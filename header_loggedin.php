@@ -27,7 +27,7 @@
 </button>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-info navbar-light fixed-top" style="height: 110px;">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="height: 110px; background-color:rgb(0,149,159)">
 <!-- Logo -->
 <div class="col">
 	<a class="navbar-brand" href="./index.php">

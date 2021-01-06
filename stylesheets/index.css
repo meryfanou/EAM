@@ -1,8 +1,14 @@
+  /* For responsiveness */
+  div.row
+  {
+    width: 100%;
+  }
+
   /* Breadcrumb - stick on scroll */
 	div.sticky
 	{
 		position: sticky;
-		top: 120px;
+		top: 115px;
 		z-index: 9;
 		width: 100%;
 	}
@@ -52,12 +58,12 @@
   /* Usefull buttons at the left */
   .btn-group
   {
-  	margin-left: -40px;
+  	/*margin-left: -40px;*/
   }
  	.btn-group .button
  	{
- 		background-color: rgba(155, 35, 53, 0.4);
- 		border: 5px solid rgba(155, 35, 53,0);
+ 		background-color: rgba(0, 139, 139, 0.8);
+ 		border: 5px solid rgba(0, 139, 139, 0);
  		color: rgb(0,0,0,0.7);
    	font-weight: bold;
  		display: block;
@@ -73,7 +79,24 @@
  		border-left: none;
  		border-bottom: none;
  		border-top: none;
- 		border-right: 5px solid rgba(155, 35, 53,0.7);
+ 		border-right: 5px solid rgba(0, 139, 139,0.8);
+  }
+
+  .flex-container
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-container > div
+  {
+    margin: 60px;
+    padding: 28px;
+    background-color: white;
+    color: rgb(0, 139, 139);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 20%;
+    text-align: center;
   }
 
   /* For small screen only */

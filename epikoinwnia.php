@@ -58,7 +58,7 @@
     </div>
 
     <!--  THLEFWNA -->
-    <div class="container-fluid bg-secondary" style="margin: 10px; padding: 10px ;border: 1px solid black;">
+    <div class="container-fluid" style="margin: 10px; padding: 10px ;border: 1px solid black; background-color: grey">
         <div class="row">
             <div class="col">
             <h3 style="text-align:center">Τηλέφωνα Επικοινωνίας </h3>

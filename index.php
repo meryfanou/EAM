@@ -12,18 +12,18 @@
 </div>
 
 <br><br>
-<div class="row" style="width: 100%">
+<div class="row">
 
   <!-- Usefull buttons -->
   <div class="col btn-group" style="text-align: left;">
     <ul style="list-style: none">
       <br><br><br>
-      <hr style="border-top: 4px solid rgba(155, 35, 53, 0.4); width: 265px;">
+      <hr style="border-top: 4px solid rgba(0, 139, 139, 0.8); width: 265px;">
       <li><button class="button">Πληροφορίες για τον Covid-19</button></li><br>
       <li><button class="button">Δουλεύουμε από το σπίτι</button></li><br>
       <li><button class="button">Ευκαιρίες κατάρτησης για ανέργους</button></li>
-      <hr style="border-top: 4px solid rgba(155, 35, 53, 0.4); width: 265px;">
-      <b></b>r>
+      <hr style="border-top: 4px solid rgba(0, 139, 139, 0.8); width: 265px;">
+      <br></br>
     </ul>
   </div>
 
@@ -92,5 +92,19 @@
     </a>
   </div>
 </div>
+
+<!-- <br>
+<div class="row flex-container">
+  <div>
+      <h5>Νέα & Ανακοινώσεις</h5>
+      <hr style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 95%;">
+      <p></p>
+  </div>
+  <div>
+      <h5>Συχνές Ερωτήσεις</h5>
+      <hr style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 95%;">
+      <p></p>
+  </div>
+</div> -->
 
 <?php include './footer.php' ?>
