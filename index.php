@@ -1,7 +1,7 @@
 <?php include './header.php' ?>
 
 <link rel="stylesheet" href="./stylesheets/index.css">
-
+<body style="background-color:rgba(198, 198, 236, 0.8)">
 <!-- Breadcrumb -->
 <div class="sticky">
 	<nav aria-label="breadcrumb">
@@ -52,31 +52,31 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Πληροφορίες για τον Covid-19 ~">
-          <img src="carousel0.png" alt="~ Πληροφορίες για τον Covid-19 ~"></a>
+          <img src="images/carousel0.png" alt="~ Πληροφορίες για τον Covid-19 ~"></a>
       </div>
       <div class="carousel-item">
         <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Νέα & Ανακοινώσεις ~">
-        <img src="carousel2.png" alt="~ Νέα & Ανακοινώσεις ~"></a>
+        <img src="images/carousel2.png" alt="~ Νέα & Ανακοινώσεις ~"></a>
       </div>
     	<div class="carousel-item">
         <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Κατάρτηση νέων πτυχιούχων ~">
-        <img src="carousel4.jpg" alt="~ Κατάρτηση νέων πτυχιούχων ~"></a>
+        <img src="images/carousel4.jpg" alt="~ Κατάρτηση νέων πτυχιούχων ~"></a>
       </div>
       <div class="carousel-item">
         <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Κατάρτηση ανέργων ~">
-        <img src="carousel7.png" alt="~ Κατάρτηση ανέργων ~"></a>
+        <img src="images/carousel7.png" alt="~ Κατάρτηση ανέργων ~"></a>
       </div>
       <div class="carousel-item">
         <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Πληροφορίες για τον Ενιαίο Φορέα Κοινωνικής Ασφάλισης ~">
-        <img src="carousel8.png" alt="~ Πληροφορίες για τον Ενιαίο Φορέα Κοινωνικής Ασφάλισης ~"></a>
+        <img src="images/carousel8.png" alt="~ Πληροφορίες για τον Ενιαίο Φορέα Κοινωνικής Ασφάλισης ~"></a>
       </div>
       <div class="carousel-item">
         <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Νέα για τον Covid & Επιχειρήσεις ~">
-        <img src="carousel9.png" alt="~ Νέα για τον Covid & Επιχειρήσεις ~"></a>
+        <img src="images/carousel9.png" alt="~ Νέα για τον Covid & Επιχειρήσεις ~"></a>
       </div>
       <div class="carousel-item">
         <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Συχνές Ερωτήσεις ~">
-        <img src="carousel6.png" alt="~ Συχνές Ερωτήσεις ~"></a>
+        <img src="images/carousel6.png" alt="~ Συχνές Ερωτήσεις ~"></a>
       </div>
     </div>
   

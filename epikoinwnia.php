@@ -1,7 +1,6 @@
 <?php include './header_loggedin.php' ?>
 
-<link rel="stylesheet" href="./main.css">
-
+<body style="background-color:rgba(198, 198, 236, 0.8)">
 <!--<body style="background-color:rgb(198, 198, 236);">-->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

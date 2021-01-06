@@ -1,3 +1,16 @@
+/* Breadcrumb - stick on scroll */
+div.sticky
+{
+  position: sticky;
+  top: 115px;
+  z-index: 9;
+  width: 100%;
+}
+.sticky .breadcrumb
+{
+  background-color: white;
+}
+
 /* For large screen only */
 @media (min-width: 992px) {
   /* Dropdown box - invisible without hovering */
