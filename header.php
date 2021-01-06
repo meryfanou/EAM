@@ -102,7 +102,7 @@
 		    <a class="nav-link" href="#" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ΕΓΓΡΑΦΗ</a>
     	</li>
    		<li class="nav-item">
-   			<a class="nav-link" href="#" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;ΕΠΙΚΟΙΝΩΝΙΑ</a>
+   			<a class="nav-link" href="epikoinwnia.php" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;ΕΠΙΚΟΙΝΩΝΙΑ</a>
 	    </li>
 		<li class="nav-item">
    			<a class="nav-link" href="#" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;English&nbsp;<i class="fa fa-language"></i></a>
