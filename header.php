@@ -49,9 +49,10 @@
 	    	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: bold;">&nbsp;&nbsp;ΕΡΓΑΖΟΜΕΝΟΙ</a>
       		<div class="dropdown-menu">
 		        <a class="dropdown-item" href="#">COVID-19 ΚΑΙ ΕΡΓΑΖΟΜΕΝΟΙ</a>
+		        <!-- Border line for large screen -->
 		        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
        			<a class="dropdown-item" href="#">ΑΜΟΙΒΕΣ / ΔΩΡΑ / ΑΔΕΙΕΣ</a>
-	    	    <!-- <a class="dropdown-item" href="#">Link 3</a> -->
+		        <!-- Border line for small screen -->
 			    <hr id="smScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 55%;">
    			</div>
 	    </li>
@@ -59,9 +60,10 @@
 	    	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: bold;">&nbsp;&nbsp;ΕΡΓΟΔΟΤΕΣ</a>
       		<div class="dropdown-menu">
 		        <a class="dropdown-item" href="#">COVID-19 ΚΑΙ ΕΡΓΟΔΟΤΕΣ</a>
+		        <!-- Border line for large screen -->
 		        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
        			<a class="dropdown-item" href="#">ΥΠΟΛΟΓΙΣΜΟΣ ΑΣΦΑΛΙΣΤΙΚΩΝ ΕΙΣΦΟΡΩΝ ΕΠΙΧΕΙΡΗΣΗΣ</a>
-	    	    <!-- <a class="dropdown-item" href="#">Link 3</a> -->
+		        <!-- Border line for small screen -->
 			    <hr id="smScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 65%;">
    			</div>
 	    </li>
@@ -69,10 +71,13 @@
 	    	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: bold;">&nbsp;&nbsp;ΑΝΕΡΓΟΙ</a>
    			<div class="dropdown-menu">
 	        	<a class="dropdown-item" href="#">ΘΕΣΕΙΣ ΕΡΓΑΣΙΑΣ</a>
+		        <!-- Border line for large screen -->
 		        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
         		<a class="dropdown-item" href="#">ΕΠΙΔΟΜΑΤΑ</a>
+		        <!-- Border line for large screen -->
 		        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
 		        <a class="dropdown-item" href="#">ΕΥΚΑΙΡΙΕΣ ΚΑΤΑΡΤΗΣΗΣ</a>
+		        <!-- Border line for small screen -->
 			    <hr id="smScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 55%;">
    			</div>
     	</li>
@@ -80,8 +85,7 @@
 		    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: bold;">&nbsp;&nbsp;ΣΥΝΤΑΞΙΟΥΧΟΙ</a>
    			<div class="dropdown-menu">
 		        <a class="dropdown-item" href="#">ΝΕΑ ΓΙΑ ΤΙΣ ΣΥΝΤΑΞΕΙΣ</a>
-       			<!-- <a class="dropdown-item" href="#">Link 2</a> -->
-	    	    <!-- <a class="dropdown-item" href="#">Link 3</a> -->
+		        <!-- Border line for small screen -->
 			    <hr id="smScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 55%;">
    			</div>
     	</li>

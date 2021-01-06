@@ -1,3 +1,4 @@
+  /* Breadcrumb - stick on scroll */
 	div.sticky
 	{
 		position: sticky;
@@ -10,55 +11,74 @@
 		background-color: white;
 	}
 
+  /* Carousel - position */
 	#myCarousel
 	{
 		text-align: right;
 		margin-right: 25px;
 	}
-	/* Make the image fully responsive */
-  	.carousel-inner img
-  	{
-    	width: 100%;
-	    height: 100%;
-  	}
-  	.carousel-inner div
-  	{
-  		color: rgba(0,0,0,0.8);
-  	}
+	/* Make carousel's images fully responsive */
+  .carousel-inner img
+  {
+  	width: 100%;
+	  height: 100%;
+  }
+  /* Tabs for each page at the bottom */
+  .carousel .carousel-indicators li
+  {
+  	background-color:rgba(0, 0, 0, 0.7);
+  }
+  /* Carousel image */
+  .carousel-item img
+  {
+    width: 880px;
+    height: 450px;
+  }
+  /* Carousel left control */
+  .carousel-control-prev
+  {
+    display: flex;
+    justify-content: right;
+    margin-left: -9.5%;
+  }
+  /* Carousel right control */
+  .carousel-control-next
+  {
+    display: flex;
+    justify-content: right;
+    margin-right: 2%;
+  }
 
-  	.carousel .carousel-indicators li
-  	{
-  		background-color:rgba(0, 0, 0, 0.7);
-  	}
-
-  	.btn-group
-  	{
-  		margin-left: -40px;
-  	}
-
-  	.btn-group .button
-  	{
-  		background-color: rgba(155, 35, 53, 0.4);
-  		border: 5px solid rgba(155, 35, 53,0);
-  		color: rgb(0,0,0,0.7);
-      	font-weight: bold;
-  		display: block;
-  		width: 265px;
-  		height: 70px;
-  		transition-duration: 0.4s;
-  		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  	}
-  	.btn-group .button:hover
+  /* Usefull buttons at the left */
+  .btn-group
+  {
+  	margin-left: -40px;
+  }
+ 	.btn-group .button
+ 	{
+ 		background-color: rgba(155, 35, 53, 0.4);
+ 		border: 5px solid rgba(155, 35, 53,0);
+ 		color: rgb(0,0,0,0.7);
+   	font-weight: bold;
+ 		display: block;
+ 		width: 265px;
+ 		height: 70px;
+ 		transition-duration: 0.4s;
+ 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ 	}
+ 	.btn-group .button:hover
 	{
-  		background-color: white;
-  		color: rgb(0,0,0,0.7);
-  		border-left: none;
-  		border-bottom: none;
-  		border-top: none;
-  		border-right: 5px solid rgba(155, 35, 53,0.7);
-	}
+ 		background-color: white;
+ 		color: rgb(0,0,0,0.7);
+ 		border-left: none;
+ 		border-bottom: none;
+ 		border-top: none;
+ 		border-right: 5px solid rgba(155, 35, 53,0.7);
+  }
 
+  /* For small screen only */
 	@media (max-width: 991px) {
+    /* Carousel - position */
 		#myCarousel
 		{
 			margin-left: 15px;
