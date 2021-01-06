@@ -31,7 +31,7 @@
 <!-- Logo -->
 <div class="col">
 	<a class="navbar-brand" href="./index.php">
-    	<img src="Logo.png" alt="Logo" style="height: 110px; width: 250px; border-radius:0%"><!-- or 50% ?? -->
+    	<img src="images/Logo.png" alt="Logo" style="height: 110px; width: 250px; border-radius:0%"><!-- or 50% ?? -->
   	</a>
 </div>
 
