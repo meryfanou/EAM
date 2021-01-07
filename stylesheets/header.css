@@ -57,6 +57,12 @@ div.sticky
   {
     display: none;
   }
+
+  /* To align properly .list-group-horizontal */
+  #sm-screen
+  {
+    display: none;
+  }
 }
 
 /* For small screen only */
@@ -117,6 +123,12 @@ div.sticky
       }
       /* Border line in dropdown menu - visible only in small screen */
       .navbar-collapse .col .navbar-nav .nav-item hr#smScreen
+      {
+        display: block;
+      }
+
+      /* To align properly .list-group-horizontal */
+      #sm-screen
       {
         display: block;
       }

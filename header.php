@@ -109,7 +109,7 @@
 			<li class="nav-item">
 	   			<a class="nav-link" href="#" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;English&nbsp;<i class="fa fa-language"></i></a>
 		    </li>
-		</ul><div class="col"></div>
+		</ul><div class="col" id="sm-screen"></div>
 	</div>
 
 	<!-- Search form -->
@@ -121,7 +121,7 @@
 		    		<button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i></button>
 		  		</div>
 			</div>
-		</form>
+		</form><div class="col-sm-1"></div>
 	</div>
 </div>
 </div>
