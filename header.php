@@ -1,3 +1,4 @@
+<!-- header.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +32,7 @@
 <!-- Logo -->
 <div class="col">
 	<a class="navbar-brand" href="./index.php">
-    	<img src="Logo.png" alt="Logo" style="height: 110px; width: 250px; border-radius:0%"><!-- or 50% ?? -->
+    	<img src="images/Logo.png" alt="Logo" style="width: 250px; border-radius:0%"><!-- or 50% ?? -->
   	</a>
 </div>
 
@@ -94,23 +95,25 @@
 
 <!-- Other Options -->
 <div class="col">
-	<ul class="navbar-nav mb-3 list-group list-group-horizontal" style="position: relative; margin-right: -5%;">
-		<li class="nav-item">
-	    	<a class="nav-link" href="#" style="font-size: 87%;">ΣΥΝΔΕΣΗ</a>
-		</li>
-		<li class="nav-item">
-		    <a class="nav-link" href="#" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ΕΓΓΡΑΦΗ</a>
-    	</li>
-   		<li class="nav-item">
-   			<a class="nav-link" href="epikoinwnia.php" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;ΕΠΙΚΟΙΝΩΝΙΑ</a>
-	    </li>
-		<li class="nav-item">
-   			<a class="nav-link" href="#" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;English&nbsp;<i class="fa fa-language"></i></a>
-	    </li>
-	</ul>
+	<div class="row"><div class="col"></div>
+		<ul class="navbar-nav mb-3 list-group list-group-horizontal" style="margin-right: -5%;">
+			<li class="nav-item">
+		    	<a class="nav-link" href="#" style="font-size: 87%;">ΣΥΝΔΕΣΗ</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" href="#" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ΕΓΓΡΑΦΗ</a>
+	    	</li>
+	   		<li class="nav-item">
+	   			<a class="nav-link" href="epikoinwnia.php" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;ΕΠΙΚΟΙΝΩΝΙΑ</a>
+		    </li>
+			<li class="nav-item">
+	   			<a class="nav-link" href="#" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;English&nbsp;<i class="fa fa-language"></i></a>
+		    </li>
+		</ul>
+	</div>
 
 	<!-- Search form -->
-	<div class="row"><div class="col-md-3"></div><div class="col">
+	<div class="row"><div class="col"></div>
   		<form class="form-inline" action="" style="width: 250px;">
   			<div class="input-group input-group-sm mb-2">
 				<input type="text" class="form-control" placeholder="Search">
@@ -119,7 +122,7 @@
 		  		</div>
 			</div>
 		</form>
-	</div></div>
+	</div>
 </div>
 </div>
 </nav>

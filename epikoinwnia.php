@@ -1,3 +1,4 @@
+<!-- epikoinwnia.php -->
 <?php include './header_loggedin.php' ?>
 
 <body style="background-color:rgba(198, 198, 236, 0.8)">
@@ -11,7 +12,7 @@
 <div class="sticky">
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php">Αρχική</a></li>
+        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
         <li class="breadcrumb-item active" aria-current="page">Επικοινωνία</li>
     </ol>
     </nav>

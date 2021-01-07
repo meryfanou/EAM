@@ -1,6 +1,5 @@
-
-<br><br><br>
-<br><br><br>
+<!-- footer.php -->
+<br><br><br><br><br>
 
 <footer class="text-center text-lg-start" style="background-color: rgba(0, 0, 0, 0.3)">
 <!-- Grid container -->

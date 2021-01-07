@@ -1,12 +1,13 @@
+<!-- index.php -->
 <?php include './header.php' ?>
 
 <link rel="stylesheet" href="./stylesheets/index.css">
-<body style="background-color:rgba(198, 198, 236, 0.8)">
+<body style="background-color:rgba(198, 198, 236, 0.8);">
 <!-- Breadcrumb -->
 <div class="sticky">
 	<nav aria-label="breadcrumb">
 	  <ol class="breadcrumb">
-    	<li class="breadcrumb-item">Αρχική</li>
+    	<li class="breadcrumb-item"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</li>
 	  </ol>
 	</nav>
 </div>
@@ -31,7 +32,7 @@
   <div id="myCarousel" class="col carousel slide" data-ride="carousel">
 
     <!-- Indicators (page tabs at the bottom) -->
-    <ul class="carousel-indicators" style="display:flex; justify-content:right; margin-right: 320px;">
+    <ul class="carousel-indicators" style="display:flex; justify-content:right; margin-right: 38%;">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -91,20 +92,32 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+
+  <div class="col-sm-2"></div>
 </div>
 
-<!-- <br>
+<br>
 <div class="row flex-container">
-  <div>
-      <h5>Νέα & Ανακοινώσεις</h5>
+  <div class="flex-content">
+      <a href="#" style="text-decoration:none;"><h5>Νέα & Ανακοινώσεις</h5></a>
       <hr style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 95%;">
-      <p></p>
+
+      <a href="#"><p><span style="font-weight:bold;">7.1.21 </span>Επίδομα 400 ευρώ για τους αυτοαπασχολούμενους επιστήμονες από 7 κλάδους θα καταβάλει το υπουργείο Εργασίας προς τα τέλη Ιανουαρίου.</p></a>
+      <hr style="border-top: 1px solid rgba(0, 0, 0, 0.3); width: 95%;">
+      <a href="#"><p><span style="font-weight:bold;">5.1.21 </span>e-ΕΦΚΑ: Ποιοι απαλλάσσονται από ασφαλιστική ενημερότητα και βεβαίωση οφειλής</p></a>
+      <hr style="border-top: 1px solid rgba(0, 0, 0, 0.3); width: 95%;">
+      <a href="#"><p><span style="font-weight:bold;">3.1.21 </span>Επίδομα αδείας: Πώς καταβάλλεται στους εργαζομένους που έχουν ενταχθεί στο πρόγραμμα "Συν- εργασία"</p></a>
   </div>
-  <div>
-      <h5>Συχνές Ερωτήσεις</h5>
+  <div class="flex-content">
+      <a href="#" style="text-decoration:none;"><h5>Συχνές Ερωτήσεις</h5></a>
       <hr style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 95%;">
-      <p></p>
+
+      <a href="#"><p><span style="font-weight:bold">Άδεια Ειδικού Σκοπού: </span>Ποιες είναι οι προϋποθέσεις για παραχώρησή της;</p></a>
+      <hr style="border-top: 1px solid rgba(0, 0, 0, 0.3); width: 95%;">
+      <a href="#"><p><span style="font-weight:bold;">Σχέδιο Αναστολής Εργασίας: </span>Όσοι προσλήφθηκαν πρόσφατα και δεν πληρούν τις ασφαλιστικές προϋποθέσεις θα πάρουν ανεργιακό επίδομα στο πλαίσιο Σχεδίου Αναστολής;</p></a>
+      <hr style="border-top: 1px solid rgba(0, 0, 0, 0.3); width: 95%;">
+      <a href="#"><p><span style="font-weight:bold;">Επίδομα Ασθενείας: </span>Οι αυτοτελώς εργαζόμενοι δικαιούνται το ειδικό επίδομα ασθενείας;</p></a>
   </div>
-</div> -->
+</div>
 
 <?php include './footer.php' ?>

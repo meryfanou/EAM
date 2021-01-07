@@ -1,9 +1,17 @@
+/* header.css */
+
+/* For responsiveness */
+div.row
+{
+  width: 100%;
+}
+
 /* Breadcrumb - stick on scroll */
 div.sticky
 {
   position: sticky;
   top: 115px;
-  z-index: 9;
+  z-index: 99;
   width: 100%;
 }
 .sticky .breadcrumb
@@ -14,7 +22,7 @@ div.sticky
 /* For large screen only */
 @media (min-width: 992px) {
   /* Dropdown box - invisible without hovering */
-  .collapse .col ul.navbar-nav li.dropdown div.dropdown-menu
+  .dropdown-menu
   {
     display: none;
     background-color: #f9f9f9;
@@ -23,29 +31,29 @@ div.sticky
     border-color: rgba(0,0,0,0.6);
   }
   /* Dropdown item */
-  .collapse .col ul.navbar-nav li.dropdown div.dropdown-menu a.dropdown-item
+  .dropdown-item
   {
     padding: 8px 12px;
     text-align: center;
     white-space: normal;    /* Break words in lines if too long */
   }
   /* Dropdown item on hovering */
-  .collapse .col ul.navbar-nav li.dropdown div.dropdown-menu a.dropdown-item:hover
+  .dropdown-item:hover
   {
     background-color: #ddd;
   }
   /* Dropdown box - visible with hovering */
-  .collapse .col ul.navbar-nav li.dropdown:hover div.dropdown-menu
+  .dropdown:hover .dropdown-menu
   {
     display: block;
   }
   /* Border line in dropdown menu - visible only in large screen */
-  .navbar-collapse .col .navbar-nav .nav-item hr#lgScreen
+  .nav-item hr#lgScreen
   {
     display: block;
   }
   /* Border line in dropdown menu - invisible in large screen */
-  .navbar-collapse .col .navbar-nav .nav-item hr#smScreen
+  .nav-item hr#smScreen
   {
     display: none;
   }
@@ -53,11 +61,6 @@ div.sticky
 
 /* For small screen only */
 @media (max-width: 991px) {
-      /* Logo - stick to upper left corner */
-      nav.navbar div.col a.navbar-brand img
-      {
-        margin-top: -13px;
-      }
       /* Collapsing navbar style */
       .navbar-collapse
       {
@@ -79,7 +82,7 @@ div.sticky
       .navbar-collapse .col .form-inline
       {
         margin-left: 25%;
-        margin-right: 40%;
+        margin-right: 25%;
         margin-bottom: 50px;
       }
       /* Dropdown menu titles */
