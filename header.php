@@ -32,7 +32,7 @@
 <!-- Logo -->
 <div class="col">
 	<a class="navbar-brand" href="./index.php">
-    	<img src="images/Logo.png" alt="Logo" style="width: 250px; border-radius:0%"><!-- or 50% ?? -->
+    	<img src="images/Logo.png" alt="Logo" style="width: 250px; border-radius:0%">
   	</a>
 </div>
 
@@ -109,7 +109,7 @@
 			<li class="nav-item">
 	   			<a class="nav-link" href="#" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;English&nbsp;<i class="fa fa-language"></i></a>
 		    </li>
-		</ul>
+		</ul><div class="col"></div>
 	</div>
 
 	<!-- Search form -->
