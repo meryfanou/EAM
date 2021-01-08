@@ -4,10 +4,11 @@
 <body style="background-color:rgba(198, 198, 236, 0.8)">
 <!--<body style="background-color:rgb(198, 198, 236);">-->
 
+<!--
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+-->
 <!-- Breadcrumb -->
 <div class="sticky">
     <nav aria-label="breadcrumb">
@@ -18,26 +19,11 @@
     </nav>
 </div>
 <br>
-<!--     
-    <div class="container-xxl bg-secondary" style="margin: 10px; padding: 10px ;border: 1px solid black;">
-        <div class="row">
-            <div class="col-lg-6">
-                <h2> Ωράριο Λειτουργίας </h2>
-                <br>
-                <p> software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-            <div class="col-lg-6">
-                <h2> Ωράριο Λειτουργίας </h2>
-                <br>
-                <p> software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-    </div>
-</div> -->
 <div class="parent-container d-flex"> <!-- kurio megalo kouti -->
     
     <!-- upokoutia to kathena me tis plhrofories tou -->
     <!-- WRARIO -->
-    <div class="container-fluid bg-secondary" style="margin: 10px; padding: 10px ;border: 1px solid black;">
+    <div class="container-fluid " style="margin: 10px; padding: 10px ;border: 1px solid black; background-color: darkgrey">
         <div class="row">
             <div class="col">
             <h3 style="text-align:center"> Ωράριο Λειτουργίας </h3>
@@ -58,7 +44,7 @@
     </div>
 
     <!--  THLEFWNA -->
-    <div class="container-fluid" style="margin: 10px; padding: 10px ;border: 1px solid black; background-color: grey">
+    <div class="container-fluid" style="margin: 10px; padding: 10px ;border: 1px solid black; background-color: darkgrey">
         <div class="row">
             <div class="col">
             <h3 style="text-align:center">Τηλέφωνα Επικοινωνίας </h3>
@@ -79,7 +65,7 @@
     </div>
 
     <!--  RANTEYOY -->
-    <div class="container-fluid bg-secondary" style="margin: 10px; padding: 10px ;border: 1px solid black;">
+    <div class="container-fluid " style="margin: 10px; padding: 10px ;border: 1px solid black;background-color: darkgrey">
         <div class="row">
             <div class="col">
                 <h3 style="text-align:center">Ραντεβού </h3>
@@ -90,7 +76,7 @@
                             συμπληρώνοντας την παρακάτω φόρμα:<br>
                         </li>
                         <li>
-                            <br><a href="" class="text-dark"><button type="button" class="btn btn-info">Κλείστε Ραντεβού</button></a>
+                            <br><a href="randevu.php" class="text-dark"><button type="button" class="btn btn-info">Κλείστε Ραντεβού</button></a>
                         </li>
                     </ul>
             </div>
@@ -102,59 +88,75 @@
 <!-- FORMA EPIKOINWNIAS -->
 
 
-    <div class="container-xxl bg-secondary" style="margin: 10px; padding: 20px ;border: 1px solid black;">
+    <div class="container-xxl " style="margin: 10px; padding: 20px ;border: 1px solid black;background-color: darkgrey">
         <h2> <b>επικοινώνησε μαζί μας!</b> </h2>
         Θα θέλαμε να σας ενημερώσουμε ότι λόγω των τρεχουσών συνθηκών και του ιδιαίτερα αυξημένου όγκου μηνυμάτων , παρουσιάζονται σημαντικές καθυστερήσεις στις απαντήσεις μας.
         <br><br><h6><b> Σας ευχαριστούμε για την κατανόηση </b> </h6>
         
         <form class="was-validated form-group"> <!-- class="needs-validation" novalidate -->
             <!-- ONOMA -->
-            <div class="form-group w-25">
-                <label for="username" class="form-label">Ονοματεπώνυμο *</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" required>
-                <div class="invalid-feedback">
-                    Please choose a username.
+            <div class="form-group w-25" style="display: table-row">
+                <div style="display: table-cell;overflow: auto; height: 60px; width: 400px"> 
+                    <label for="username" class="form-label">Ονοματεπώνυμο *</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" required> 
+                    
+                    <div class="invalid-feedback">
+                        Παρακαλώ επιλέξτε όνομα
+                    </div>
                 </div>
+                <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Tο όνομα δεν πρέπει να περιέχει ειδικούς χαρακτήρες όπως _, -, +, !, κτλ."> </div>  </div>
             </div>
     
             <br>
 
             <!-- EMAIL -->
-            <div class="form-group w-25">
-                <label for="email">Email *</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-                <div class="invalid-feedback">
-                    Το email δεν ήταν έγκυρο.
+            <div class="form-group w-25" style="display: table-row">
+                <div style="display: table-cell;overflow: auto; height: 60px; width: 400px">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                    <div class="invalid-feedback">
+                        Το email δεν ήταν έγκυρο.
+                    </div>
                 </div>
+                <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Η διεύθυνση πρέπει να είναι της μορφής: name@example.com"> </div>  </div>
+
             </div>
             
             <br>
 
             <!-- EPILOGH THEMATOS -->
-            <div class="form-group w-50">
-                <label for="selection">Επιλέξτε θέμα *</label>
-                <select class="custom-select" required>
-                <option></option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                </select>
-                <div class="invalid-feedback">
-                    Παρακαλώ επιλέξτε ένα θέμα.
+            <div class="form-group w-50"style="display: table-row">
+                <div style="display: table-cell;overflow: auto; height: 60px; width: 400px">
+                    <label for="selection">Επιλέξτε θέμα *</label>
+                    <select class="custom-select" required>
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Παρακαλώ επιλέξτε ένα θέμα.
+                    </div>
                 </div>
+                <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="To θέμα για το οποίο θέλετε να επικονωνήσετε με την υπηρεσία"> </div>  </div>
             </div>
 
             <br>
 
             <!-- MHNYMA -->
-            <div class="form-group w-100">
-                <label for="message">Μήνυμα *</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"required></textarea>
-                <div class="invalid-feedback">
-                    Παρακαλώ συμπληρώστε το μήνυμά σας.
+            <div class="form-group w-100" style="display: table-row">
+                <div style="display: table-cell;overflow: auto; height: 60px; width: 600px">
+
+                    <label for="message">Μήνυμα *</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"required></textarea>
+                    <div class="invalid-feedback">
+                        Παρακαλώ συμπληρώστε το μήνυμά σας.
+                    </div>
                 </div>
+                <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Μήνυμα προς αποστόλη. Εδώ γράφετε ό,τι θέλετε να μας πείτε"> </div>  </div>
+
             </div>
             <br>
 
@@ -162,16 +164,16 @@
         </form>
     </div>
 
-    <div class="container-xxl bg-secondary" style="margin: 10px; padding: 10px ;border: 1px solid black;">
+    <div class="container-xxl " style="margin: 10px; padding: 10px ;border: 1px solid black;background-color: darkgrey">
         <h2> Τρόποι εξυπηρέτησης κοινού </h2>
         <br>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
 
-    <div class="container-xxl bg-secondary" style="margin: 10px; padding: 10px ;border: 1px solid black;">
+    <div class="container-xxl " style="margin: 10px; padding: 10px ;border: 1px solid black;background-color: darkgrey">
         <h2> Τρόποι εξυπηρέτησης κοινού εν μέσω πανδημίας</h2>
+         
+        <p>Στο σημείο αυτό θα θέλαμε να αναφέρουμε την καθημερινή διαπίστωση ότι ο ρόλος συμβούλων καθίσταται τη συγκεκριμένη περίοδο πιο αναγκαίος από ποτέ. Εκείνοι καθοδηγούν και ηρεμούν τους ανθρώπου, προσφέροντάς τους αίσθημα σιγουριάς και αισιοδοξίας για το αύριο. </p>
         <br>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
     
 
