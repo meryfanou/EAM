@@ -96,9 +96,16 @@
 <!-- Other Options -->
 <div class="col">
 	<div class="row"><div class="col"></div>
-		<ul class="navbar-nav mb-3 list-group list-group-horizontal" style="margin-right: -5%; margin-left:2%;">
+		<ul class="navbar-nav mb-3 list-group list-group-horizontal" style="margin-right: -5%;">
 			<li class="nav-item">
-		    	<a class="nav-link" href="#" style="font-size: 87%;">ΚΑΛΩΣΗΡΘΑΤΕ</a>
+				<a class="nav-link" href="./user-profile.php" style="font-size: 87%;" data-toggle="tooltip" title="Προφίλ" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+		    		ΚΑΛΩΣΗΡΘΑΤΕ&nbsp;&nbsp;<i class="fas fa-user-circle"></i></a>
+				<!-- Tooltip -->
+				<script>
+				    $(document).ready(function(){
+				        $('[data-toggle="tooltip"]').tooltip();
+					});
+				</script>
 			</li>
 	   		<li class="nav-item">
 	   			<a class="nav-link" href="epikoinwnia.php" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;ΕΠΙΚΟΙΝΩΝΙΑ</a>
@@ -106,7 +113,7 @@
 			<li class="nav-item">
 	   			<a class="nav-link" href="#" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;English&nbsp;<i class="fa fa-language"></i></a>
 		    </li>
-		</ul><div class="col"></div>
+		</ul><div class="col" id="sm-screen"></div>
 	</div>
 
 	<!-- Search form -->

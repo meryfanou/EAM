@@ -7,7 +7,7 @@
 <div class="sticky">
 	<nav aria-label="breadcrumb">
 	  <ol class="breadcrumb">
-    	<li class="breadcrumb-item"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</li>
+    	<li class="breadcrumb-item active"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</li>
 	  </ol>
 	</nav>
 </div>
@@ -42,41 +42,41 @@
       <li data-target="#myCarousel" data-slide-to="6"></li>
     </ul>
 
-    <!-- Popover text for an image -->
+    <!-- Tooltip for an image -->
     <script>
       $(document).ready(function(){
-        $('[data-toggle="popover"]').popover();   
+        $('[data-toggle="tooltip"]').tooltip();
       });
     </script>
 
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Πληροφορίες για τον Covid-19 ~">
-          <img src="images/carousel0.png" alt="~ Πληροφορίες για τον Covid-19 ~"></a>
+        <a href="#" data-toggle="tooltip" title="~ Πληροφορίες για τον Covid-19 ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <img src="images/carousel0.png" alt="~ Πληροφορίες για τον Covid-19 ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Νέα & Ανακοινώσεις ~">
+        <a href="#" data-toggle="tooltip" title="~ Νέα & Ανακοινώσεις ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel2.png" alt="~ Νέα & Ανακοινώσεις ~"></a>
       </div>
     	<div class="carousel-item">
-        <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Κατάρτηση νέων πτυχιούχων ~">
+        <a href="#" data-toggle="tooltip" title="~ Κατάρτηση νέων πτυχιούχων ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel4.jpg" alt="~ Κατάρτηση νέων πτυχιούχων ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Κατάρτηση ανέργων ~">
+        <a href="#" data-toggle="tooltip" title="~ Κατάρτηση ανέργων ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel7.png" alt="~ Κατάρτηση ανέργων ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Πληροφορίες για τον Ενιαίο Φορέα Κοινωνικής Ασφάλισης ~">
+        <a href="#" data-toggle="tooltip" title="~ Πληροφορίες για τον Ενιαίο Φορέα Κοινωνικής Ασφάλισης ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel8.png" alt="~ Πληροφορίες για τον Ενιαίο Φορέα Κοινωνικής Ασφάλισης ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Νέα για τον Covid & Επιχειρήσεις ~">
+        <a href="#" data-toggle="tooltip" title="~ Νέα για τον Covid & Επιχειρήσεις ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel9.png" alt="~ Νέα για τον Covid & Επιχειρήσεις ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="popover" data-trigger="hover" data-content="~ Συχνές Ερωτήσεις ~">
+        <a href="#" data-toggle="tooltip" title="~ Συχνές Ερωτήσεις ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel6.png" alt="~ Συχνές Ερωτήσεις ~"></a>
       </div>
     </div>
