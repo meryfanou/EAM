@@ -1,9 +1,12 @@
 <!-- epikoinwnia.php -->
 <?php include './header_loggedin.php' ?>
 
-<body style="background-color:rgba(198, 198, 236, 0.8)">
-<!--<body style="background-color:rgb(198, 198, 236);">-->
 
+
+<body style="background-color:rgba(198, 198, 236, 0.8)">
+ 
+<!--<body style="background-color:rgb(198, 198, 236);">-->
+<link rel="stylesheet" type="text/css" href="dist/bootstrap-clockpicker.min.css">
 <!--
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -22,7 +25,6 @@
 <br>
 
 <!-- FORMA EPIKOINWNIAS -->
-
 
     <div class="container-xxl " style="margin: 10px; padding: 20px ;border: 1px solid black;background-color: darkgrey">
         <h2> <b>Κλείστε Ραντεβού</b> </h2>
@@ -148,7 +150,7 @@
                 <div style="display: table-cell;overflow: auto; height: 60px; width: 400px"> 
                     <label for="username" class="form-label">Ταχυδρομικός Κωδικός *</label>
                     <br>
-                    <input id="zip" name="zip" type="text" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" placeholder="πχ 12345"required>
+                    <input id="zip" name="zip" type="text" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" placeholder="πχ 12345"maxlength="5"required>
                     
                     <div class="invalid-feedback">
                         Εισάγετε σωστά τον Ταχυδρομικό Κωδικό σας
@@ -163,7 +165,7 @@
 
             <!-- EMAIL -->
             <div class="form-group w-25" style="display: table-row">
-                <div style="display: table-cell;overflow: auto; height: 60px; width: 400px">
+                <div style="dclass="md-form"isplay: table-cell;overflow: auto; height: 60px; width: 400px">
                     <label for="email">Email *</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
                     <div class="invalid-feedback">
@@ -181,7 +183,7 @@
                 <div style="display: table-cell;overflow: auto; height: 60px; width: 400px"> 
                     <label for="username" class="form-label">Τηλέφωνο Επικοινωνίας *</label>
                     <br>
-                    <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="698-12-34-567" required>
+                    <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="698-12-34-567"maxlength="10" required>
 
                     <div class="invalid-feedback">
                         Εισάγετε σωστά το τηλέφωνό σας
@@ -195,17 +197,33 @@
             <!-- HMEROMHNIA -->
             <div class="form-group w-25" style="display: table-row">
                 <div style="display: table-cell;overflow: auto; height: 60px; width: 400px"> 
-                    <label for="username" class="form-label">Όνομα *</label>
+                    <label for="username" class="form-label">Ημερομηνία *</label>
                     <input type="date" class="form-control" id="exampleFormControlInput1" required> 
                     
                     <div class="invalid-feedback">
-                        Εισάγετε σωστά το όνομά σας
+                        Αυτή η ημερομηνία δεν είναι διαθέσιμη
                     </div>
                 </div>
                 <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="H ημερομηνία καθορισμού του ραντεβού σας"> </div>  </div>
             </div>
     
             <br>
+            <!-- WRA -->
+            <div class="form-group w-25" style="display: table-row">
+                <div style="display: table-cell;overflow: auto; height: 60px; width: 400px"> 
+                    <label for="appt">Επιλέξτε ώρα:</label>
+                    <input type="time" id="appt" name="appt" required>
+                    
+                    <div class="invalid-feedback">
+                        Αυτή η ώρα δεν είναι διαθέσιμη
+                    </div>
+                </div>
+                <div style="display: table-cell;padding-left: 20px;"><br><p></p> <div class="fas fa-question-circle" title="H ώρα καθορισμού του ραντεβού σας"> </div>  </div>
+            </div>
+    
+            
+            <br>
+            
 
             <!-- MHNYMA -->
             <div class="form-group w-100" style="display: table-row">
@@ -227,6 +245,9 @@
     </div>
 
 
+ 
 </body>
 <?php include './footer.php' ?>
 
+
+ 

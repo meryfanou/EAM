@@ -134,7 +134,7 @@
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5</option>
+                    <option>Άλλο</option>
                     </select>
                     <div class="invalid-feedback">
                         Παρακαλώ επιλέξτε ένα θέμα.
