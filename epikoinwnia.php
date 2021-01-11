@@ -93,7 +93,7 @@
         Θα θέλαμε να σας ενημερώσουμε ότι λόγω των τρεχουσών συνθηκών και του ιδιαίτερα αυξημένου όγκου μηνυμάτων , παρουσιάζονται σημαντικές καθυστερήσεις στις απαντήσεις μας.
         <br><br><h6><b> Σας ευχαριστούμε για την κατανόηση </b> </h6>
         
-        <form class="was-validated form-group"> <!-- class="needs-validation" novalidate -->
+        <form class="was-validated form-group"id="search_form"method="get"> <!-- class="needs-validation" novalidate -->
             <!-- ONOMA -->
             <div class="form-group w-25" style="display: table-row">
                 <div style="display: table-cell;overflow: auto; height: 60px; width: 400px"> 
@@ -130,10 +130,10 @@
                     <label for="selection">Επιλέξτε θέμα *</label>
                     <select class="custom-select" required>
                     <option></option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
+                    <option>Επαγγελματίας</option>
+                    <option>Άνεργος</option>
+                    <option>Επιδότηση</option>
+                    <option>Σύνταξη</option>
                     <option>Άλλο</option>
                     </select>
                     <div class="invalid-feedback">
@@ -160,24 +160,54 @@
             </div>
             <br>
 
-            <button type="submit" class="btn btn-primary">Αποστολή</button>
+            <button type="button" class="btn btn-primary"data-toggle="modal" data-target="#exampleModalCenter">Αποστολή</button>
         </form>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Επιβεβαίωση αποστολής</h5>
+                        <button type="submit" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Είστε βέβαιοι για τα στοιχεία σας;
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Κλείσιμο</button>
+                        <button type="submit"onclick="form_submit()" class="btn btn-primary">Αποστολή</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
     </div>
 
-    <div class="container-xxl " style="margin: 10px; padding: 10px ;border: 1px solid black;background-color: darkgrey">
-        <h2> Τρόποι εξυπηρέτησης κοινού </h2>
-        <br>
-    </div>
+
 
     <div class="container-xxl " style="margin: 10px; padding: 10px ;border: 1px solid black;background-color: darkgrey">
         <h2> Τρόποι εξυπηρέτησης κοινού εν μέσω πανδημίας</h2>
          
-        <p>Στο σημείο αυτό θα θέλαμε να αναφέρουμε την καθημερινή διαπίστωση ότι ο ρόλος συμβούλων καθίσταται τη συγκεκριμένη περίοδο πιο αναγκαίος από ποτέ. Εκείνοι καθοδηγούν και ηρεμούν τους ανθρώπου, προσφέροντάς τους αίσθημα σιγουριάς και αισιοδοξίας για το αύριο. </p>
+        <h6>ΕΠΙΚΟΙΝΩΝΙΑ ΠΟΛΙΤΩΝ ΜΕ ΤΟ ΥΠΟΥΡΓΕΙΟ ΚΑΤΑ ΤΗ ΔΙΑΡΚΕΙΑ ΤΩΝ ΕΚΤΑΚΤΩΝ ΜΕΤΡΩΝ.</h6>
+
+            <p style="padding-left:20px">Ηλεκτρονικές Υπηρεσίες</p>
+            <p style="padding-left:40px">Οι περισσότερες υπηρεσίες του υπουργείου παρέχονται αποκλειστικά ηλεκτρονικά. Η πρόσβαση στις ηλεκτρονικές υπηρεσίες του υπουργείου γίνεται είτε μέσω www.gov.gr με τουςκωδικούς του TAXISnet, είτε μέσω των e-Υπηρεσιών υπουργείο  με τουςκωδικούς TAXISnet ή με τους κωδικούς πιστοποιημένων χρηστών του.
+            Για όσες υπηρεσίες δεν παρέχονται ηλεκτρονικά, τα αιτήματα ή τα δικαιολογητικά θα γίνονται δεκτά μέσω ηλεκτρονικού ταχυδρομείου, εφόσον έχει τηρηθεί η διαδικασία πιστοποίησης μέσω www.gov.gr ή έχει επισυναφθεί Υπεύθυνη Δήλωση με θεωρημένο το γνήσιο της υπογραφής. </p>
+        
+            <p style="padding-left:20px">Ηλεκτρονική Επικοινωνία </p>
+            <p style="padding-left:40px">Για όσες υπηρεσίες δεν παρέχονται ηλεκτρονικά, καθώς και για την υποβολή ερωτημάτων,επικοινωνήστε με το Κέντρο Προώθησης Απασχόλησης που ανήκετε μέσω ηλεκτρονικού ταχυδρομείου, αναφέροντας το θέμα καθώς και τα στοιχεία σας.</p>
         <br>
+        <p>Στο σημείο αυτό θα θέλαμε να αναφέρουμε την καθημερινή διαπίστωση ότι ο ρόλος συμβούλων καθίσταται τη συγκεκριμένη περίοδο πιο αναγκαίος από ποτέ. Εκείνοι καθοδηγούν και ηρεμούν τους ανθρώπου, προσφέροντάς τους αίσθημα σιγουριάς και αισιοδοξίας για το αύριο. </p>
     </div>
     
 
+
+
 </body>
+
+<script src="epikoinwnia.js"></script>
+
 <?php include './footer.php' ?>
 
 
