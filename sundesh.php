@@ -25,10 +25,10 @@
 
     
     <p style="margin-left :100px">Σύνδεση</p>
-    <div class="container-xxl " style="margin: 0 100px 50px 100px; padding-top: 50px ; padding-left: 350px;border: 1px solid black;background-color: darkgrey; text-align : center">
-        <form class="was-validated form-group"> <!-- class="needs-validation" novalidate -->
+    <div class="container-xxl " style="display:flex;margin: 0 100px 50px 100px; padding-top: 50px ; padding-left: 100px;border: 1px solid black;background-color: darkgrey; text-align : center">
+        <form class="was-validated form-group" style="width: 400px"> <!-- class="needs-validation" novalidate -->
             <!-- ONOMA -->
-            <div class="form-group w-25" style="display: table-row">
+            <div class="form-group w-25" style="display: table-row;">
                 <div style="display: table-cell;overflow: auto; height: 60px; width: 400px"> 
                     <label for="username" class="form-label">Ονοματεπώνυμο </label>
                     <input type="text" class="form-control" id="exampleFormControlInput1" required> 
@@ -41,9 +41,11 @@
             </div>
     
             <br>
-
+            <br>
+            <br>
+               
             <!-- PASSWORD -->
-            <div class="form-group w-25" style="display: table-row">
+            <div class="form-group w-25" style="display: table-row;">
                 <div style="display: table-cell;overflow: auto; height: 60px; width: 400px">
                     <label for="password">Κωδικός πρόσβασης </label>
                     <input type="password" class="form-control" id="exampleFormControlInput1"required>
@@ -56,7 +58,10 @@
             
             <br>
 
-            <button type="submit" class="btn btn-primary" style="margin-right : 400px">Σύνδεση</button>
+            <button type="submit" class="btn btn-primary" style="margin-right : 650px">Σύνδεση</button>
+        </form>
+        <form style="flex-grow:1">
+        <p style="padding-top:100px"> ή<button type="submit" class="btn btn-primary" style="margin-left : 200px">Σύνδεση μέσω AXIS</button></p>
         </form>
     </div>
 
