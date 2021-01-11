@@ -2,7 +2,7 @@
 <?php include './header.php' ?>
 
 <link rel="stylesheet" href="./stylesheets/index.css">
-<body style="background-color:rgba(198, 198, 236, 0.8);">
+<body style="background-color:rgba(198, 198, 236, 0.5);">
 <!-- Breadcrumb -->
 <div class="sticky">
 	<nav aria-label="breadcrumb">

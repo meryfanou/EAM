@@ -98,7 +98,7 @@
 	<div class="row"><div class="col"></div>
 		<ul class="navbar-nav mb-3 list-group list-group-horizontal" style="margin-right: -5%;">
 			<li class="nav-item">
-				<a class="nav-link" href="./user-profile.php" style="font-size: 87%;" data-toggle="tooltip" title="Προφίλ" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+				<a class="nav-link" href="./user-profile.php" style="font-size: 87%;" data-toggle="tooltip" title="Προβολή Προφίλ" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
 		    		ΚΑΛΩΣΗΡΘΑΤΕ&nbsp;&nbsp;<i class="fas fa-user-circle"></i></a>
 				<!-- Tooltip -->
 				<script>

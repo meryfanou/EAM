@@ -3,7 +3,7 @@
 <?php include './header_loggedin.php' ?>
 
 <link rel="stylesheet" href="./stylesheets/user-profile.css">
-<body style="background-color:rgba(198, 198, 236, 0.8);">
+<body style="background-color:rgba(198, 198, 236, 0.5);">
 
 <!-- Breadcrumb -->
 <div class="sticky">
@@ -16,13 +16,6 @@
 </div>
 
 <br><br>
-<!-- <div class="media border">
-  <img src="img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-  <div class="media-body">
-    <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
-    <p>Lorem ipsum...</p>
-  </div>
-</div> -->
 <div class="row flex-container">
 	<div class="flex-content">
 		<div class="row">
@@ -40,12 +33,11 @@
    				<br><p>Lorem ipsum...</p>
    			</div>
 			<div class="col-sm-1">
-				<br><vr style="border-left: 1px solid rgba(0,0,0,0.4); width: 60%;">
+				<br><vr id="xs-screen" style="border-left: 1px solid rgba(0,0,0,0.4); width: 60%;">
 			</div>
 			<div class="col">
    				<br><p>Lorem ipsum...</p>
    			</div>
-			<!-- <div class="col"></div> -->
    		</div>
 	</div>
 </div>

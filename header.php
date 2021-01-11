@@ -98,10 +98,10 @@
 	<div class="row"><div class="col"></div>
 		<ul class="navbar-nav mb-3 list-group list-group-horizontal" style="margin-right: -5%;">
 			<li class="nav-item">
-		    	<a class="nav-link" href="#" style="font-size: 87%;">ΣΥΝΔΕΣΗ</a>
+		    	<a class="nav-link" href="./sundesh.php" style="font-size: 87%;">ΣΥΝΔΕΣΗ</a>
 			</li>
 			<li class="nav-item">
-			    <a class="nav-link" href="#" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ΕΓΓΡΑΦΗ</a>
+			    <a class="nav-link" href="./registration.php" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ΕΓΓΡΑΦΗ</a>
 	    	</li>
 	   		<li class="nav-item">
 	   			<a class="nav-link" href="epikoinwnia.php" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;ΕΠΙΚΟΙΝΩΝΙΑ</a>
