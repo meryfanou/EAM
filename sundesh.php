@@ -26,12 +26,12 @@
     
     <p style="margin-left :100px">Σύνδεση</p>
     <div class="container-xxl " style="display:flex;margin: 0 100px 50px 100px; padding-top: 50px ; padding-left: 100px;border: 1px solid black;background-color: darkgrey; text-align : center">
-        <form class="was-validated form-group" style="width: 400px"> <!-- class="needs-validation" novalidate -->
+        <form class="was-validated form-group" style="width: 400px" method="POST" action="./routes/login.php"> <!-- class="needs-validation" novalidate -->
             <!-- ONOMA -->
             <div class="form-group w-25" style="display: table-row;">
                 <div style="display: table-cell;overflow: auto; height: 60px; width: 400px"> 
                     <label for="username" class="form-label">Ονοματεπώνυμο </label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" required> 
+                    <input name="username" type="text" class="form-control" id="exampleFormControlInput1" required> 
                     
                     <div class="invalid-feedback">
                         Παρακαλώ επιλέξτε όνομα
@@ -48,7 +48,7 @@
             <div class="form-group w-25" style="display: table-row;">
                 <div style="display: table-cell;overflow: auto; height: 60px; width: 400px">
                     <label for="password">Κωδικός πρόσβασης </label>
-                    <input type="password" class="form-control" id="exampleFormControlInput1"required>
+                    <input name="password" type="password" class="form-control" id="exampleFormControlInput1"required>
                     <div class="invalid-feedback">
                         Ο Κωδικός δεν ήταν έγκυρος.
                     </div>

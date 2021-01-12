@@ -8,6 +8,7 @@
     border-bottom: 4px solid rgba(0,0,0,0.5);
     border-top: 4px solid rgba(0,0,0,0.5);
     margin-left: 3%;
+    margin-right: 0%;
 	}
 	/* Make carousel's images fully responsive */
   .carousel-inner img
@@ -89,7 +90,15 @@
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+    transition: font-size 0.25s;
+    font-size: 125%;
   }
+
+  .flex-container .flex-content h5:hover
+  {
+    font-size: 130%;
+  }
+
   /* Only show the number of words that fits in the box - add '...' at the end */
   .flex-container .flex-content p
   {
@@ -99,6 +108,25 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+  }
+
+  .flex-container .flex-content .show-button
+  {
+    width: 125px;
+    background: rgb(0,139,139);
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+  }
+
+  .flex-container .flex-content .show-button:hover,
+  .flex-container .flex-content .show-button:focus
+  {
+    background: rgba(0,139,139,0.8);
   }
 
   /* For small screen only */

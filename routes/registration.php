@@ -1,7 +1,7 @@
 <!-- registration.php -->
 
 <?php
-	// connect to database
+	// Connect to database
 	require_once '../login.php';
 	$conn = new mysqli($hn,$un,$pw,$db);
 	if($conn->connect_error) die($conn->connect_error);
@@ -96,6 +96,38 @@
 
 	// Disconnect from db
 	$conn->close();
+
+	// Add user's info to $_SESSION, so tah it can be accessed by other pages too
+	session_start();
+	$_SESSION['logged_in_user_id'] = $userID;
+	$_SESSION['logged_in_user_name'] = $username;
+	$_SESSION['firstName'] = $firstName;
+	$_SESSION['lastName'] = $lastName;
+	$_SESSION['afm'] = $afm;
+	$_SESSION['email'] = $email;
+	$_SESSION['address'] = $address;
+	$_SESSION['birthDate'] = $birthDate;
+	$_SESSION['phoneNumber'] = $phoneNumber;
+	if(isset($_POST['cellphoneNumber']))
+		$_SESSION['cellphoneNumber'] = $cellphoneNumber;
+	if(isset($_POST['children']))
+		$_SESSION['children'] = $children;
+	$_SESSION['userType'] = $userType;
+	if(isset($_POST['profession']))
+		$_SESSION['profession'] = $profession;
+	if(isset($_POST['enterpriseName']))
+		$_SESSION['enterpriseName'] = $enterpriseName;
+	if(isset($_POST['enterpriseAddress']))
+		$_SESSION['enterpriseAddress'] = $enterpriseAddress;
+	if(isset($_POST['enterpriseStatus']))
+		$_SESSION['enterpriseStatus'] = $enterpriseStatus;
+	if(isset($_POST['enterprise']))
+		$_SESSION['enterpriseID'] = intval($enterprise);
+	if(isset($_POST['enterpriseNumber']))
+		$_SESSION['enterpriseNumber'] = $enterpriseNumber;
+	if(isset($_POST['fund']))
+		$_SESSION['fund'] = $fund;
+
 	// Redirect
 	header('Location: ../registration_success.php');
 	exit();

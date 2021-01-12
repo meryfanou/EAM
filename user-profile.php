@@ -1,4 +1,3 @@
-<!-- THE LINK SHOULD BE "userID-profile.php" !! -->
 <!-- user-profile.php -->
 <?php include './header_loggedin.php' ?>
 

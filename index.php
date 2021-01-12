@@ -1,16 +1,39 @@
 <!-- index.php -->
-<?php include './header.php' ?>
+<?php
+  session_start();
 
-<link rel="stylesheet" href="./stylesheets/index.css">
-<body style="background-color:rgba(198, 198, 236, 0.5);">
-<!-- Breadcrumb -->
-<div class="sticky">
-	<nav aria-label="breadcrumb">
-	  <ol class="breadcrumb">
-    	<li class="breadcrumb-item active"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</li>
-	  </ol>
-	</nav>
-</div>
+  include './header.php';
+
+  echo <<<_END
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <body style="background-color:rgba(198, 198, 236, 0.5);">
+    <!-- Breadcrumb -->
+    <div class="sticky">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</li>
+        </ol>
+      </nav>
+    </div>
+  _END;
+
+  // If the user was just registered/logged_in
+  if(isset($_SESSION['logged_in_user_id']) && (!isset($_SESSION['welcome_user']) || $_SESSION['welcome_user'] == -1)){
+    print "<div class=\"alert\" style=\"background-color: #A0DAA9; border-color:seagreen; color:#264E36;\">";
+    print "<strong>Καλωσήρθες " . $_SESSION['username'] . "! Η σύνδεσή σου ολοκληρώθηκε με επιτυχία.</strong>";
+    print "</div>";
+
+    $_SESSION['welcome_user'] = 1;
+  }
+  // If the user just logged out
+  else if(!isset($_SESSION['logged_in_user_id']) &&  !isset($_SESSION['welcome_user'])){
+    print "<div class=\"alert\" style=\"background-color: #A0DAA9; border-color:seagreen; color:#264E36;\">";
+    print "<strong>Η αποσύνδεση ολοκληρώθηκε με επιτυχία!</strong>";
+    print "</div>";
+
+    $_SESSION['welcome_user'] = -1; 
+  }
+?>
 
 <br><br>
 <div class="row">
@@ -52,31 +75,31 @@
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <a href="#" data-toggle="tooltip" title="~ Πληροφορίες για τον Covid-19 ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="#" data-toggle="tooltip" title="Πληροφορίες για τον Covid-19" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel0.png" alt="~ Πληροφορίες για τον Covid-19 ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="tooltip" title="~ Νέα & Ανακοινώσεις ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="#" data-toggle="tooltip" title="Νέα & Ανακοινώσεις" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel2.png" alt="~ Νέα & Ανακοινώσεις ~"></a>
       </div>
     	<div class="carousel-item">
-        <a href="#" data-toggle="tooltip" title="~ Κατάρτηση νέων πτυχιούχων ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="#" data-toggle="tooltip" title="Κατάρτηση νέων πτυχιούχων" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel4.jpg" alt="~ Κατάρτηση νέων πτυχιούχων ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="tooltip" title="~ Κατάρτηση ανέργων ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="#" data-toggle="tooltip" title="Κατάρτηση ανέργων" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel7.png" alt="~ Κατάρτηση ανέργων ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="tooltip" title="~ Πληροφορίες για τον Ενιαίο Φορέα Κοινωνικής Ασφάλισης ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="#" data-toggle="tooltip" title="Πληροφορίες για τον Ενιαίο Φορέα Κοινωνικής Ασφάλισης" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel8.png" alt="~ Πληροφορίες για τον Ενιαίο Φορέα Κοινωνικής Ασφάλισης ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="tooltip" title="~ Νέα για τον Covid & Επιχειρήσεις ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="#" data-toggle="tooltip" title="Νέα για τον Covid & Επιχειρήσεις" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel9.png" alt="~ Νέα για τον Covid & Επιχειρήσεις ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="tooltip" title="~ Συχνές Ερωτήσεις ~" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="#" data-toggle="tooltip" title="Συχνές Ερωτήσεις" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel6.png" alt="~ Συχνές Ερωτήσεις ~"></a>
       </div>
     </div>
@@ -102,11 +125,12 @@
       <a href="#" style="text-decoration:none;"><h5>Νέα & Ανακοινώσεις</h5></a>
       <hr style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 95%;">
 
-      <a href="#"><p><span style="font-weight:bold;">7.1.21 </span>Επίδομα 400 ευρώ για τους αυτοαπασχολούμενους επιστήμονες από 7 κλάδους θα καταβάλει το υπουργείο Εργασίας προς τα τέλη Ιανουαρίου.</p></a>
+      <a href="#"><p><span style="font-weight:bold;">7/1/21 </span>Επίδομα 400 ευρώ για τους αυτοαπασχολούμενους επιστήμονες από 7 κλάδους θα καταβάλει το υπουργείο Εργασίας προς τα τέλη Ιανουαρίου.</p></a>
       <hr style="border-top: 1px solid rgba(0, 0, 0, 0.3); width: 95%;">
-      <a href="#"><p><span style="font-weight:bold;">5.1.21 </span>e-ΕΦΚΑ: Ποιοι απαλλάσσονται από ασφαλιστική ενημερότητα και βεβαίωση οφειλής</p></a>
+      <a href="#"><p><span style="font-weight:bold;">5/1/21 </span>e-ΕΦΚΑ: Ποιοι απαλλάσσονται από ασφαλιστική ενημερότητα και βεβαίωση οφειλής</p></a>
       <hr style="border-top: 1px solid rgba(0, 0, 0, 0.3); width: 95%;">
-      <a href="#"><p><span style="font-weight:bold;">3.1.21 </span>Επίδομα αδείας: Πώς καταβάλλεται στους εργαζομένους που έχουν ενταχθεί στο πρόγραμμα "Συν- εργασία"</p></a>
+      <a href="#"><p><span style="font-weight:bold;">3/1/21 </span>Επίδομα αδείας: Πώς καταβάλλεται στους εργαζομένους που έχουν ενταχθεί στο πρόγραμμα "Συν- εργασία"</p></a>
+      <input type="button" class="show-button" value="Προβολή Όλων">
   </div>
   <div class="flex-content">
       <a href="#" style="text-decoration:none;"><h5>Συχνές Ερωτήσεις</h5></a>
@@ -117,6 +141,7 @@
       <a href="#"><p><span style="font-weight:bold;">Σχέδιο Αναστολής Εργασίας: </span>Όσοι προσλήφθηκαν πρόσφατα και δεν πληρούν τις ασφαλιστικές προϋποθέσεις θα πάρουν ανεργιακό επίδομα στο πλαίσιο Σχεδίου Αναστολής;</p></a>
       <hr style="border-top: 1px solid rgba(0, 0, 0, 0.3); width: 95%;">
       <a href="#"><p><span style="font-weight:bold;">Επίδομα Ασθενείας: </span>Οι αυτοτελώς εργαζόμενοι δικαιούνται το ειδικό επίδομα ασθενείας;</p></a>
+      <input type="button" class="show-button" value="Προβολή Όλων">
   </div>
 </div>
 

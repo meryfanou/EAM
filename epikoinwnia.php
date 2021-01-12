@@ -1,5 +1,5 @@
 <!-- epikoinwnia.php -->
-<?php include './header_loggedin.php' ?>
+<?php include './header.php' ?>
 
 <body style="background-color:rgba(198, 198, 236, 0.5)">
 
