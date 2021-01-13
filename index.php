@@ -1,7 +1,5 @@
 <!-- index.php -->
 <?php
-  session_start();
-
   include './header.php';
 
   echo <<<_END
@@ -17,21 +15,22 @@
     </div>
   _END;
 
+  // echo $_SESSION['logged_in_user_id'];
   // If the user was just registered/logged_in
-  if(isset($_SESSION['logged_in_user_id']) && (!isset($_SESSION['welcome_user']) || $_SESSION['welcome_user'] == -1)){
+  if(isset($_SESSION['logged_in_user_id']) && !isset($_SESSION['welcome_user'])){
     print "<div class=\"alert\" style=\"background-color: #A0DAA9; border-color:seagreen; color:#264E36;\">";
     print "<strong>Καλωσήρθες " . $_SESSION['username'] . "! Η σύνδεσή σου ολοκληρώθηκε με επιτυχία.</strong>";
     print "</div>";
 
-    $_SESSION['welcome_user'] = 1;
+    $_SESSION['welcome_user'] = -1;
   }
   // If the user just logged out
-  else if(!isset($_SESSION['logged_in_user_id']) &&  !isset($_SESSION['welcome_user'])){
+  else if(!isset($_SESSION['logged_in_user_id']) && $_SESSION['welcome_user'] == -1){
     print "<div class=\"alert\" style=\"background-color: #A0DAA9; border-color:seagreen; color:#264E36;\">";
     print "<strong>Η αποσύνδεση ολοκληρώθηκε με επιτυχία!</strong>";
     print "</div>";
 
-    $_SESSION['welcome_user'] = -1; 
+    unset($_SESSION['welcome_user']);
   }
 ?>
 

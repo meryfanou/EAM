@@ -7,30 +7,87 @@
 	justify-content: center;
 	align-items: center;
 }
+
 .flex-container .flex-content
 {
-	padding: 5%;
+	padding: 5% 5%;
 	background-color: white;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
  	width: 75%;
 	border-radius: 5px;
 }
+
 .flex-container .flex-content img
 {
-	width: 140px;
-	height: 140px;
-	margin-left: 10%;
+	width: 90px;
+	height: 90px;
 }
+
 .flex-container .flex-content h4
 {
 	text-align: left;
-	padding-left: 8%;
+	padding-left: 10%;
+	padding-top: 3%;
+}
+
+.flex-container .flex-content .edit-button
+{
+    width: 118px;
+    height: 50px;
+    background: white;
+    font-weight: bold;
+    color: #E08119;
+    border: 3px solid #E08119;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 20px 5px 10px 5px;
+}
+
+.flex-container .flex-content .edit-button:hover,
+.flex-container .flex-content .edit-button:focus
+{
+	background: #FFD662;
+	color: rgba(0,0,0,0.7);
+	border-color: #FFD662;
+}
+
+.flex-container .flex-content .logout-button
+{
+    width: 118px;
+    height: 50px;
+    background: white;
+    font-weight: bold;
+    color: #CD212A;
+    border: 3px solid #CD212A;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 20px 5px 10px 5px;
+}
+
+.flex-container .flex-content .logout-button:hover,
+.flex-container .flex-content .logout-button:focus
+{
+	background: #FF6F61;
+	color: rgba(0,0,0,0.7);
+	border-color: #FF6F61;
 }
 
 /* For extra small screen */
-@media (max-width: 575px){
+@media (max-width: 991px){
 	#xs-screen
 	{
 		display: none;
+	}
+
+	.flex-container .flex-content img
+	{
+		display: none;
+	}
+
+	.flex-container .flex-content h4
+	{
+		padding-top: 5%;
 	}
 }

@@ -71,7 +71,7 @@
 		// Get highest enterpriseID in db
 		$query = "SELECT enterpriseID FROM `Enterprises`";
 		$ids = $conn->query($query);
-		if(!$ids) die($conn->error);
+		if(!$ids) die($conn->error);s
 		$max_id = 0;
 		for ($i=0; $i<$ids->num_rows; $i++) {
 			$ids->data_seek($i);

@@ -1,5 +1,4 @@
 <!-- registration_success.php -->
-<?php session_start() ?>
 <?php include './header.php' ?>
 
 <link rel="stylesheet" href="./stylesheets/form.css">

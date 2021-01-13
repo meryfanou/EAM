@@ -5,7 +5,8 @@
 
 	// Unset all values stored in $_SESSION for (so far) logged in user
 	foreach ($_SESSION as $key => $value){
-		unset($_SESSION["$key"]);
+		if($key != "welcome_user")
+			unset($_SESSION["$key"]);
 	}
 
 	// Redirect
