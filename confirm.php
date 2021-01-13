@@ -1,7 +1,6 @@
 <!-- confirm.php -->
 <?php include './header.php' ?>
 
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"> -->
 <link rel="stylesheet" href="./stylesheets/form.css">
 <body style="background-color:rgba(198, 198, 236, 0.5)">
 
@@ -36,7 +35,6 @@
         <a  href="epikoinwnia.php"><input type="button" class="action-button" value="Επιστροφή στην Eπικοινωνία" style="width: 230px;"></a>
     </fieldset>
 </div>
-
 
 
 <?php include './footer.php' ?>

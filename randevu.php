@@ -140,9 +140,8 @@
                         </div>
                 </div><br>
 
-                <!-- Next button -->
-                <!-- <br><a href="confirm.php"><input type="button" class="next action-button" value="Επόμενο"></button></a> -->
-                <br><button type="submit" class="action-button">Επόμενο</button>
+                <!-- Submit button -->
+                <br><button type="submit" class="action-button" style="width: 160px;">Κλείσιμο Ραντεβού</button>
             </div>
         </fieldset>
       
@@ -152,9 +151,6 @@
 
 <script>
 
-    // function form_submit() {
-    //     document.getElementById("search_form").submit();
-    // }  
     // Submit form, only if all inputs are valid
     $("#msform").submit(function(event) {
         // make selected form variable

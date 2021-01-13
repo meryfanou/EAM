@@ -23,7 +23,14 @@
     
     <!-- upokoutia to kathena me tis plhrofories tou -->
     <!-- WRARIO -->
-    <div class="container-fluid " style="margin: 10px; padding: 10px ;border: 1px solid black; background-color: darkgrey">
+    <div class="container-fluid " style="
+	justify-content: center;
+	align-content: center;
+	margin: 3% 3% 3% 3%;
+	padding: 3%;
+	border: 1px solid rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.15);
+	text-align : center;">
         <div class="row">
             <div class="col">
             <h3 style="text-align:center"> Ωράριο Λειτουργίας </h3>
@@ -43,7 +50,14 @@
     </div>    
 
     <!--  THLEFWNA -->
-    <div class="container-fluid" style="margin: 10px; padding: 10px ;border: 1px solid black; background-color: darkgrey">
+    <div class="container-fluid" style="
+	justify-content: center;
+    align-content: center;
+    margin: 3% 3% 3% 3%;
+	padding: 3%;
+	border: 1px solid rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.15);
+	text-align : center;">
         <div class="row">
             <div class="col">
             <h3 style="text-align:center">Τηλέφωνα Επικοινωνίας </h3>    
@@ -64,7 +78,14 @@
     </div>    
     
     <!--  RANTEYOY -->
-    <div class="container-fluid " style="margin: 10px; padding: 10px ;border: 1px solid black;background-color: darkgrey">
+    <div class="container-fluid " style="
+	justify-content: center;
+    align-content: center;
+    margin: 3% 3% 3% 3%;
+	padding: 3%;
+	border: 1px solid rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.15);
+	text-align : center;">
         <div class="row">
             <div class="col">
                 <h3 style="text-align:center">Ραντεβού </h3>
@@ -86,17 +107,24 @@
 
 </ul>
 
-<div class="container-xxl " style="margin: 10px; padding: 10px ;border: 1px solid black;background-color: darkgrey">
+<div class="container-xxl " style="
+	justify-content: center;
+	align-content: center;
+	margin: 0 8% 4% 8%;
+	padding: 3%;
+	border: 1px solid rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.15);
+	text-align : center;">
     <h2> Τρόποι εξυπηρέτησης κοινού εν μέσω πανδημίας</h2>
      
     <h6>ΕΠΙΚΟΙΝΩΝΙΑ ΠΟΛΙΤΩΝ ΜΕ ΤΟ ΥΠΟΥΡΓΕΙΟ ΚΑΤΑ ΤΗ ΔΙΑΡΚΕΙΑ ΤΩΝ ΕΚΤΑΚΤΩΝ ΜΕΤΡΩΝ.</h6>
 
-        <p style="padding-left:20px">Ηλεκτρονικές Υπηρεσίες</p>
-        <p style="padding-left:40px">Οι περισσότερες υπηρεσίες του υπουργείου παρέχονται αποκλειστικά ηλεκτρονικά. Η πρόσβαση στις ηλεκτρονικές υπηρεσίες του υπουργείου γίνεται είτε μέσω www.gov.gr με τουςκωδικούς του TAXISnet, είτε μέσω των e-Υπηρεσιών υπουργείο  με τουςκωδικούς TAXISnet ή με τους κωδικούς πιστοποιημένων χρηστών του.
+        <p >Ηλεκτρονικές Υπηρεσίες</p>
+        <p >Οι περισσότερες υπηρεσίες του υπουργείου παρέχονται αποκλειστικά ηλεκτρονικά. Η πρόσβαση στις ηλεκτρονικές υπηρεσίες του υπουργείου γίνεται είτε μέσω www.gov.gr με τουςκωδικούς του TAXISnet, είτε μέσω των e-Υπηρεσιών υπουργείο  με τουςκωδικούς TAXISnet ή με τους κωδικούς πιστοποιημένων χρηστών του.
         Για όσες υπηρεσίες δεν παρέχονται ηλεκτρονικά, τα αιτήματα ή τα δικαιολογητικά θα γίνονται δεκτά μέσω ηλεκτρονικού ταχυδρομείου, εφόσον έχει τηρηθεί η διαδικασία πιστοποίησης μέσω www.gov.gr ή έχει επισυναφθεί Υπεύθυνη Δήλωση με θεωρημένο το γνήσιο της υπογραφής. </p>
     
-        <p style="padding-left:20px">Ηλεκτρονική Επικοινωνία </p>
-        <p style="padding-left:40px">Για όσες υπηρεσίες δεν παρέχονται ηλεκτρονικά, καθώς και για την υποβολή ερωτημάτων,επικοινωνήστε με το Κέντρο Προώθησης Απασχόλησης που ανήκετε μέσω ηλεκτρονικού ταχυδρομείου, αναφέροντας το θέμα καθώς και τα στοιχεία σας.</p>
+        <p >Ηλεκτρονική Επικοινωνία </p>
+        <p >Για όσες υπηρεσίες δεν παρέχονται ηλεκτρονικά, καθώς και για την υποβολή ερωτημάτων,επικοινωνήστε με το Κέντρο Προώθησης Απασχόλησης που ανήκετε μέσω ηλεκτρονικού ταχυδρομείου, αναφέροντας το θέμα καθώς και τα στοιχεία σας.</p>
     <br>
     <p>Στο σημείο αυτό θα θέλαμε να αναφέρουμε την καθημερινή διαπίστωση ότι ο ρόλος συμβούλων καθίσταται τη συγκεκριμένη περίοδο πιο αναγκαίος από ποτέ. Εκείνοι καθοδηγούν και ηρεμούν τους ανθρώπου, προσφέροντάς τους αίσθημα σιγουριάς και αισιοδοξίας για το αύριο. </p>
 </div>
@@ -105,14 +133,11 @@
 
 <!-- Form body -->
 <div class="d-xl-flex">
-    
-    
-    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="randevu.php">
-        <!-- First form page -->
-        <fieldset id="fieldset1">
+    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="confirm_ep.php">
+        <fieldset>
             <h2 style="padding-bottom:20px"> <b>επικοινώνησε μαζί μας!</b> </h2>
             <div class="form-card">
-                
+
                 <!-- ONOMA -->
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
@@ -141,8 +166,8 @@
                 <!--selection-->
                 <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;"> 
-                        <label for="selection" class="form-control-label">Θέμα* </label><br>
-                        <select class="custom-select"data-error="Παρακαλώ επιλέξτε ένα τμήμα" >
+                        <label for="selection" class="form-control-label">Θέμα*</label><br>
+                        <select class="custom-select"data-error="Παρακαλώ επιλέξτε ένα τμήμα" required>
                         <option></option>
                         <option>Ασφάλεια</option>
                         <option>Άνεργος</option>
@@ -161,8 +186,8 @@
                 <!--message-->
                 <div class="form-group" style="display: table-row">
                    <div style="display: table-cell;overflow: auto;">
-                        <label for="message">Μήνυμα* </label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="message">Μήνυμα*</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                         <div class="help-block with-errors"></div>
                 </div>
                 <div style="display: table-cell;padding-left: 20px"><br><p></p>
@@ -170,8 +195,8 @@
                         </div>
                 </div><br>
 
-            <!-- Next button -->
-            <br><a href="confirm_ep.php"><input type="button" class="next action-button" value="Επόμενο"></button></a>
+            <!-- Submit button -->
+            <br><button type="submit" class="action-button">Αποστολή</button>
         </fieldset>
       
     </form>
@@ -180,9 +205,6 @@
 
 <script>
 
-    // function form_submit() {
-    //     document.getElementById("search_form").submit();
-    // }  
     // Submit form, only if all inputs are valid
     $("#msform").submit(function(event) {
         // make selected form variable
