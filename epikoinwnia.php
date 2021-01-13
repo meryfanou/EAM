@@ -23,7 +23,14 @@
     
     <!-- upokoutia to kathena me tis plhrofories tou -->
     <!-- WRARIO -->
-    <div class="container-fluid " style="margin: 10px; padding: 10px ;border: 1px solid black; background-color: darkgrey">
+    <div class="container-fluid " style="
+	justify-content: center;
+	align-content: center;
+	margin: 3% 3% 3% 3%;
+	padding: 3%;
+	border: 1px solid rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.15);
+	text-align : center;">
         <div class="row">
             <div class="col">
             <h3 style="text-align:center"> Ωράριο Λειτουργίας </h3>
@@ -43,7 +50,14 @@
     </div>    
 
     <!--  THLEFWNA -->
-    <div class="container-fluid" style="margin: 10px; padding: 10px ;border: 1px solid black; background-color: darkgrey">
+    <div class="container-fluid" style="
+	justify-content: center;
+    align-content: center;
+    margin: 3% 3% 3% 3%;
+	padding: 3%;
+	border: 1px solid rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.15);
+	text-align : center;">
         <div class="row">
             <div class="col">
             <h3 style="text-align:center">Τηλέφωνα Επικοινωνίας </h3>    
@@ -64,7 +78,14 @@
     </div>    
     
     <!--  RANTEYOY -->
-    <div class="container-fluid " style="margin: 10px; padding: 10px ;border: 1px solid black;background-color: darkgrey">
+    <div class="container-fluid " style="
+	justify-content: center;
+    align-content: center;
+    margin: 3% 3% 3% 3%;
+	padding: 3%;
+	border: 1px solid rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.15);
+	text-align : center;">
         <div class="row">
             <div class="col">
                 <h3 style="text-align:center">Ραντεβού </h3>
@@ -86,17 +107,24 @@
 
 </ul>
 
-<div class="container-xxl " style="margin: 10px; padding: 10px ;border: 1px solid black;background-color: darkgrey">
+<div class="container-xxl " style="
+	justify-content: center;
+	align-content: center;
+	margin: 0 8% 4% 8%;
+	padding: 3%;
+	border: 1px solid rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.15);
+	text-align : center;">
     <h2> Τρόποι εξυπηρέτησης κοινού εν μέσω πανδημίας</h2>
      
     <h6>ΕΠΙΚΟΙΝΩΝΙΑ ΠΟΛΙΤΩΝ ΜΕ ΤΟ ΥΠΟΥΡΓΕΙΟ ΚΑΤΑ ΤΗ ΔΙΑΡΚΕΙΑ ΤΩΝ ΕΚΤΑΚΤΩΝ ΜΕΤΡΩΝ.</h6>
 
-        <p style="padding-left:20px">Ηλεκτρονικές Υπηρεσίες</p>
-        <p style="padding-left:40px">Οι περισσότερες υπηρεσίες του υπουργείου παρέχονται αποκλειστικά ηλεκτρονικά. Η πρόσβαση στις ηλεκτρονικές υπηρεσίες του υπουργείου γίνεται είτε μέσω www.gov.gr με τουςκωδικούς του TAXISnet, είτε μέσω των e-Υπηρεσιών υπουργείο  με τουςκωδικούς TAXISnet ή με τους κωδικούς πιστοποιημένων χρηστών του.
+        <p >Ηλεκτρονικές Υπηρεσίες</p>
+        <p >Οι περισσότερες υπηρεσίες του υπουργείου παρέχονται αποκλειστικά ηλεκτρονικά. Η πρόσβαση στις ηλεκτρονικές υπηρεσίες του υπουργείου γίνεται είτε μέσω www.gov.gr με τουςκωδικούς του TAXISnet, είτε μέσω των e-Υπηρεσιών υπουργείο  με τουςκωδικούς TAXISnet ή με τους κωδικούς πιστοποιημένων χρηστών του.
         Για όσες υπηρεσίες δεν παρέχονται ηλεκτρονικά, τα αιτήματα ή τα δικαιολογητικά θα γίνονται δεκτά μέσω ηλεκτρονικού ταχυδρομείου, εφόσον έχει τηρηθεί η διαδικασία πιστοποίησης μέσω www.gov.gr ή έχει επισυναφθεί Υπεύθυνη Δήλωση με θεωρημένο το γνήσιο της υπογραφής. </p>
     
-        <p style="padding-left:20px">Ηλεκτρονική Επικοινωνία </p>
-        <p style="padding-left:40px">Για όσες υπηρεσίες δεν παρέχονται ηλεκτρονικά, καθώς και για την υποβολή ερωτημάτων,επικοινωνήστε με το Κέντρο Προώθησης Απασχόλησης που ανήκετε μέσω ηλεκτρονικού ταχυδρομείου, αναφέροντας το θέμα καθώς και τα στοιχεία σας.</p>
+        <p >Ηλεκτρονική Επικοινωνία </p>
+        <p >Για όσες υπηρεσίες δεν παρέχονται ηλεκτρονικά, καθώς και για την υποβολή ερωτημάτων,επικοινωνήστε με το Κέντρο Προώθησης Απασχόλησης που ανήκετε μέσω ηλεκτρονικού ταχυδρομείου, αναφέροντας το θέμα καθώς και τα στοιχεία σας.</p>
     <br>
     <p>Στο σημείο αυτό θα θέλαμε να αναφέρουμε την καθημερινή διαπίστωση ότι ο ρόλος συμβούλων καθίσταται τη συγκεκριμένη περίοδο πιο αναγκαίος από ποτέ. Εκείνοι καθοδηγούν και ηρεμούν τους ανθρώπου, προσφέροντάς τους αίσθημα σιγουριάς και αισιοδοξίας για το αύριο. </p>
 </div>

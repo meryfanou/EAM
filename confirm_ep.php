@@ -23,25 +23,48 @@
 
         
 <!-- Form body -->
-<div class="container-xxl " style="margin: 100px; padding: 20px ;border: 1px solid black;">
+<div class="container-xxl "style="
+	justify-content: center;
+	align-content: center;
+	margin: 0 8% 4% 8%;
+	padding: 3%;
+	border: 1px solid rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.15);
+	text-align : center;">
     
 
     <div class="form-group " style="display: table-row">
-                <div style="display: table-cell;overflow: auto;padding-left :30%"> 
+                <div style="display: table-cell;overflow: auto;"> 
                 <h3 class="fs-title">Ευχαριστούμε για την επικοινωνία!</h3><br><br>
             </div>
     </div> 
     <div class="form-group " style="display: table-row">
-            <div style="display: table-cell;overflow: auto;padding-left:100px;padding-right:100px"> 
+            <div style="display: table-cell;overflow: auto"> 
                 <p> Το αιτημά σας καταχωρήθηκε και είναι σε επεξεργασία. Παρακαλώ ελέγξτε το email που εισαγάγατε για επιβεβαίωση!</p>
                 <p> Για άλλη μια φορά θα θέλαμε να σας ενημερώσουμε ότι λόγω των τρεχουσών συνθηκών και του ιδιαίτερα αυξημένου όγκου μηνυμάτων , παρουσιάζονται σημαντικές καθυστερήσεις στις απαντήσεις μας.</p>
             </div>
     </div>  
     
    
-    <div style="padding-left:30%; padding-top : 30px"display="inline-block"> 
-        <a href="index.php"><input type="button" class="next action-button" value="Επιστροφή στην αρχική"></button></a>
-        <a  href="epikoinwnia.php"><input type="button" class="next action-button" value="Επιστροφή στην επικοινωνία"></button></a>
+    <div display="inline-block"> 
+        <a href="index.php"><input type="button" class="next action-button" value="Επιστροφή στην αρχική"style=" width: 200px;
+    background: rgb(0,139,139);
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px"></button></a>
+        <a  href="epikoinwnia.php"><input type="button" class="next action-button" value="Επιστροφή στην επικοινωνία"style=" width: 220px;
+    background: rgb(0,139,139);
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px"></button></a>
     </div>
 
 
