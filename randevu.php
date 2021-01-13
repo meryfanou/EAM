@@ -1,4 +1,4 @@
-<!-- registration.php -->
+<!-- randevu.php -->
 <?php include './header.php' ?>
 
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"> -->
@@ -20,25 +20,20 @@
 </div>
 <br>
 
-<!-- Registration form -->
-
-        
 <!-- Form body -->
 <div class="d-xl-flex">
-    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="randevu.php">
-        <!-- First form page -->
-        <fieldset id="fieldset1">
+    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="confirm.php">
+        <fieldset>
             <div class="form-card">
                 <h3 class="fs-title">Κλείστε Ραντεβού</h3><br><br>
                 <!-- ONOMA -->
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
-                        <label for="username" class="form-control-label">Όνομα</label>
+                        <label for="username" class="form-control-label">Όνομα*</label>
                         <input name="username" type="text" class="form-control" id="username" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$" required>
                         <div class="help-block with-errors"></div>
                     </div>
-                    <!-- <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Tο επώνυμο πρέπει να αποτελείται από τουλάχιστον 4 χαρακτήρες"> </div> </div> -->
-
+                    <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Tο επώνυμο πρέπει να αποτελείται από τουλάχιστον 4 χαρακτήρες"> </div> </div>
                 </div><br>
                  <!-- Last Name -->
                  <div class="form-group" style="display: table-row;">
@@ -47,8 +42,7 @@
                         <input name="lastName" type="text" class="form-control" id="lastName" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$" required>
                         <div class="help-block with-errors"></div>
                     </div>
-                    <!-- <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Tο επώνυμο πρέπει να αποτελείται από τουλάχιστον 4 χαρακτήρες"> </div>  </div> -->
-
+                    <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Tο επώνυμο πρέπει να αποτελείται από τουλάχιστον 4 χαρακτήρες"> </div>  </div>
                 </div><br>
 
                  <!-- e-mail -->
@@ -90,7 +84,7 @@
                 <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;"> 
                         <label for="date" class="form-control-label">Ημερομηνία *</label>
-                        <input type="date" class="form-control" id="date"  data-error="Παρακαλώ δώστε μία έγκυρη ημερομηνία"> 
+                        <input type="date" class="form-control" id="date"  data-error="Παρακαλώ δώστε μία έγκυρη ημερομηνία" required> 
                         <div class="help-block with-errors"></div>
                 
                     </div>
@@ -104,7 +98,7 @@
                 <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;"> 
                         <label for="time" class="form-control-label">Ώρα *</label>
-                        <input type="time" class="form-control" id="time"  data-error="Παρακαλώ δώστε μία έγκυρη ώρα"pattern="[0-9 _:]"> 
+                        <input type="time" class="form-control" id="time"  data-error="Παρακαλώ δώστε μία έγκυρη ώρα"pattern="[0-9 _:]" required> 
                         <div class="help-block with-errors"></div>
                 
                     </div>
@@ -134,9 +128,6 @@
                         </div>
                 </div><br>
 
-
-
-
                 <!--message-->
                 <div class="form-group" style="display: table-row">
                    <div style="display: table-cell;overflow: auto;">
@@ -149,8 +140,10 @@
                         </div>
                 </div><br>
 
-            <!-- Next button -->
-            </div><br><button type="submit" class="next action-button">Επόμενο</button>
+                <!-- Next button -->
+                <!-- <br><a href="confirm.php"><input type="button" class="next action-button" value="Επόμενο"></button></a> -->
+                <br><button type="submit" class="action-button">Επόμενο</button>
+            </div>
         </fieldset>
       
     </form>
@@ -159,6 +152,9 @@
 
 <script>
 
+    // function form_submit() {
+    //     document.getElementById("search_form").submit();
+    // }  
     // Submit form, only if all inputs are valid
     $("#msform").submit(function(event) {
         // make selected form variable
@@ -173,74 +169,8 @@
         // Add bootstrap 4 was-validated classes to trigger validation messages
         vForm.addClass('was-validated');
     });
-
-    // $(document).ready(function(){
-    //     var current_fs, next_fs, previous_fs; //fieldsets
-    //     var opacity;
-
-    //     // When a 'next' button is clicked
-    //     $(".next").click(function(){
-    //         current_fs = $(this).parent();
-    //         next_fs = $(this).parent().next();
-
-    //         // Check if form is valid before moving to the next step
-    //         // If this is the first fieldset
-    //         if(next_fs.next().length > 0){
-    //             var formObj1 = document.getElementById('username');
-    //             var formObj2 = document.getElementById('lastname');
-    //             var formObj3 = document.getElementById('email');
-    //             var formObj4 = document.getElementById('phoneNumber');
-    //             var formObj5 = document.getElementById('cellphoneNumber');
-    //             var formObj6 = document.getElementById('date');
-    //             var formObj7 = document.getElementById('time');
-    //             var formObj8 = document.getElementById('message');
-    //             if(!formObj1.checkValidity() || !formObj2.checkValidity() || !formObj3.checkValidity() ||!formObj4.checkValidity() || !formObj5.checkValidity() || !formObj6.checkValidity() || !formObj7.checkValidity()){
-    //                 return false;
-    //             }
-    //         }
-
-    //         //Add Class Active
-    //         $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
-    //     });
-
-    //     // When a 'prev' button is clicked
-    //     $(".previous").click(function(){
-    //         current_fs = $(this).parent();
-    //         previous_fs = $(this).parent().prev();
-
-    //         //Remove class active
-    //         $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-
-    //         //show the previous fieldset
-    //         previous_fs.show();
-
-    //         //hide the current fieldset with style
-    //         current_fs.animate({opacity: 0}, {
-    //             step: function(now) {
-    //                 // for making fielset appear animation
-    //                 opacity = 1 - now;
-
-    //                 current_fs.css({
-    //                     'display': 'none',
-    //                     'position': 'relative'
-    //                 });
-    //                 previous_fs.css({'opacity': opacity});
-    //             },
-    //             duration: 600
-    //         });
-    //     });
-
-    //     $('.radio-group .radio').click(function(){
-    //         $(this).parent().find('.radio').removeClass('selected');
-    //         $(this).addClass('selected');
-    //     });
-
-    //     $(".submit").click(function(){
-    //         return false;
-    //     })
-    // });
-
+       
 </script>
+
 
 <?php include './footer.php' ?>

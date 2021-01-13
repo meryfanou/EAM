@@ -41,7 +41,7 @@ form .list-unstyled li
 
 #msform fieldset:not(:first-of-type)
 {
-    display: none
+    display: none;
 }
 
 #msform .action-button
@@ -54,7 +54,7 @@ form .list-unstyled li
     border-radius: 5px;
     cursor: pointer;
     padding: 10px 5px;
-    margin: 10px 5px
+    margin: 10px 5px;
 }
 
 #msform .action-button:hover,
