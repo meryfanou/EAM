@@ -21,25 +21,25 @@
 
 <!-- Login form -->
 <div class="d-xl-flex">
-    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST"  action="index.php">
+    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST"  action="./routes/login.php">
         <fieldset>
             <div class="form-card">
                 <h3 class="fs-title">Σύνδεση</h3><br><br>
                 <!-- ONOMA -->
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
-                        <label for="username" class="form-control-label">Όνομα*</label>
-                        <input name="username" type="text" class="form-control" id="username" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$" required>
+                        <label for="username" class="form-control-label">Username*</label>
+                        <input name="username" type="text" class="form-control" id="username" data-error="Υποχρεωτικό πεδίο" required>
                         <div class="help-block with-errors"></div>
                     </div>
-                    <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Tο επώνυμο πρέπει να αποτελείται από τουλάχιστον 4 χαρακτήρες"> </div> </div>
+                    <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Tο username πρέπει να αποτελείται από τουλάχιστον 4 χαρακτήρες"> </div> </div>
 
                 </div><br>
 
               <!-- Password -->
               <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;">
-                        <label for="password" class="form-control-label">Κωδικός πρόσβασης</label>
+                        <label for="password" class="form-control-label">Κωδικός πρόσβασης*</label>
                         <input name="password" type="password" class="form-control" id="password" data-error="Ο Κωδικός δεν είναι έγκυρος" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         <div class="help-block with-errors"></div>
                     </div>

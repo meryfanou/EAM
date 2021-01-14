@@ -118,26 +118,26 @@
 <br>
 <div class="row flex-container">
   <div class="flex-content">
-      <a href="#" style="text-decoration:none;"><h5>Νέα & Ανακοινώσεις</h5></a>
+      <a href="default.php" style="text-decoration:none;"><h5>Νέα & Ανακοινώσεις</h5></a>
       <hr style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 95%;">
 
-      <a href="#"><p><span style="font-weight:bold;">7/1/21 </span>Επίδομα 400 ευρώ για τους αυτοαπασχολούμενους επιστήμονες από 7 κλάδους θα καταβάλει το υπουργείο Εργασίας προς τα τέλη Ιανουαρίου.</p></a>
+      <a href="default.php"><p><span style="font-weight:bold;">7/1/21 </span>Επίδομα 400 ευρώ για τους αυτοαπασχολούμενους επιστήμονες από 7 κλάδους θα καταβάλει το υπουργείο Εργασίας προς τα τέλη Ιανουαρίου.</p></a>
       <hr style="border-top: 1px solid rgba(0, 0, 0, 0.3); width: 95%;">
-      <a href="#"><p><span style="font-weight:bold;">5/1/21 </span>e-ΕΦΚΑ: Ποιοι απαλλάσσονται από ασφαλιστική ενημερότητα και βεβαίωση οφειλής</p></a>
+      <a href="default.php"><p><span style="font-weight:bold;">5/1/21 </span>e-ΕΦΚΑ: Ποιοι απαλλάσσονται από ασφαλιστική ενημερότητα και βεβαίωση οφειλής</p></a>
       <hr style="border-top: 1px solid rgba(0, 0, 0, 0.3); width: 95%;">
-      <a href="#"><p><span style="font-weight:bold;">3/1/21 </span>Επίδομα αδείας: Πώς καταβάλλεται στους εργαζομένους που έχουν ενταχθεί στο πρόγραμμα "Συν- εργασία"</p></a>
-      <input type="button" class="show-button" value="Προβολή Όλων">
+      <a href="default.php"><p><span style="font-weight:bold;">3/1/21 </span>Επίδομα αδείας: Πώς καταβάλλεται στους εργαζομένους που έχουν ενταχθεί στο πρόγραμμα "Συν- εργασία"</p></a>
+      <a href="default.php" style="text-decoration:none;"><input type="button" class="show-button" value="Προβολή Όλων"></a>
   </div>
   <div class="flex-content">
-      <a href="#" style="text-decoration:none;"><h5>Συχνές Ερωτήσεις</h5></a>
+      <a href="default.php" style="text-decoration:none;"><h5>Συχνές Ερωτήσεις</h5></a>
       <hr style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 95%;">
 
-      <a href="#"><p><span style="font-weight:bold">Άδεια Ειδικού Σκοπού: </span>Ποιες είναι οι προϋποθέσεις για παραχώρησή της;</p></a>
+      <a href="default.php"><p><span style="font-weight:bold">Άδεια Ειδικού Σκοπού: </span>Ποιες είναι οι προϋποθέσεις για παραχώρησή της;</p></a>
       <hr style="border-top: 1px solid rgba(0, 0, 0, 0.3); width: 95%;">
-      <a href="#"><p><span style="font-weight:bold;">Σχέδιο Αναστολής Εργασίας: </span>Όσοι προσλήφθηκαν πρόσφατα και δεν πληρούν τις ασφαλιστικές προϋποθέσεις θα πάρουν ανεργιακό επίδομα στο πλαίσιο Σχεδίου Αναστολής;</p></a>
+      <a href="default.php"><p><span style="font-weight:bold;">Σχέδιο Αναστολής Εργασίας: </span>Όσοι προσλήφθηκαν πρόσφατα και δεν πληρούν τις ασφαλιστικές προϋποθέσεις θα πάρουν ανεργιακό επίδομα στο πλαίσιο Σχεδίου Αναστολής;</p></a>
       <hr style="border-top: 1px solid rgba(0, 0, 0, 0.3); width: 95%;">
-      <a href="#"><p><span style="font-weight:bold;">Επίδομα Ασθενείας: </span>Οι αυτοτελώς εργαζόμενοι δικαιούνται το ειδικό επίδομα ασθενείας;</p></a>
-      <input type="button" class="show-button" value="Προβολή Όλων">
+      <a href="default.php"><p><span style="font-weight:bold;">Επίδομα Ασθενείας: </span>Οι αυτοτελώς εργαζόμενοι δικαιούνται το ειδικό επίδομα ασθενείας;</p></a>
+      <a href="default.php" style="text-decoration:none;"><input type="button" class="show-button" value="Προβολή Όλων"></a>
   </div>
 </div>
 

@@ -1,5 +1,41 @@
 /* header.css */
 
+/*#search-form input
+{
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  border-color: rgba(0,0,0,0.5);
+  color: rgba(0,0,0,0.5);
+  background-color: transparent;
+  margin-top: 2%;
+}*/
+
+.input-icons i
+{
+  position: absolute;
+  margin-top: 3.5%;
+  margin-left: 3%;
+}
+
+.input-icons
+{
+  /*margin-bottom: 10px;*/
+}
+
+.input-field
+{
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.5);
+  color: rgba(0,0,0,0.7);
+  background-color: transparent;
+  margin-top: 2%;
+  text-align: center;
+  cursor: pointer;
+}
+
 /* For responsiveness */
 div.row
 {
