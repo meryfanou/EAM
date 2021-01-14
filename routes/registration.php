@@ -8,9 +8,9 @@
 
 	// Get user's input from registration form
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		// Initialize variables
-		$username= $password= $firstName= $lastName= $afm= $email= $address= $birthDate= $phoneNumber= $cellphoneNumber= $children= "";
-		$userType= $profession= $enterpriseName= $enterpriseAddress= $enterpriseStatus= $enterpriseID= $enterpriseNumber= $fund= "";
+		// Initialize non-null variables
+		$username = $password = $firstName = $lastName = $afm = $email = $address = $birthDate = $phoneNumber = "";
+		$userType = $profession = $enterpriseName = $enterpriseAddress = $enterpriseID= "";
 
 		if(isset($_POST['username']))
 			$username = $_POST['username'];

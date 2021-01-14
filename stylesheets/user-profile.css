@@ -30,18 +30,28 @@
 	padding-top: 3%;
 }
 
+.flex-container .flex-content h5,
+.flex-container .flex-content h6
+{
+	text-align: center;
+	color: #2C3E50;
+}
+
+.flex-container .flex-content b
+{
+	color: #2C3E50;
+}
+
 .flex-container .flex-content .edit-button
 {
-    width: 118px;
-    height: 50px;
     background: white;
     font-weight: bold;
+    font-size: 100%;
     color: #E08119;
-    border: 3px solid #E08119;
+    border: 2px solid #E08119;
     border-radius: 5px;
     cursor: pointer;
-    padding: 10px 5px;
-    margin: 20px 5px 10px 5px;
+    padding: 5px 15px;
 }
 
 .flex-container .flex-content .edit-button:hover,
@@ -54,16 +64,14 @@
 
 .flex-container .flex-content .logout-button
 {
-    width: 118px;
-    height: 50px;
     background: white;
     font-weight: bold;
+    font-size: 100%;
     color: #CD212A;
-    border: 3px solid #CD212A;
+    border: 2px solid #CD212A;
     border-radius: 5px;
     cursor: pointer;
-    padding: 10px 5px;
-    margin: 20px 5px 10px 5px;
+    padding: 5px 15px;
 }
 
 .flex-container .flex-content .logout-button:hover,
@@ -74,12 +82,38 @@
 	border-color: #FF6F61;
 }
 
+.showEmployee:hover
+{
+	text-decoration: underline;
+}
+
+#msform
+{
+	text-align: center;
+}
+
+#msform .action-button
+{
+	height: 40px;
+    width: 250px;
+    background: rgb(0,139,139);
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus
+{
+    box-shadow: 0 0 0 2px white;
+}
+
 /* For extra small screen */
 @media (max-width: 991px){
-	#xs-screen
-	{
-		display: none;
-	}
 
 	.flex-container .flex-content img
 	{

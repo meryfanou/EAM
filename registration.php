@@ -157,8 +157,8 @@
                         <label for="children" class="form-control-label">Έχετε παιδί/παιδιά κάτω των 12 ετών;</label><br>
                         <select name="children" class="custom-select" id="children">
                             <option></option>
-                            <option value="yes">Nαι</option>
-                            <option value="no">Όχι</option>
+                            <option value="Ναι">Nαι</option>
+                            <option value="Όχι">Όχι</option>
                         </select>
                     </div>
                 </div><br>
@@ -244,6 +244,7 @@
                     <div style="display: table-cell;overflow: auto;">
                         <br><label for="enterprise" class="form-control-label">Επιχείρηση *</label><br>
                         <select name="enterprise" class="custom-select" id="enterprise" data-error="Υποχρεωτικό πεδίο">
+                            <option></option>
                             <?php
                                     // connect to database
                                     require_once './login.php';
