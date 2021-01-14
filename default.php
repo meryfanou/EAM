@@ -19,30 +19,27 @@
 
         
 <!-- Form body -->
-<div class="container-fluid" style="
+<div class="container-xxl" id="msform" style="
 	justify-content: center;
 	align-content: center;
-	margin: 0 8% 4% 8%;
+	margin: 0px 10px 0px 10px;
 	padding: 3%;
 	border: 1px solid rgba(0,0,0,0.6);
 	background-color: rgba(0,0,0,0.15);
 	text-align : center;">
     <img src="images/wrench.png" alt="Logo" style="width: 250px; border-radius:0%">
-   <h2> Η σελίδα αυτά είναι υπό κατασκευή. Παρακαλώ επιστρέψτε στην αρχική ή γυρίστε πίσω. </h2>
-   <br>
-   <br><a href="index.php"><input type="button" class="next action-button" value="Αρχική" style=" width: 110px;
-    background: rgb(0,139,139);
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px"></button></a>
-
+    <h2> Η σελίδα αυτά είναι υπό κατασκευή.<br>Παρακαλώ προχωρήστε στην αρχική ή γυρίστε πίσω.</h2>
+    <br><br>
+    <a href="index.php"><input type="button" class="action-button" value="Αρχική"></button></a>
+    <input type="button" class="action-button" value="Επιστροφή" onclick="goBack()"></button>
 </div>
 
 
-
+<script>
+    // Go back button
+    function goBack() {
+        window.history.back();
+    }
+</script>
 
 <?php include './footer.php' ?>

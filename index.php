@@ -41,7 +41,7 @@
       <hr style="border-top: 4px solid rgba(0, 139, 139, 0.8); width: 265px;">
       <li><button class="button">Πληροφορίες για τον Covid-19</button></li><br>
       <li><button class="button">Δουλεύουμε από το σπίτι</button></li><br>
-      <li><button class="button">Ευκαιρίες κατάρτησης για ανέργους</button></li>
+      <li><a href="default.php" style="text-decoration:none;"><button class="button">Ευκαιρίες κατάρτησης για ανέργους</button></a></li>
       <hr style="border-top: 4px solid rgba(0, 139, 139, 0.8); width: 265px;">
       <br></br>
     </ul>

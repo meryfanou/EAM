@@ -127,14 +127,14 @@
 	   			<a class="nav-link" href="epikoinwnia.php" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;ΕΠΙΚΟΙΝΩΝΙΑ</a>
 		    </li>
 			<li class="nav-item">
-	   			<a class="nav-link" href="#" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;English&nbsp;<i class="fa fa-language"></i></a>
+	   			<a class="nav-link" href="default.php" style="font-size: 87%;">|&nbsp;&nbsp;&nbsp;English&nbsp;<i class="fa fa-language"></i></a>
 		    </li>
 		</ul><div class="col" id="sm-screen"></div>
 	</div>
 
 	<!-- Search form -->
 	<div class="row"><div class="col"></div>
-  		<form class="form-inline" action="" style="width: 250px;">
+  		<form class="form-inline" action="default.php" style="width: 250px;">
   			<div class="input-group input-group-sm mb-2">
 				<input type="text" class="form-control" placeholder="Search">
 				<div class="input-group-append input-group-sm">

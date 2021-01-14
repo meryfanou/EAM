@@ -32,7 +32,7 @@
 	          		<p><i class="fas fa-map-marker-alt"></i>&nbsp;Σταδίου 29, Αθήνα 105 59</p>
     		    </li>
 	          	<li>
-	            	<a href="#!" class="text-dark"><i class="fas fa-map"></i>&nbsp;Οδηγίες Πρόσβασης</a>
+	            	<a href="default.php" class="text-dark"><i class="fas fa-map"></i>&nbsp;Οδηγίες Πρόσβασης</a>
     	    	</li>
         	</ul>
       	</div>
@@ -49,7 +49,7 @@
         	  		<p><i class="fas fa-phone"></i>&nbsp;213-1516651</p>
     	      	</li>
 	          	<li>
-            		<a href="" class="text-dark"><i class="fas fa-envelope"></i>&nbsp;pliroforisi-politi@ypakp.gr</a>
+            		<a class="text-dark"><i class="fas fa-envelope"></i>&nbsp;pliroforisi-politi@ypakp.gr</a>
 	        	</li>
         	</ul>
     	</div>

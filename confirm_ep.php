@@ -56,7 +56,7 @@
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px 5px"></button></a>
-        <a  href="epikoinwnia.php"><input type="button" class="next action-button" value="Επιστροφή στην επικοινωνία"style=" width: 220px;
+        <a  href="epikoinwnia.php"><input type="button" class="next action-button" value="Επιστροφή στην επικοινωνία"style=" width: 230px;
     background: rgb(0,139,139);
     font-weight: bold;
     color: white;
