@@ -1,5 +1,5 @@
 <!-- user-profile.php -->
-<?php include './header.php'; ?>
+<?php include './header.php' ?>
 
 <link rel="stylesheet" href="./stylesheets/user-profile.css">
 <body style="background-color:rgba(198, 198, 236, 0.5);">
@@ -14,14 +14,24 @@
 	</nav>
 </div>
 
-<?php 	 // If the user is an employer and has just updated an employee's info, show a message
+<?php
 
+	// If the user is an employer and has just updated an employee's info, show a message
 	if(isset($_SESSION['updated_employee']) && $_SESSION['updated_employee'] == 1){
 		print "<div class=\"alert\" style=\"background-color: #A0DAA9; border-color:seagreen; color:#264E36;\">";
-    	print "<strong>Οι αλλαγές αποθηκεύτηκαν επιτυχία!</strong>";
+    	print "<strong>Οι αλλαγές αποθηκεύτηκαν με επιτυχία!</strong>";
     	print "</div>";
 
 	    unset($_SESSION['updated_employee']);
+	}
+
+	// If the user has just updated his/her profile, show a message
+	if(isset($_SESSION['updated_profile']) && $_SESSION['updated_profile'] == 1){
+		print "<div class=\"alert\" style=\"background-color: #A0DAA9; border-color:seagreen; color:#264E36;\">";
+    	print "<strong>Οι αλλαγές αποθηκεύτηκαν με επιτυχία!</strong>";
+    	print "</div>";
+
+	    unset($_SESSION['updated_profile']);
 	}
 
 ?>
@@ -101,7 +111,7 @@
 			<div class="col"></div>
 			<!-- Buttons -->
 			<div class="col-md-5 float-right">
-		    	<a><input type="button" class="edit-button btn-sm" value="Επεξεργασία"></a>
+		    	<a href="./edit_profile.php"><input type="button" class="edit-button btn-sm" value="Επεξεργασία"></a>
 			    <a href="./routes/logout.php"><input type="button" class="logout-button btn-sm" value="Αποσύνδεση"></a>
 			</div>
 	    </div>
