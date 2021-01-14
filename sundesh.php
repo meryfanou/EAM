@@ -1,7 +1,11 @@
 <!-- epikoinwnia.php -->
 <?php include './header.php' ?>
 
+<link rel="stylesheet" href="./stylesheets/form.css">
+
 <body style="background-color:rgba(198, 198, 236, 0.5)">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 
 <!--
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -23,72 +27,151 @@
 
 <!-- FORMA EPIKOINWNIAS -->
 
+<div class="d-xl-flex">
+    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST"  action="index.php">
+        <!-- First form page -->
+        <fieldset id="fieldset1">
+            <div class="form-card">
+                <h3 class="fs-title">Σύνδεση</h3><br><br>
+                <!-- ONOMA -->
+                <div class="form-group" style="display: table-row;">
+                    <div style="display: table-cell;overflow: auto;">
+                        <label for="username" class="form-control-label">Όνομα*</label>
+                        <input name="username" type="text" class="form-control" id="username" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Tο επώνυμο πρέπει να αποτελείται από τουλάχιστον 4 χαρακτήρες"> </div> </div>
+
+                </div><br>
+
+              <!-- Password -->
+              <div class="form-group" style="display: table-row">
+                    <div style="display: table-cell;overflow: auto;">
+                        <label for="password" class="form-control-label">Κωδικός πρόσβασης</label>
+                        <input name="password" type="password" class="form-control" id="password" data-error="Ο Κωδικός δεν είναι έγκυρος" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div style="display: table-cell;padding-left: 20px"><br><p></p>
+                        <div class="fas fa-question-circle" title="Ο κωδικός πρόσβασης πρέπει να αποτελείται από τουλάχιστον 8 χαρακτήρες και να περιέχει οπωσδήποτε 1 κεφαλαίο γράμμα, 1 πεζό γράμμα και 1 αριθμητικό"> </div> 
+                    </div>
+                </div><br>
+                
+            <!-- Trigger modal button -->
+            <!-- <input type="button" data-toggle="modal" data-target="#myModal" class="action-button" value="Υποβολή">
+            -->
+            <button type="submit" class="action-button">Σύνδεση</button>
+            <a href="default.php"><button type="button" class="action-button">Σύνδεση μέσω TAXIS </button></a>
+            <!-- Modal -->
+            <!-- <div  id="myModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin: 200px 0px 0px 5px " >
+                <div style="background-color: rgba(255, 255, 255, 0.6);" class="modal-header">
+                   
+                    <h3 id="myModalLabel">Επιβεβαίωση</h3>
+                </div>
+                <div style="background-color: rgba(255, 255, 255, 0.6)" class="modal-body">
+                    <form id="myForm" method="post">
+                       <h5>Είστε σίγουροι για τα στοιχεία σας; </h5>
+                    </form>
+                </div>
+                <div style="background-color: rgba(255, 255, 255, 0.6)"class="modal-footer">
+                    <button class='btn btn-danger' data-dismiss='modal' aria-hidden='true'>Άκυρο</button>
+                    <!-- Submit form button
+                    <button type="submit" class="action-button">Σύνεχεια</button>
+                </div>
+            </div> -->
+        
+
+           
+           
+
+       
+
+            <!-- Modal -->
+            <!-- <div  id="myModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin: 200px 0px 0px 5px " >
+                <div style="background-color: rgba(255, 255, 255, 0.6);" class="modal-header">
+                   
+                    <h3 id="myModalLabel">Επιβεβαίωση</h3>
+                </div>
+                <div style="background-color: rgba(255, 255, 255, 0.6)" class="modal-body">
+                    <form id="myForm" method="post">
+                       <h5>Είστε σίγουροι για τα στοιχεία σας; </h5>
+                    </form>
+                </div>
+                <div style="background-color: rgba(255, 255, 255, 0.6)"class="modal-footer">
+                    <button class='btn btn-danger' data-dismiss='modal' aria-hidden='true'>Άκυρο</button>
+                    <!-- Submit form button
+                    <button type="submit" class="action-button">Σύνεχεια</button>
+                </div>
+            </div> -->
+        
+        </fieldset>
+
+
+      
+    </form>
+</div>
+
+
+<div class="d-xl-flex">
+    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST"  action="index.php">
+        <!-- First form page -->
+        <fieldset id="fieldset1">
+        <div class="form-card">
+                <h3 class="fs-title">Ξέχασα τον κωδικό μου</h3><br><br>
+                 <!-- e-mail -->
+                 <div class="form-group" style="display: table-row;">
+                    <div style="display: table-cell;overflow: auto;">
+                        <label for="email" class="form-control-label">Ηλεκτρονική διεύθυνση (e-mail) *</label>
+                        <input name="email" type="email" class="form-control" id="email" data-error="Παρακαλώ δώστε ένα έγκυρο e-mail"required >
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div style="display: table-cell;padding-left: 20px"><br><p></p>
+                        <div class="fas fa-question-circle" title="Π.χ. name@example.gr"> </div> 
+                    </div>
+                </div><br>
+
+                
+            <!-- Trigger modal button -->
+            <!-- <input type="button" data-toggle="modal" data-target="#myModal" class="action-button" value="Υποβολή">
+            -->
+            <button type="submit" class="action-button">Aποστολή</button>
+
+     
+            </fieldset>
+
+
+      
+</form>
+</div>
+
+
+<script>
+
+    // Submit form, only if all inputs are valid
+    $("#msform").submit(function(event) {
+        // make selected form variable
+        var vForm = $(this);
     
-    <p style="margin-left :100px">Σύνδεση</p>
-    <div class="container-xxl " style="display:flex;margin: 0 100px 50px 100px; padding-top: 50px ; padding-left: 100px;border: 1px solid black;background-color: darkgrey; text-align : center">
-        <form class="was-validated form-group" style="width: 400px" method="POST" action="./routes/login.php"> <!-- class="needs-validation" novalidate -->
-            <!-- ONOMA -->
-            <div class="form-group w-25" style="display: table-row;">
-                <div style="display: table-cell;overflow: auto; height: 60px; width: 400px"> 
-                    <label for="username" class="form-label">Ονοματεπώνυμο </label>
-                    <input name="username" type="text" class="form-control" id="exampleFormControlInput1" required> 
-                    
-                    <div class="invalid-feedback">
-                        Παρακαλώ επιλέξτε όνομα
-                    </div>
-                </div>
-                <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Tο όνομα δεν πρέπει να περιέχει ειδικούς χαρακτήρες όπως _, -, +, !, κτλ."> </div>  </div>
-            </div>
+        /* If not valid prevent form submit https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/checkValidity */
+        if (vForm[0].checkValidity() === false) {
+            event.preventDefault()
+            event.stopPropagation()
+            $("#myModal").modal("hide");
+        }
+
+        // Add bootstrap 4 was-validated classes to trigger validation messages
+        vForm.addClass('was-validated');
+    });
+
     
-            <br>
-            <br>
-            <br>
-               
-            <!-- PASSWORD -->
-            <div class="form-group w-25" style="display: table-row;">
-                <div style="display: table-cell;overflow: auto; height: 60px; width: 400px">
-                    <label for="password">Κωδικός πρόσβασης </label>
-                    <input name="password" type="password" class="form-control" id="exampleFormControlInput1"required>
-                    <div class="invalid-feedback">
-                        Ο Κωδικός δεν ήταν έγκυρος.
-                    </div>
-                </div>
-                <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Κωδικός πρόσβασης"> </div>  </div>
-            </div>
-            
-            <br>
+   
+</script>
 
-            <button type="submit" class="btn btn-primary" style="margin-right : 650px">Σύνδεση</button>
-        </form>
-        <form style="flex-grow:1">
-        <p style="padding-top:100px"> ή<button type="submit" class="btn btn-primary" style="margin-left : 200px">Σύνδεση μέσω AXIS</button></p>
-        </form>
-    </div>
-
-    <p style="margin-left :100px">Ξέχασα τον κωδικό μου</p>
-    <div class="container-xxl " style="margin: 0 100px 0 100px; padding-top:50px ; padding-left: 350px;border: 1px solid black;background-color: darkgrey; text-align : center">
-        <form class="was-validated form-group"> <!-- class="needs-validation" novalidate -->
-            <!-- EMAIL -->
-            <div class="form-group w-25" style="display: table-row">
-                <div style="display: table-cell;overflow: auto; height: 60px; width: 400px">
-                    <label for="email">Αποστολή Email </label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-                    <div class="invalid-feedback">
-                        Το email δεν ήταν έγκυρο.
-                    </div>
-                </div>
-                <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Η διεύθυνση πρέπει να είναι της μορφής: name@example.com"> </div>  </div>
-
-            </div>
-            
-            <br>
-
-            <button type="submit" class="btn btn-primary" style="margin-right : 400px">Aποστολή</button>
-            <p style="margin-right : 400px; padding: 30px 0 30px 0"> Παρακαλώ ελέγξτε τα mail σας </p>
-        </form>
-    </div>
 
 
 </body>
+
+
+
+
 <?php include './footer.php' ?>
 

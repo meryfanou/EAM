@@ -19,10 +19,10 @@
 
         
 <!-- Form body -->
-<div class="container-fluid" style="
+<div class="container-xxl" style="
 	justify-content: center;
 	align-content: center;
-	margin: 0 8% 4% 8%;
+	margin: 0px 10px 0px 10px;
 	padding: 3%;
 	border: 1px solid rgba(0,0,0,0.6);
 	background-color: rgba(0,0,0,0.15);

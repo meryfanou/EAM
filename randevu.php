@@ -20,10 +20,12 @@
 </div>
 <br>
 
+        
 <!-- Form body -->
 <div class="d-xl-flex">
-    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="confirm.php">
-        <fieldset>
+<form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST"  action="confirm.php">
+        <!-- First form page -->
+        <fieldset id="fieldset1">
             <div class="form-card">
                 <h3 class="fs-title">Κλείστε Ραντεβού</h3><br><br>
                 <!-- ONOMA -->
@@ -34,22 +36,24 @@
                         <div class="help-block with-errors"></div>
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Tο επώνυμο πρέπει να αποτελείται από τουλάχιστον 4 χαρακτήρες"> </div> </div>
+
                 </div><br>
                  <!-- Last Name -->
                  <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="lastName" class="form-control-label">Επώνυμο *</label>
-                        <input name="lastName" type="text" class="form-control" id="lastName" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$" required>
+                        <input name="lastName" type="text" class="form-control" id="lastName" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$"required >
                         <div class="help-block with-errors"></div>
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Tο επώνυμο πρέπει να αποτελείται από τουλάχιστον 4 χαρακτήρες"> </div>  </div>
+
                 </div><br>
 
                  <!-- e-mail -->
                  <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="email" class="form-control-label">Ηλεκτρονική διεύθυνση (e-mail) *</label>
-                        <input name="email" type="email" class="form-control" id="email" data-error="Παρακαλώ δώστε ένα έγκυρο e-mail" required>
+                        <input name="email" type="email" class="form-control" id="email" data-error="Παρακαλώ δώστε ένα έγκυρο e-mail"required >
                         <div class="help-block with-errors"></div>
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
@@ -61,7 +65,7 @@
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="phoneNumber" class="form-control-label">Σταθερό Τηλέφωνο *</label>
-                        <input name="phoneNumber" type="text" class="form-control" id="phoneNumber" data-error="Παρακαλώ δώστε ένα έγκυρο τηλέφωνο" pattern="^[0-9]{10}" required>
+                        <input name="phoneNumber" type="text" class="form-control" id="phoneNumber" data-error="Παρακαλώ δώστε ένα έγκυρο τηλέφωνο" pattern="^[0-9]{10}"required >
                         <div class="help-block with-errors"></div>
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
@@ -72,7 +76,7 @@
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="cellphoneNumber" class="form-control-label">Κινητό Τηλέφωνο</label>
-                        <input name="cellphoneNumber" type="text" class="form-control" id="cellphoneNumber" data-error="Παρακαλώ δώστε ένα έγκυρο τηλέφωνο" pattern="^[0-9]{10}">
+                        <input name="cellphoneNumber" type="text" class="form-control" id="cellphoneNumber" data-error="Παρακαλώ δώστε ένα έγκυρο τηλέφωνο" pattern="^[0-9]{10}"required >
                         <div class="help-block with-errors"></div>
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
@@ -84,7 +88,7 @@
                 <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;"> 
                         <label for="date" class="form-control-label">Ημερομηνία *</label>
-                        <input type="date" class="form-control" id="date"  data-error="Παρακαλώ δώστε μία έγκυρη ημερομηνία" required> 
+                        <input type="date" name="date" class="form-control" id="date"  data-error="Παρακαλώ δώστε μία έγκυρη ημερομηνία"required> 
                         <div class="help-block with-errors"></div>
                 
                     </div>
@@ -98,7 +102,7 @@
                 <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;"> 
                         <label for="time" class="form-control-label">Ώρα *</label>
-                        <input type="time" class="form-control" id="time"  data-error="Παρακαλώ δώστε μία έγκυρη ώρα"pattern="[0-9 _:]" required> 
+                        <input type="time" class="form-control" id="time"  data-error="Παρακαλώ δώστε μία έγκυρη ώρα"pattern="[0-9 _:]"> 
                         <div class="help-block with-errors"></div>
                 
                     </div>
@@ -140,13 +144,36 @@
                         </div>
                 </div><br>
 
-                <!-- Submit button -->
-                <br><button type="submit" class="action-button" style="width: 160px;">Κλείσιμο Ραντεβού</button>
+            <!-- Trigger modal button -->
+            <input type="button" data-toggle="modal" data-target="#myModal" class="action-button" value="Υποβολή">
+
+       
+
+            <!-- Modal -->
+            <div  id="myModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin: 200px 0px 0px 5px " >
+                <div style="background-color: rgba(255, 255, 255, 0.6);" class="modal-header">
+                   
+                    <h3 id="myModalLabel">Επιβεβαίωση</h3>
+                </div>
+                <div style="background-color: rgba(255, 255, 255, 0.6)" class="modal-body">
+                    <form id="myForm" method="post">
+                       <h5>Είστε σίγουροι για τα στοιχεία σας; </h5>
+                    </form>
+                </div>
+                <div style="background-color: rgba(255, 255, 255, 0.6)"class="modal-footer">
+                    <button class='btn btn-danger' data-dismiss='modal' aria-hidden='true'>Άκυρο</button>
+                    <!-- Submit form button -->
+                    <button type="submit" class="action-button">Σύνεχεια</button>
+                </div>
             </div>
         </fieldset>
       
+
+
     </form>
 </div>
+
+<!-- <input type="button" class="next action-button" value="Επόμενο"></button> -->
 
 
 <script>
@@ -160,13 +187,17 @@
         if (vForm[0].checkValidity() === false) {
             event.preventDefault()
             event.stopPropagation()
+            $("#myModal").modal("hide");
         }
-    
+
         // Add bootstrap 4 was-validated classes to trigger validation messages
         vForm.addClass('was-validated');
     });
-       
+
+    
+   
 </script>
+
 
 
 <?php include './footer.php' ?>
