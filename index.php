@@ -1,21 +1,18 @@
 <!-- index.php -->
+<?php include './header.php'; ?>
+
+<link rel="stylesheet" href="./stylesheets/index.css">
+<body style="background-color:rgba(198, 198, 236, 0.5);">
+<!-- Breadcrumb -->
+  <div class="sticky">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</li>
+    </ol>
+  </nav>
+</div>
+
 <?php
-  include './header.php';
-
-  echo <<<_END
-    <link rel="stylesheet" href="./stylesheets/index.css">
-    <body style="background-color:rgba(198, 198, 236, 0.5);">
-    <!-- Breadcrumb -->
-    <div class="sticky">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item active"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</li>
-        </ol>
-      </nav>
-    </div>
-  _END;
-
-  // echo $_SESSION['logged_in_user_id'];
   // If the user was just registered/logged_in
   if(isset($_SESSION['logged_in_user_id']) && !isset($_SESSION['welcome_user'])){
     print "<div class=\"alert\" style=\"background-color: #A0DAA9; border-color:seagreen; color:#264E36;\">";

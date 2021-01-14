@@ -8,9 +8,9 @@
 
 	// Get user's input from registration form
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		// Initialize non-null variables
-		$username = $password = $firstName = $lastName = $afm = $email = $address = $birthDate = $phoneNumber = "";
-		$userType = $profession = $enterpriseName = $enterpriseAddress = $enterpriseID= "";
+		// Initialize variables
+		$username= $password= $firstName= $lastName= $afm= $email= $address= $birthDate= $phoneNumber= $cellphoneNumber= $children='';
+		$userType= $profession= $enterpriseName= $enterpriseAddress= $enterpriseStatus= $enterpriseID= $enterpriseNumber= $fund= '';
 
 		if(isset($_POST['username']))
 			$username = $_POST['username'];
@@ -71,7 +71,7 @@
 		// Get highest enterpriseID in db
 		$query = "SELECT enterpriseID FROM `Enterprises`";
 		$ids = $conn->query($query);
-		if(!$ids) die($conn->error);s
+		if(!$ids) die($conn->error);
 		$max_id = 0;
 		for ($i=0; $i<$ids->num_rows; $i++) {
 			$ids->data_seek($i);
@@ -100,7 +100,7 @@
 	// Add user's info to $_SESSION, so tah it can be accessed by other pages too
 	session_start();
 	$_SESSION['logged_in_user_id'] = $userID;
-	$_SESSION['logged_in_user_name'] = $username;
+	$_SESSION['username'] = $username;
 	$_SESSION['firstName'] = $firstName;
 	$_SESSION['lastName'] = $lastName;
 	$_SESSION['afm'] = $afm;
