@@ -39,9 +39,9 @@
     <ul style="list-style: none">
       <br><br><br>
       <hr style="border-top: 4px solid rgba(0, 139, 139, 0.8); width: 265px;">
-      <li><button class="button">Πληροφορίες για τον Covid-19</button></li><br>
-      <li><button class="button">Δουλεύουμε από το σπίτι</button></li><br>
-      <li><a href="default.php" style="text-decoration:none;"><button class="button">Ευκαιρίες κατάρτησης για ανέργους</button></a></li>
+      <li><a href="./covid.php" style="text-decoration:none;"><button class="button">Πληροφορίες για τον Covid-19</button></a></li><br>
+      <li><a href="#" style="text-decoration:none;"><button class="button">Δουλεύουμε από το σπίτι</button></a></li><br>
+      <li><a href="default.php" style="text-decoration:none;"><button class="button">Προγράμματα κατάρτησης για ανέργους</button></a></li>
       <hr style="border-top: 4px solid rgba(0, 139, 139, 0.8); width: 265px;">
       <br></br>
     </ul>
@@ -71,31 +71,31 @@
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <a href="#" data-toggle="tooltip" title="Πληροφορίες για τον Covid-19" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="./covid.php" data-toggle="tooltip" title="Πληροφορίες για τον Covid-19" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel0.png" alt="~ Πληροφορίες για τον Covid-19 ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="tooltip" title="Νέα & Ανακοινώσεις" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="default.php" data-toggle="tooltip" title="Νέα & Ανακοινώσεις" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel2.png" alt="~ Νέα & Ανακοινώσεις ~"></a>
       </div>
     	<div class="carousel-item">
-        <a href="#" data-toggle="tooltip" title="Κατάρτηση νέων πτυχιούχων" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="default.php" data-toggle="tooltip" title="Κατάρτηση νέων πτυχιούχων" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel4.jpg" alt="~ Κατάρτηση νέων πτυχιούχων ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="tooltip" title="Κατάρτηση ανέργων" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="default.php" data-toggle="tooltip" title="Κατάρτηση ανέργων" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel7.png" alt="~ Κατάρτηση ανέργων ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="tooltip" title="Πληροφορίες για τον Ενιαίο Φορέα Κοινωνικής Ασφάλισης" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="default.php" data-toggle="tooltip" title="Πληροφορίες για τον Ενιαίο Φορέα Κοινωνικής Ασφάλισης" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel8.png" alt="~ Πληροφορίες για τον Ενιαίο Φορέα Κοινωνικής Ασφάλισης ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="tooltip" title="Νέα για τον Covid & Επιχειρήσεις" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="default.php" data-toggle="tooltip" title="Νέα για τον Covid & Επιχειρήσεις" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel9.png" alt="~ Νέα για τον Covid & Επιχειρήσεις ~"></a>
       </div>
       <div class="carousel-item">
-        <a href="#" data-toggle="tooltip" title="Συχνές Ερωτήσεις" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
+        <a href="default.php" data-toggle="tooltip" title="Συχνές Ερωτήσεις" data-template="<div class='tooltip' role='tooltip'><div class='tooltip-inner'></div></div>" data-placement="left">
         <img src="images/carousel6.png" alt="~ Συχνές Ερωτήσεις ~"></a>
       </div>
     </div>

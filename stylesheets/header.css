@@ -52,6 +52,11 @@ div.sticky
   background-color: white;
 }
 
+.dropdown-item
+{
+  font-size: 85%;
+}
+
 /* For large screen only */
 @media (min-width: 992px) {
   /* Dropdown box - invisible without hovering */

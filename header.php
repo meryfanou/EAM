@@ -33,7 +33,7 @@
 <!-- Logo -->
 <div class="col">
 	<a class="navbar-brand" href="./index.php">
-    	<img src="images/Logo.png" alt="Logo" style="width: 250px; border-radius:0%">
+    	<img src="images/Logo.png" alt="Logo" style="width: 280px; border-radius:0%">
   	</a>
 </div>
 
@@ -50,7 +50,7 @@
 			<div class="col"></div>
 			<div class="col input-icons">
 	            <i class="fas fa-search"></i>
-	            <a href="default.php" style="text-decoration:none;"><input class="input-field" type="text" value="Search"></a>
+	            <a href="default.php" style="text-decoration:none;"><input class="input-field" type="text" value="Αναζήτηση"></a>
 	        </div>
 			<!-- Other Options -->
 			<div class="col"></div>
@@ -95,10 +95,22 @@
 				<li class="nav-item dropdown">
 			    	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: bold;">&nbsp;&nbsp;ΕΡΓΑΖΟΜΕΝΟΙ</a>
 		      		<div class="dropdown-menu">
-				        <a class="dropdown-item" href="#">COVID-19 ΚΑΙ ΕΡΓΑΖΟΜΕΝΟΙ</a>
+		       			<a class="dropdown-item" href="default.php">ΑΜΟΙΒΕΣ / ΔΩΡΑ / ΑΔΕΙΕΣ</a>
 				        <!-- Border line for large screen -->
 				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
-		       			<a class="dropdown-item" href="#">ΑΜΟΙΒΕΣ / ΔΩΡΑ / ΑΔΕΙΕΣ</a>
+				        <a class="dropdown-item" href="default.php">ΥΠΟΛΟΓΙΣΜΟΣ ΩΡΟΜΙΣΘΙΟΥ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+				        <a class="dropdown-item" href="default.php">ΥΠΕΡΕΡΓΑΣΙΑ / ΑΠΟΖΗΜΙΩΣΕΙΣ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+				        <a class="dropdown-item" href="default.php">ΘΕΜΑΤΑ ΑΣΦΑΛΙΣΗΣ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+		       			<a class="dropdown-item" href="default.php">ΓΙΑ ΝΕΟΥΣ ΕΡΓΑΖΟΜΕΝΟΥΣ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+				        <a class="dropdown-item" href="#">COVID-19 & ΕΝΑΛΛΑΚΤΙΚΟΙ ΤΡΟΠΟΙ ΕΡΓΑΣΙΑΣ</a>
 				        <!-- Border line for small screen -->
 					    <hr id="smScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 55%;">
 		   			</div>
@@ -106,10 +118,19 @@
 		   		<li class="nav-item dropdown">
 			    	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: bold;">&nbsp;&nbsp;ΕΡΓΟΔΟΤΕΣ</a>
 		      		<div class="dropdown-menu">
-				        <a class="dropdown-item" href="#">COVID-19 ΚΑΙ ΕΡΓΟΔΟΤΕΣ</a>
+				        <a class="dropdown-item" href="default.php">ΥΠΟΧΡΕΩΣΕΙΣ ΕΡΓΟΔΟΤΩΝ - ΠΛΗΡΟΦΟΡΙΑΚΟ ΣΥΣΤΗΜΑ ΕΡΓΑΝΗ</a>
+		       			<!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+		       			<a class="dropdown-item" href="default.php">ΕΠΙΧΟΡΗΓΗΣΕΙΣ & ΕΠΕΝΔΥΣΕΙΣ</a>
 				        <!-- Border line for large screen -->
 				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
-		       			<a class="dropdown-item" href="#">ΥΠΟΛΟΓΙΣΜΟΣ ΑΣΦΑΛΙΣΤΙΚΩΝ ΕΙΣΦΟΡΩΝ ΕΠΙΧΕΙΡΗΣΗΣ</a>
+		       			<a class="dropdown-item" href="default.php">ΥΠΟΛΟΓΙΣΜΟΣ ΑΣΦΑΛΙΣΤΙΚΩΝ ΕΙΣΦΟΡΩΝ ΕΠΙΧΕΙΡΗΣΗΣ</a>
+		       			<!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+		       			<a class="dropdown-item" href="default.php">ΑΣΦΑΛΕΙΑ & ΥΓΕΙΑ ΣΤΗΝ ΕΡΓΑΣΙΑ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+				        <a class="dropdown-item" href="./covid.php">COVID-19 & ΕΠΙΧΕΙΡΗΣΕΙΣ</a>
 				        <!-- Border line for small screen -->
 					    <hr id="smScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 65%;">
 		   			</div>
@@ -117,13 +138,16 @@
 				<li class="nav-item dropdown">
 			    	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: bold;">&nbsp;&nbsp;ΑΝΕΡΓΟΙ</a>
 		   			<div class="dropdown-menu">
-			        	<a class="dropdown-item" href="#">ΘΕΣΕΙΣ ΕΡΓΑΣΙΑΣ</a>
+			        	<a class="dropdown-item" href="default.php">ΘΕΣΕΙΣ ΕΡΓΑΣΙΑΣ</a>
 				        <!-- Border line for large screen -->
 				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
-		        		<a class="dropdown-item" href="#">ΕΠΙΔΟΜΑΤΑ</a>
+		        		<a class="dropdown-item" href="default.php">ΕΠΙΔΟΜΑΤΑ ΑΝΕΡΓΙΑΣ</a>
 				        <!-- Border line for large screen -->
 				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
-				        <a class="dropdown-item" href="#">ΕΥΚΑΙΡΙΕΣ ΚΑΤΑΡΤΗΣΗΣ</a>
+				        <a class="dropdown-item" href="default.php">ΠΡΟΓΡΑΜΜΑΤΑ ΚΑΤΑΡΤΗΣΗΣ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+		       			<a class="dropdown-item" href="default.php">ΚΟΙΝΩΦΕΛΗΣ ΕΡΓΑΣΙΑ</a>
 				        <!-- Border line for small screen -->
 					    <hr id="smScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 55%;">
 		   			</div>
@@ -131,7 +155,10 @@
 		    	<li class="nav-item dropdown">
 				    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: bold;">&nbsp;&nbsp;ΣΥΝΤΑΞΙΟΥΧΟΙ</a>
 		   			<div class="dropdown-menu">
-				        <a class="dropdown-item" href="#">ΝΕΑ ΓΙΑ ΤΙΣ ΣΥΝΤΑΞΕΙΣ</a>
+				        <a class="dropdown-item" href="default.php">ΝΕΑ ΓΙΑ ΤΙΣ ΣΥΝΤΑΞΕΙΣ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+		       			<a class="dropdown-item" href="default.php">ΕΠΙΔΟΜΑ ΑΛΛΗΛΕΓΓΥΗΣ ΓΙΑ ΑΝΑΣΦΑΛΙΣΤΟΥΣ ΥΠΕΡΗΛΙΚΕΣ</a>
 				        <!-- Border line for small screen -->
 					    <hr id="smScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 55%;">
 		   			</div>
@@ -139,10 +166,19 @@
 				<li class="nav-item dropdown">
 			    	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: bold;">COVID-19</a>
 		      		<div class="dropdown-menu">
-				        <a class="dropdown-item" href="#">COVID-19 ΚΑΙ ΕΡΓΑΖΟΜΕΝΟΙ</a>
+				        <a class="dropdown-item" href="./covid.php">ΣΤΟ ΧΩΡΟ ΕΡΓΑΣΙΑΣ: ΟΔΗΓΙΕΣ & ΜΕΤΡΑ ΠΡΟΛΗΨΗΣ</a>
 				        <!-- Border line for large screen -->
 				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
-		       			<a class="dropdown-item" href="#">ΑΜΟΙΒΕΣ / ΔΩΡΑ / ΑΔΕΙΕΣ</a>
+		       			<a class="dropdown-item" href="#">ΕΝΑΛΛΑΚΤΙΚΟΙ ΤΡΟΠΟΙ ΕΡΓΑΣΙΑΣ & ΕΙΔΙΚΕΣ ΑΔΕΙΕΣ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+				        <a class="dropdown-item" href="default.php">ΕΠΙΧΕΙΡΗΣΕΙΣ: ΕΠΙΔΟΜΑΤΑ / ΤΡΟΠΟΙ ΛΕΙΤΟΥΡΓΙΑΣ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+				        <a class="dropdown-item" href="default.php">ΕYΠΑΘΕΙΣ ΟΜΑΔΕΣ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+		       			<a class="dropdown-item" href="default.php">ΤΕΛΕΥΤΑΙΕΣ ΥΠΟΥΡΓΙΚΕΣ ΑΠΟΦΑΣΕΙΣ</a>
 				        <!-- Border line for small screen -->
 					    <hr id="smScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 55%;">
 		   			</div>
@@ -150,10 +186,22 @@
 		   		<li class="nav-item dropdown">
 			    	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: bold;">&nbsp;&nbsp;ΥΠΟΥΡΓΕΙΟ</a>
 		      		<div class="dropdown-menu">
-				        <a class="dropdown-item" href="#">COVID-19 ΚΑΙ ΕΡΓΟΔΟΤΕΣ</a>
+				        <a class="dropdown-item" href="default.php">ΤΜΗΜΑΤΑ & ΟΡΓΑΝΩΣΗ</a>
 				        <!-- Border line for large screen -->
 				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
-		       			<a class="dropdown-item" href="#">ΥΠΟΛΟΓΙΣΜΟΣ ΑΣΦΑΛΙΣΤΙΚΩΝ ΕΙΣΦΟΡΩΝ ΕΠΙΧΕΙΡΗΣΗΣ</a>
+		       			<a class="dropdown-item" href="default.php">ΝΕΑ & ΑΝΑΚΟΙΝΩΣΕΙΣ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+		       			<a class="dropdown-item" href="default.php">ΑΣΦΑΛΙΣΤΙΚΟΙ ΦΟΡΕΙΣ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+		       			<a class="dropdown-item" href="default.php">ΔΡΑΣΕΙΣ ΕΝΤΑΞΗΣ ΓΙΑ ΕΥΑΛΩΤΕΣ ΟΜΑΔΕΣ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+		       			<a class="dropdown-item" href="default.php">ΔΙΕΘΝΗ ΘΕΜΑΤΑ & ΕΡΓΑΣΙΑ</a>
+				        <!-- Border line for large screen -->
+				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
+		       			<a class="dropdown-item" href="default.php">ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ</a>
 				        <!-- Border line for small screen -->
 					    <hr id="smScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 65%;">
 		   			</div>

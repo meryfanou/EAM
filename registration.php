@@ -37,7 +37,7 @@
                 <!-- Username -->
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
-                        <label for="username" class="form-control-label">Username (Όνομα Χρήστη) </label>
+                        <label for="username" class="form-control-label">Username (Όνομα Χρήστη) *</label>
                         <input name="username" type="text" class="form-control" id="username" data-error="Παρακαλώ επιλέξτε ένα έγκυρο username" minlength="4" required>
                         <div class="help-block with-errors"></div>
                     </div>
@@ -46,7 +46,7 @@
                 <!-- Password -->
                 <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;">
-                        <label for="password" class="form-control-label">Κωδικός πρόσβασης</label>
+                        <label for="password" class="form-control-label">Κωδικός πρόσβασης *</label>
                         <input name="password" type="password" class="form-control" id="password" data-error="Ο Κωδικός δεν είναι έγκυρος" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         <div class="help-block with-errors"></div>
                     </div>
@@ -57,7 +57,7 @@
                 <!-- Confirm Password -->
                 <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;">
-                        <label for="password" class="form-control-label">Επιβεβαίωση κωδικού πρόσβασης</label>
+                        <label for="password" class="form-control-label">Επιβεβαίωση κωδικού πρόσβασης *</label>
                         <input name="confirm-pwd" type="password" class="form-control" id="confirm-pwd" data-match="#password" data-error="Η επαλήθευση και ο κωδικός διαφέρουν" required>
                         <div class="help-block with-errors"></div>
                     </div>
@@ -405,6 +405,8 @@
                 var formObj2 = document.getElementById('password');
                 var formObj3 = document.getElementById('confirm-pwd');
                 if(!formObj1.checkValidity() || !formObj2.checkValidity() || !formObj3.checkValidity()){
+                    // Add bootstrap 4 was-validated classes to trigger validation messages
+                    $('#msform').addClass('was-validated');
                     return false;
                 }
             }
@@ -420,6 +422,8 @@
                 var formObj8 = document.getElementById('cellphoneNumber');
                 var formObj9 = document.getElementById('children');
                 if(!formObj1.checkValidity() || !formObj2.checkValidity() || !formObj3.checkValidity() || !formObj4.checkValidity() ||  !formObj5.checkValidity() || !formObj6.checkValidity() || !formObj7.checkValidity() || !formObj8.checkValidity() || !formObj9.checkValidity()){
+                    // Add bootstrap 4 was-validated classes to trigger validation messages
+                    $('#msform').addClass('was-validated');
                     return false;
                 }
             }
@@ -431,6 +435,8 @@
                 var formObj4 = document.getElementById('fund');
                 // if(!formObj1.checkValidity() || !formObj2.checkValidity() || !formObj3.checkValidity() || !formObj4.checkValidity()) {
                 if(!formObj1.checkValidity() || !formObj4.checkValidity()) {
+                    // Add bootstrap 4 was-validated classes to trigger validation messages
+                    $('#msform').addClass('was-validated');
                     return false;
                 }
             }

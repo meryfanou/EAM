@@ -154,23 +154,25 @@
 	   					<p><b>Κατάσταση επιχείρησης λόγω Covid-19: </b><?php echo $entpr_info['duringCovid']; ?></p>
 	   				<?php }
    				}
-   				// If it is an employee
-   				if($user_info['userType'] == "Εργαζόμενος"){ ?>
-   					<b><u>Από τον Εργοδότη:</u></b>
-   					<?php if(isset($user_info['duringCovid'])){ ?>
-   						<div style="text-indent:8%;"><p><b>Εν μέσω Covid-19: </b><?php echo $user_info['duringCovid']; ?></p></div>
-   					<?php }
-   					if(isset($user_info['onLeave'])){ ?>
-   						<div style="text-indent:8%;"><p><b>Άδεια: </b><?php echo $user_info['onLeave']; ?></p></div>
-   					<?php } else { ?>
-   						<div style="text-indent:8%;"><p><b>Άδεια: </b>Δεν έχει γίνει κάποιο αίτημα</p></div>
-   					<?php }
-   				} ?>
-   				<?php if(isset($user_info['enterpriseNumber'])){ ?>
+   				if(isset($user_info['enterpriseNumber'])){ ?>
    					<p><b>Τηλέφωνο Εργασίας: </b><?php echo $user_info['enterpriseNumber']; ?></p>
    				<?php } ?>
    				<?php if(isset($user_info['insuranceFund'])){ ?>
    					<p><b>Ασφαλιστικό Ταμείο: </b><?php echo $user_info['insuranceFund']; ?></p>
+   				<?php }
+   				// If it is an employee
+   				if($user_info['userType'] == "Εργαζόμενος"){ ?>
+   					<div style="line-height: 0.8;">
+   						<br><b><u>Από τον Εργοδότη:</u></b><br><br>
+	   					<?php if(isset($user_info['duringCovid'])){ ?>
+   							<div style="text-indent:8%;"><p><b>Εν μέσω Covid-19: </b><?php echo $user_info['duringCovid']; ?></p></div>
+   						<?php }
+   						if(isset($user_info['onLeave'])){ ?>
+   							<div style="text-indent:8%;"><p><b>Άδεια: </b><?php echo $user_info['onLeave']; ?></p></div>
+   						<?php } else { ?>
+   							<div style="text-indent:8%;"><p><b>Άδεια: </b>Δεν έχει γίνει κάποιο αίτημα</p></div>
+	   					<?php } ?>
+	   				</div>
    				<?php } ?>
    			</div>
    		</div>
