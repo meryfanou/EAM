@@ -1,26 +1,16 @@
 /* header.css */
 
-/*#search-form input
-{
-  width: 250px;
-  height: 25px;
-  border-radius: 5px;
-  border-color: rgba(0,0,0,0.5);
-  color: rgba(0,0,0,0.5);
-  background-color: transparent;
-  margin-top: 2%;
-}*/
-
 .input-icons i
 {
   position: absolute;
   margin-top: 3.5%;
   margin-left: 3%;
+  color: rgba(0,0,0,0.5);
 }
 
-.input-icons
+.input-icons:hover i
 {
-  /*margin-bottom: 10px;*/
+  color: black;
 }
 
 .input-field
@@ -29,11 +19,18 @@
   height: 25px;
   border-radius: 5px;
   border: 1px solid rgba(0,0,0,0.5);
-  color: rgba(0,0,0,0.7);
+  color: rgba(0,0,0,0.5);
   background-color: transparent;
   margin-top: 2%;
   text-align: center;
   cursor: pointer;
+}
+
+.input-field:hover,
+.input-field:focus
+{
+  border-color: black;
+  color: black;
 }
 
 /* For responsiveness */
