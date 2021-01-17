@@ -1,5 +1,10 @@
 <!-- footer.php -->
-<br><br><br><br><br>
+<!-- <br><br><br><br><br> -->
+
+<!-- this is changed footer for sticky -->
+<link rel="stylesheet" href="./stylesheets/footer.css">
+<div class="content"></div>
+<!-- this is changed footer for sticky -->
 
 <footer class="text-center text-lg-start" style="background-color: rgba(0, 0, 0, 0.3)">
 <!-- Grid container -->
