@@ -17,6 +17,16 @@
     </ol>
     </nav>
 </div>
+
+<?php
+    // If the user is not logged in, show help message
+    if(!isset($_SESSION['logged_in_user_id'])){
+        print "<div class=\"alert\" style=\"background-color:#ECDB54; border-color:#B8860B; color:#B8860B;\">";
+        print "<strong>Παρακαλώ </strong><a href=\"./sundesh.php\">συνδεθείτε</a><strong> ή </strong><a href=\"./registration.php\">εγγραφείτε</a><strong> πρώτα ώστε να συμπληρωθούν αυτόματα τα στοιχεία σας, όπου είναι εφικτό.</strong>";
+        print "</div>";
+    }
+?>
+
 <br>
 
 <!-- Forma gia exapestasews ergasia -->

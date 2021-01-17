@@ -162,17 +162,15 @@
    				<?php }
    				// If it is an employee
    				if($user_info['userType'] == "Εργαζόμενος"){ ?>
-   					<div style="line-height: 0.8;">
-   						<br><b><u>Από τον Εργοδότη:</u></b><br><br>
-	   					<?php if(isset($user_info['duringCovid'])){ ?>
-   							<div style="text-indent:8%;"><p><b>Εν μέσω Covid-19: </b><?php echo $user_info['duringCovid']; ?></p></div>
-   						<?php }
-   						if(isset($user_info['onLeave'])){ ?>
-   							<div style="text-indent:8%;"><p><b>Άδεια: </b><?php echo $user_info['onLeave']; ?></p></div>
-   						<?php } else { ?>
-   							<div style="text-indent:8%;"><p><b>Άδεια: </b>Δεν έχει γίνει κάποιο αίτημα</p></div>
-	   					<?php } ?>
-	   				</div>
+   					<br><b><u>Από τον Εργοδότη:</u></b><br><br>
+	   				<?php if(isset($user_info['duringCovid'])){ ?>
+   						<div style="text-indent:8%;"><p><b>Εν μέσω Covid-19: </b><?php echo $user_info['duringCovid']; ?></p></div>
+   					<?php }
+   					if(isset($user_info['onLeave'])){ ?>
+   						<div style="text-indent:8%;"><p><b>Άδεια: </b><?php echo $user_info['onLeave']; ?></p></div>
+   					<?php } else { ?>
+   						<div style="text-indent:8%;"><p><b>Άδεια: </b>Δεν έχει γίνει κάποιο αίτημα</p></div>
+	   				<?php } ?>
    				<?php } ?>
    			</div>
    		</div>
