@@ -14,63 +14,196 @@
         </nav>
     </div>
 
+    <!-- <br></br> -->
+
     <div id="accordion">
-    <div class="card">
+
+    <!-- <div class="card"> -->
         <div class="card-header" id="headingOne">
-        <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Collapsible Group Item #1
-            </button>
-        </h5>
-        </div>
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">                    
+                    <h5><b>Νέος κορωνοϊός Covid-19</b></h5>
+                </button>
+            </h5>
+            </div>
 
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-        <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                Στην πόλη Wuhan,επαρχία Hubei, στην Κίνα, εμφανίστηκε συρροή κρουσμάτων πνευμονίας. Στις 9 Ιανουαρίου 2020 οι υγειονομικές αρχές της Κίνας ανακοίνωσαν ότι πρόκειται για νέο στέλεχος κορωνοϊού (2019-nCoV). Οι κορωνοϊοί είναι μία ομάδα ιών που συνήθως προκαλούν αναπνευστικές λοιμώξεις με ποικίλη σοβαρότητα στον άνθρωπο και στα ζώα. Εκτιμάται ότι περίπου το ένα τρίτο των λοιμώξεων ανώτερου αναπνευστικού στον άνθρωπο μπορεί να προκαλείται από κορωνοϊούς.
+            </div>
         </div>
-        </div>
-    </div>
-    <div class="card">
+    <!-- </div> -->
+
+    <!-- <div class="card"> -->
         <div class="card-header" id="headingTwo">
-        <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Collapsible Group Item #2
-            </button>
-        </h5>
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h5><b>Οδηγίες Πρόληψης της Διασποράς του Ιού</b></h5>
+                </button>
+            </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                Γενικές οδηγίες ατομικής υγιεινής και προστασίας. Η τήρησή τους μειώνει δραστικά τον κίνδυνο
+                μετάδοσης του ιού:
+                <ul>
+                    <li> Φοράτε ΠΑΝΤΟΥ και ΠΑΝΤΑ την μάσκα σας </li>
+                    <li> ΜΗΝ ακουμπάτε την μάσκα με τα χέρια σας. Πιάστε μόνο τα λάστιχα για να την βάλετε και να τη βγάλετε. </li>
+                    <li> Αν βήξετε ή φταρνιστείτε, καλύψτε το στόμα και τη μύτη σας επιπλέον με χαρτομάντηλο </li>
+                    <li> Πετάξτε αμέσως το χαρτομάντηλο στον κάδο απορριμάτων </li>
+                    <li>
+                        <p>Πλένετε τακτικά και σχολαστικά τα χέρια σας με σαπούνι και νερό ή χρησιμοποιείτε αλκοολούχο αντισηπτικό διάλυμα</p>
+                        <!-- <iframe width="420" height="315" src="https://www.youtube.com/watch?v=3PmVJQUCm4E&feature=youtu.be" frameborder="0" allowfullscreen></iframe> -->
+                    </li>
+                    <li> ΜΗΝ αγγίζετε τα μάτια, τη μύτη και το στόμα σας </li>
+                    <li> Καθαρίζετε τακτικά το χώρο σας, τις επιφάνειες εργασίας, καθώς και τα πόμολα με αραιωμένη χλωρίνη ή αντισηπτικό διάλυμα </li>
+                    <li> Τηρείτε τις αποστάσεις και αποφεύγετε το συγχρωτισμό </li>
+                    <li> Αερίζετε τους χώρους εργασίας επαρκώς </li>
+                </ul>
+            </div>
         </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-        <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-        </div>
-    </div>
-    <div class="card">
+    <!-- </div> -->
+    
         <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Collapsible Group Item #3
-            </button>
-        </h5>
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-controls="collapseThree">
+                    <h5><b>Ορισμοί κρούσματος COVID -19 και «επαφών» κρούσματος COVID-19</b></h5>
+                </button>
+            </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                <h6>Κλινικά κριτήρια</h6>
+                    Ασθενής με ένα τουλάχιστον από τα κατωτέρω συμπτώματα :
+                    <ul>
+                        <li>βήχας</li>
+                        <li>πυρετός</li>
+                        <li>δύσπνοια</li>
+                        <li>αιφνίδια εκδήλωση ανοσμίας, αγευσίας ή δυσγευσίας</li>
+                    </ul>
+                
+                <h6>Εργαστηριακά κριτήρια</h6>
+                    <p>Ανίχνευση νουκλεϊκού οξέος SARS-CoV-2 σε κλινικό δείγμα</p>
+
+                <h6>Επιδημιολογικά κριτήρια</h6>
+
+                    Τουλάχιστον ένα από τα κατωτέρω επιδημιολογικά κριτήρια:
+                    <ul>
+                        <li>στενή επαφή με επιβεβαιωμένο κρούσμα COVID-19 εντός 14 ημερών πριν την έναρξη συμπτωμάτων</li>
+                        <li>φιλοξενούμενοι ή προσωπικό δομών στις οποίες φιλοξενούνται ευάλωτα άτομα και έχει επιβεβαιωθεί συνεχιζόμενη μετάδοσηCOVID-19</li>
+                    </ul>
+
+                <h6>Ταξινόμηση κρουσμάτων</h6>
+                    
+                    <ul>
+                        <li>Ενδεχόμενο κρούσμα: Ασθενής που πληροί τα κλινικά κριτήρια</li>
+                        <li>
+                            Πιθανό κρούσμα:
+                            <ol>
+                                <li>Ασθενής που πληροί τα κλινικά κριτήρια και ένα επιδημιολογικό κριτήριο</li>
+                                <li>Άτομο που πληροί τα απεικονιστικά διαγνωστικά κριτήρια</li>
+                            </ol>
+                        </li>
+                        <li>Επιβεβαιωμένο κρούσμα: Άτομο που πληροί τα εργαστηριακά κριτήρια</li>
+                    </ul>
+            </div>
         </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-        <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-controls="collapseThree">
+                <!-- aria-expanded="false" -->
+                    <h5><b>Διαχείριση Περιστατικών στο Χώρο Εργασίας</b></h5>
+                </button>
+            </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                <!-- https://eody.gov.gr/wp-content/uploads/2020/10/%CE%A0%CE%A1%CE%A9%CE%A4%CE%9F%CE%9A%CE%9F%CE%9B%CE%9B%CE%9F-%CE%94%CE%99%CE%91%CE%A7%CE%95%CE%99%CE%A1%CE%99%CE%A3%CE%97%CE%A3-%CE%9A%CE%A1%CE%9F%CE%A5%CE%A3%CE%9C%CE%91%CE%A4%CE%9F%CE%A3-%CE%A3%CE%95-%CE%A7%CE%A9%CE%A1%CE%9F%CE%A5%CE%A3-%CE%95%CE%A1%CE%93%CE%91%CE%A3%CE%99%CE%91%CE%A3-%CE%A4%CE%9F%CE%A5-%CE%94%CE%97%CE%9C%CE%9F%CE%A3%CE%99%CE%9F%CE%A5-%CE%A4%CE%9F%CE%9C%CE%95%CE%91.pdf -->
+                <ol>
+                    <li>
+                        Η σωστή εφαρμογή των οδηγιών που ακολουθούν έχει ως στόχο:
+                        <ul>
+                            <li> Την ελαχιστοποίηση της μετάδοσης σε εργαζόμενους </li>
+                            <li> Την αντιμετώπιση των ύποπτων ή και επιβεβαιωμένων περιστατικών COVID19 που δεν χρήζουν περαιτέρω νοσηλείας </li>
+                            <li> Τον περιορισμό της διασποράς της νόσου στην κοινότητα </li>
+                        </ul>        
+                    </li>
+                    <li>
+                        Κάθε οργανική μονάδα δημόσιων υπηρεσιών πρέπει να:
+                        <ul>
+                            <li> διαθέτει ένα συγκεκριμένο και προσαρμοσμένο στις ανάγκες του επαγγελματικού χώρου σχέδιο δράσης για τον περιορισμό της μετάδοσης του κορωνοϊού στους χώρους λειτουργίας του </li>
+                            <li> Να ορίσει έναν συντονιστή διαχείρισης COVID-19 της οργανικής μονάδας </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Με σκοπό την επιτυχή εφαρμογή των μέτρων για την πρόληψη μετάδοσης του κορωνοϊού στους χώρους εργασίας είναι απαραίτητο να ορισθεί από την διοίκηση
+                        τουλάχιστον ένας συντονιστής διαχείρισης COVID-19 και ο αναπληρωτής του οι οποίοι μεριμνούν:
+                        <ul>
+                            <li> για την εφαρμογή των μέτρων πρόληψης εισόδου και μετάδοσης του κορωνοϊού ανάμεσα στους εργαζόμενους </li>
+                            <li> για τη διαχείριση ύποπτων κρουσμάτων λοίμωξης COVID-19 σε εργαζόμενους της οργανικής μονάδας </li>
+                            <li> για την άμεση ανταπόκριση σε κάθε θέμα που θα ανακύπτει και τη σωστή τήρηση των μέτρων, την ενημέρωση του προσωπικού και την εξασφάλιση ενός ασφαλούς χώρου εργασίας για τους υπαλλήλους και το κοινό </li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <h6> Διαχείριση υπόπτου κρούσματος </h6>
+                    <ul>
+                        <li> Εάν ένας εργαζόμενος εμφανίσει έστω και ήπια συμπτώματα συμβατά με λοίμωξη COVID-19 εκτός του χώρου της οργανικής μονάδας, παραμένει στο σπίτι και ειδοποιεί τον ορισμένο συντονιστή COVID-19 για τις περαιτέρω ενέργειες </li>
+                        <li> Εάν ένας εργαζόμενος εμφανίσει συμπτώματα συμβατά με λοίμωξη COVID19 εντός της οργανικής μονάδας ακολουθούνται τα παρακάτω βήματα: </li>
+                            <ul>
+                                <li> Ενημερώνει τον άμεσο προϊστάμενο του και τον συντονιστή διαχείρισης COVID-19, φοράει μάσκα, αποχωρεί από τον χώρο εργασίας και παραμένει στο σπίτι του για ανάρρωση ή καλείται το ΕΚΑΒ για τη μεταφορά του στον εγγύτερο υγειονομικό σχηματισμό </li>
+                                <li> Ο συντονιστής διαχείρισης COVID-19 ενημερώνει τον ΕΟΔΥ για επιδημιολογική διερεύνηση και ιχνηλάτηση όλων των πιθανών επαφών του κρούσματος (προσωπικού και επισκεπτών κλπ) </li>
+                                <li> Μετά την αποχώρηση του ύποπτου κρούσματος από τον οργανισμό, ακολουθείται επιμελής καθαρισμός, εφαρμογή απολυμαντικού σε επιφάνειες του χώρου όπου κινήθηκε ο εργαζόμενος με χρήση εξοπλισμού ατομικής προστασίας </li>
+                                <li> Ιατρική αξιολόγηση (από εφημερεύον Νοσοκομείο, Κέντρο Υγείας ή από ιδιώτη θεράποντα ιατρό) αν θα πρέπει να γίνει κατά προτεραιότητα μοριακό διαγνωστικό τεστ </li>
+                                <li> Εν αναμονή του αποτελέσματος, ο εργαζόμενος παραμένει σε απομόνωση κατ’ οίκον (εφόσον η κατάστασή του δεν απαιτεί νοσηλεία),
+                                    σε καλά αεριζόμενο δωμάτιο, σύμφωνα με τον
+                                    <a href="https://eody.gov.gr/neos-koronoios-covid-19-odigies-gia-frontidaypoptoy-kroysmatos-sto-spiti/">ακόλουθο σύνδεσμο</a> ενώ η οργανική μονάδα συνεχίζει κανονικά τη λειτουργία της
+                                </li>
+                            </ul>
+                    </ul>
+            </div>
         </div>
+
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-controls="collapseThree">
+                <!-- aria-expanded="false" -->
+                    <h5><b>Πιθανά Σενάρια και Δράσεις από τους Εργαζομένους</b></h5>
+                </button>
+            </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                <ul>
+                    <li> Aν ο εργαζόμενος παρουσιάσει συμπτωματολογία ίωσης (πυρετό, βήχα, δυσκολία στην αναπνοή, αγευσία η ανοσμία, πονοκέφαλο, ρίγος, μυαλγίες, καταβολή, εμετό η διάρροια), τότε δεν έρχεται στην εργασία του, μένει στο σπίτι του, επικοινωνεί με τον θεράποντα ιατρό του και παραμένει εκτός εργασίας για όσο χρονικό διάστημα απαιτηθεί, προσκομίζοντας ιατρική βεβαίωση η άδεια απουσίας λόγω ασθένειας από τον ασφαλιστικό του φορέα</li>
+                    <li>
+                        Εάν ο εργαζόμενος παρουσιάσει συμπτωματολογία ίωσης όπως παραπάνω και έχει ιστορικό στενής επαφής, τότε δεν έρχεται στην εργασία του, μένει στο σπίτι του, επικοινωνεί με:
+                        <ol>
+                            <li> τον θεράποντα ιατρό του </li>
+                            <li> τον ΕΟΔΥ (τηλ 1135) </li>
+                            <li> τον προϊστάμενο του και μέσω αυτού με την εταιρεία </li>
+                            <li> υποβάλλεται σε τεστ ανίχνευσης του ιού </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Αν ο εργαζόμενος δεν έχει κανένα σύμπτωμα αλλά έχει ιστορικό στενής επαφής με ύποπτο η επιβεβαιωμένο κρούσμα του ιού, τότε δεν έρχεται στην εργασία του, μένει στο σπίτι του, επικοινωνεί με:
+                        <ol>
+                            <li> τον θεράποντα ιατρό του </li>
+                            <li> τον ΕΟΔΥ (τηλ 1135) </li>
+                            <li> τον προϊστάμενο του και μέσω αυτού με την εταιρεία </li>
+                            <li> υποβάλλεται σε τεστ ανίχνευσης του ιού </li>
+                        </ol>
+                    </li>
+                    <li> Αν ο εργαζόμενος δεν έχει κανένα σύμπτωμα αλλά έχει ιστορικό απλής περιστασιακής επαφής με ύποπτο ή επιβεβαιωμένο κρούσμα του ιού, τότε μπορεί να μεταβεί στον χώρο εργασίας του, παρακολουθώντας στενά τον εαυτό του για πιθανά συμπτώματα και ακολουθώντας πιστά τις οδηγίες ατομικής υγιεινής </li>
+                </ul>
+            </div>
         </div>
-    </div>
+
+
     </div>
 
-    <!-- <div style="background-image: url('covidbackground05-2560x1440.jpeg');">
-        You can specify background images<br>
-        for any visible HTML element.<br>
-        In this example, the background image<br>
-        is specified for a div element.<br>
-        By default, the background-image<br>
-        will repeat itself in the direction(s)<br>
-        where it is smaller than the element<br>
-        where it is specified. (Try resizing the<br>
-        browser window to see how the<br>
-        background image behaves.
-    </div> -->
+<br></br>
+<br></br>
 
 <?php include './footer.php' ?>
