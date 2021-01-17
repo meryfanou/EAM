@@ -171,6 +171,12 @@
    					<?php } else { ?>
    						<div style="text-indent:8%;"><p><b>Άδεια: </b>Δεν έχει γίνει κάποιο αίτημα</p></div>
 	   				<?php } ?>
+   				<?php }
+   				// If it is an employer
+   				if($user_info['userType'] == "Εργοδότης"){ ?>
+   					<p style="display: inline-block; line-height: 0.8;"><b style="line-height: 1.3;">Απαλλαγή Ασφαλιστικών Εισφορών λόγω Covid-19: </b><br><br>
+   					<a href="./default.php" id="msform">
+						<button class="action-button" style="width:110px; margin:0; margin-left: 25%;">Υπολογισμός</button></a></p>
    				<?php } ?>
    			</div>
    		</div>
