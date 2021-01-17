@@ -215,98 +215,47 @@
 							    	<br><h6><u>Στοιχεία Εργασίας</u></h6><br>
 									<?php if(isset($employee['profession'])){ ?>
 								   		<p><b>Επάγγελμα: </b><?php echo $employee['profession']; ?></p>
-								   	<?php } ?>
-								   	<!-- The employer can edit few of the employee's info -->
-								    <form role="form" data-toggle="validator" class="form-inline justify-content-center" id="msform"
-								    	method="POST" action="./routes/update_employee.php">
-        								<fieldset style="align-self: center;">
-                        					<hr style="border-top: 1px solid #2C3E50; width: 85%;">
-								            <input type="hidden" name="employee" value="<?php echo $employee['userID']; ?>">
-                							<div class="form-group" style="display: table-row;">
-								                <div style="display: table-cell;overflow: auto;">
-								                    <label for="duringCovid" class="form-control-label">
-								                       	<b>Εν μέσω Covid-19: </b>
-								                    </label>
-                       								<select name="duringCovid" class="custom-select" id="duringCovid"
-                       									style="width:300px;">
-														<?php if(!isset($employee['duringCovid'])){ ?>
-                       										<option selected></option>
-                        									<option value="Δια ζώσης εργασία">Δια ζώσης εργασία</option>
-                        									<option value="Εξ' αποστάσεως εργασία">Εξ' αποστάσεως εργασία</option>
-                        									<option value="Σε αναστολή">Σε αναστολή</option>
-                        								<?php } else { ?>
-                        									<option></option>
-                        									<?php if($employee['duringCovid'] == "Δια ζώσης εργασία"){ ?>
-                        										<option value="Δια ζώσης εργασία" selected>Δια ζώσης εργασία</option>
-	                        								<?php } else { ?>
-	                        									<option value="Δια ζώσης εργασία">Δια ζώσης εργασία</option>
-	                       									<?php }
-	                       									if($employee['duringCovid'] == "Εξ' αποστάσεως εργασία"){ ?>
-                       											<option value="Εξ' αποστάσεως εργασία" selected>
-                       												Εξ' αποστάσεως εργασία</option>
-	                       									<?php } else { ?>
-	                       										<option value="Εξ' αποστάσεως εργασία">Εξ' αποστάσεως εργασία</option>
-	                       									<?php }
-	                       									if($employee['duringCovid'] == "Σε αναστολή"){ ?>
-                        										<option value="Σε αναστολή" selected>Σε αναστολή</option>
-	                       									<?php } else { ?>
-	                       										<option value="Σε αναστολή">Σε αναστολή</option>
-	                       								<?php }
-	                       								} ?>
-                       								</select>
-								                </div>
-								            </div><br>
-								            <div class="form-group" style="display: table-row;">
-								                <div style="display: table-cell;overflow: auto;">
-								                    <label for="onLeave" class="form-control-label">
-								                       	<b>Άδεια: </b>
-									                </label>
-                        							<select name="onLeave" class="custom-select" id="onLeave" style="width:300px;">
-														<?php if(!isset($employee['onLeave'])){ ?>
-                       										<option value="Δεν έχει γίνει κάποιο αίτημα" selected>
-                       											Δεν έχει γίνει κάποιο αίτημα</option>
-                       										<option value="Σε κανονική άδεια">Σε κανονική άδεια</option>
-                       										<option value="Σε αναρρωτική άδεια">Σε αναρρωτική άδεια</option>
-                       										<option value="Σε άδεια άνευ αποδοχών">
-                       											Σε άδεια άνευ αποδοχών</option>
-                      										<option value="Σε άδεια ειδικού σκοπού">
-                    											Σε άδεια ειδικού σκοπού</option>
-                       									<?php } else { ?>
-                       										<option value="Δεν έχει γίνει κάποιο αίτημα">
-                       											Δεν έχει γίνει κάποιο αίτημα</option>
-                       										<?php if($employee['onLeave'] == "Σε κανονική άδεια"){ ?>
-                       											<option value="Σε κανονική άδεια" selected>
-                       												Σε κανονική άδεια</option>
-	                       									<?php } else ?>	<option value="Σε κανονική άδεια">
-	                       											Σε κανονική άδεια</option>
-	                       									<?php if($employee['onLeave'] == "Σε αναρρωτική άδεια"){ ?>
-                        										<option value="Σε αναρρωτική άδεια" selected>
-                       												Σε αναρρωτική άδεια</option>
-	                       									<?php } else ?>	<option value="Σε αναρρωτική άδεια">
-	                  											Σε αναρρωτική άδεια</option>
-	                       									<?php if($employee['onLeave'] == "Σε άδεια άνευ αποδοχών"){ ?>
-                       											<option value="Σε άδεια άνευ αποδοχών" selected>
-                        											Σε άδεια άνευ αποδοχών</option>
-	                        								<?php } else ?>	<option value="Σε άδεια άνευ αποδοχών">
-	                        										Σε άδεια άνευ αποδοχών</option>
-	                        								<?php if($employee['onLeave'] == "Σε άδεια ειδικού σκοπού"){ ?>
-                        										<option value="Σε άδεια ειδικού σκοπού" selected>
-                        											Σε άδεια ειδικού σκοπού</option>
-	                        								<?php } else ?>	<option value="Σε άδεια ειδικού σκοπού">
-	                        										Σε άδεια ειδικού σκοπού</option>
-	                        							<?php } ?>
-                        							</select>
-								                </div>
-								            </div><br>
-								            <button type="submit" class="action-button">Αποθήκευση Αλλαγών</button>
-                       						<hr style="border-top: 1px solid #2C3E50; width: 80%;">
-									   	</fieldset>
-								   	</form>
-							   		<?php if(isset($employee['enterpriseNumber'])){ ?>
+								   	<?php }
+							   		if(isset($employee['enterpriseNumber']) && $employee['enterpriseNumber'] != ''){ ?>
 							   			<p><b>Τηλέφωνο Εργασίας: </b><?php echo $employee['enterpriseNumber']; ?></p>
-								   	<?php } ?>
-								   	<?php if(isset($employee['insuranceFund'])){ ?>
+								   	<?php }
+								   	if(isset($employee['insuranceFund'])){ ?>
 										<p><b>Ασφαλιστικό Ταμείο: </b><?php echo $employee['insuranceFund']; ?></p>
+									<?php }
+									if(isset($employee['duringCovid'])){
+										$_SESSION['update_employee'] = $employee['userID']; ?>
+										<br><p><b>Εν μέσω Covid-19: </b><?php echo $employee['duringCovid']; ?></p>
+										<div style="text-indent:8%;"><b>Δήλωση για: </b></div>
+										<?php if($employee['duringCovid'] == "Δια ζώσης εργασία"){ ?>
+											<a href="./exapostasews.php" id="msform">
+												<button class="action-button" style="margin-left:5%">Εξ' αποστάσεως εργασία</button></a>
+											<a href="#" id="msform">
+												<button class="action-button" style="margin-left:5%">Αναστολή εργασίας</button></a>
+										<?php } else if(!strncmp($employee['duringCovid'],"Εξ αποστάσεως εργασία",21)){ ?>
+											<a href="default.php" id="msform">
+												<button class="action-button" style="margin-left:5%">Δια ζώσης εργασία</button></a>
+											<a href="#" id="msform">
+												<button class="action-button" style="margin-left:5%">Αναστολή εργασίας</button></a>
+										<?php } else if(!strncmp($employee['duringCovid'],"Σε αναστολή",11)){ ?>
+											<a href="default.php" id="msform">
+												<button class="action-button" style="margin-left:5%">Δια ζώσης εργασία</button></a>
+											<a href="./exapostasews.php" id="msform">
+												<button class="action-button" style="margin-left:5%">Εξ' αποστάσεως εργασία</button></a>
+										<?php } ?>
+									<?php }
+									if(isset($employee['onLeave'])){ ?>
+										<?php if($employee['onLeave'] == "Δεν έχει γίνει κάποιο αίτημα"){ ?>
+											<br><br><p><b>Άδεια: </b><?php echo $employee['onLeave']; ?></p>
+										<?php } else { ?>
+											<br><br><p><b>Άδεια: </b><?php echo $employee['onLeave'] . " από " . $employee['onLeaveFrom'] . " έως " . $employee['onLeaveTo']; ?></p>
+										<?php }
+										// If the employee has made a request
+										if($employee['onLeave'] == "Έγινε αίτημα για κανονική άδεια" || $employee['onLeave'] == "Έγινε αίτημα για αναρρωτική άδεια" || $employee['onLeave'] == "Έγινε αίτημα για άδεια άνευ αποδοχών" || $employee['onLeave'] == "Έγινε αίτημα για άδεια ειδικού σκοπού"){
+											$_SESSION['update_employee'] = $employee['userID'];
+										?>
+											<a href="./routes/updated_employee.php" id="msform">
+												<button class="action-button" style="margin-left:5%">Αποδοχή Αιτήματος</button></a>
+		                        		<?php } ?>
 									<?php } ?>
 								</div>
 							</div>

@@ -110,25 +110,37 @@ form .list-unstyled li
 #progressbar #account:before
 {
     font-family: FontAwesome;
-    content: "\f023"
+    content: "\f023";
 }
 
 #progressbar #personal:before
 {
     font-family: FontAwesome;
-    content: "\f007"
+    content: "\f007";
 }
 
 #progressbar #professional:before
 {
     font-family: FontAwesome;
-    content: "\f0b1"
+    content: "\f0b1";
 }
 
 #progressbar #confirm:before
 {
     font-family: FontAwesome;
-    content: "\f00c"
+    content: "\f00c";
+}
+
+#progressbar #employee:before
+{
+    font-family: FontAwesome;
+    content: "\f2b9";
+}
+
+#progressbar #building:before
+{
+    font-family: FontAwesome;
+    content: "\f1ad";
 }
 
 #progressbar li:before

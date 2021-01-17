@@ -109,7 +109,8 @@
 #msform .action-button:hover,
 #msform .action-button:focus
 {
-    box-shadow: 0 0 0 2px white;
+    box-shadow: 0 0 0 2px #2C3E50;
+    /*background: rgba(0,139,139,0.8);*/
 }
 
 /* For extra small screen */

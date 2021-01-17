@@ -11,6 +11,7 @@
 		// Initialize variables
 		$username= $password= $firstName= $lastName= $afm= $email= $address= $birthDate= $phoneNumber= $cellphoneNumber= $children='';
 		$userType= $profession= $enterpriseName= $enterpriseAddress= $enterpriseStatus= $enterpriseID= $enterpriseNumber= $fund= '';
+		$onLeave = $duringCovid = '';
 
 		if(isset($_POST['username']))
 			$username = $_POST['username'];
@@ -67,6 +68,7 @@
 	// Set the next userID in db
 	$userID = $max_userID + 1;
 
+	// An employer will also have an enterprise
 	if($userType == "Εργοδότης"){
 		// Get highest enterpriseID in db
 		$query = "SELECT enterpriseID FROM `Enterprises`";
@@ -89,8 +91,14 @@
 		if(!$result) die($conn->error);
 	}
 
+	// By default info for an employee
+	if($userType == "Εργαζόμενος"){
+		$onLeave = "Δεν έχει γίνει κάποιο αίτημα";
+		$duringCovid = "Δια ζώσης εργασία";
+	}
+
 	// Add new user in db
-	$query = "INSERT INTO `Users` (userID, username, password, firstName, lastName, afm, email, address, birthDate, phoneNumber, cellphoneNumber, children, userType, profession, enterpriseID, enterpriseNumber, insuranceFund) VALUES ('$userID', '$username', '$password', '$firstName', '$lastName', '$afm', '$email', '$address', '$birthDate', '$phoneNumber', '$cellphoneNumber', '$children', '$userType', '$profession', '$enterpriseID', '$enterpriseNumber', '$fund')";
+	$query = "INSERT INTO `Users` (userID, username, password, firstName, lastName, afm, email, address, birthDate, phoneNumber, cellphoneNumber, children, userType, profession, enterpriseID, enterpriseNumber, insuranceFund, onLeave, duringCovid) VALUES ('$userID', '$username', '$password', '$firstName', '$lastName', '$afm', '$email', '$address', '$birthDate', '$phoneNumber', '$cellphoneNumber', '$children', '$userType', '$profession', '$enterpriseID', '$enterpriseNumber', '$fund', '$onLeave', '$duringCovid')";
 	$result = $conn->query($query);
 	if(!$result) die($conn->error);
 

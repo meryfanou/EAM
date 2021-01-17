@@ -48,13 +48,13 @@
 		<div class="row">
 			<!-- Search form -->
 			<div class="col"></div>
-			<div class="col input-icons">
+			<div class="col input-icons" id="search-form">
 	            <i class="fas fa-search"></i>
 	            <a href="default.php" style="text-decoration:none;"><input class="input-field" type="text" value="Αναζήτηση"></a>
 	        </div>
 			<!-- Other Options -->
 			<div class="col"></div>
-			<ul class="navbar-nav mb-3 list-group list-group-horizontal" style="">
+			<ul class="navbar-nav mb-3 list-group list-group-horizontal" id="other-options">
 				<?php if(!isset($_SESSION['logged_in_user_id'])){ ?>
 					<li class="nav-item">
 			    		<a class="nav-link" href="./sundesh.php" style="font-size: 87%;">ΣΥΝΔΕΣΗ</a>
@@ -91,7 +91,7 @@
 
 		<div class="row">
 			<!-- Dropdowns -->
-			<ul class="navbar-nav" style="">
+			<ul class="navbar-nav" id="myDropdown">
 				<li class="nav-item dropdown">
 			    	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: bold;">&nbsp;&nbsp;ΕΡΓΑΖΟΜΕΝΟΙ</a>
 		      		<div class="dropdown-menu">

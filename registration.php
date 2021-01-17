@@ -118,7 +118,7 @@
                         <div class="help-block with-errors"></div>
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
-                        <div class="fas fa-question-circle" title="Π.χ. Επιδαύρου 46 Αθήνα Αττική Ελλάδα"> </div> 
+                        <div class="fas fa-question-circle" title="Π.χ. Επιδαύρου 46"> </div> 
                     </div>
                 </div><br>
                 <!-- birth date -->
@@ -223,7 +223,7 @@
                         <div class="help-block with-errors"></div>
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
-                        <br><div class="fas fa-question-circle" title="Π.χ. Επιδαύρου 46 Αθήνα Αττική Ελλάδα"> </div> 
+                        <br><div class="fas fa-question-circle" title="Π.χ. Επιδαύρου 46"> </div> 
                     </div>
                 </div>
                 <!-- The emplyer can give their enterprise's current status -->
