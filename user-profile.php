@@ -55,7 +55,7 @@
 			// Skip userID and username - already in $_SESSION. Also ignore password
 			if($key == "userID" || $key == "username" || $key == "password") continue;
 			// If key's value is empty, continue
-			if(!$value) continue;
+			if(!$value || $value=='') continue;
 
 			// If the user is employer/employee  in an enterprise, store interprise's info as well
 			if($key == "enterpriseID"){
@@ -69,7 +69,7 @@
 						// Skip enterpriseID
 						if($entpr_key == "enterpriseID") continue;
 						// If key's value is empty, continue
-						if(!$entpr_value) continue;
+						if(!$entpr_value || $entpr_value=='') continue;
 
 						$entpr_info[$entpr_key] = $entpr_value;
 					}
@@ -130,6 +130,8 @@
    				<br><p><b>e-mail: </b><?php echo $user_info['email']; ?></p>
    				<p><b>Α.Φ.Μ.: </b><?php echo $user_info['AFM']; ?></p>
    				<p><b>Διεύθυνση Κατοικίας: </b><?php echo $user_info['address']; ?></p>
+   				<p><b>Δήμος: </b><?php echo $user_info['municipality']; ?></p>
+   				<p><b>Τ.Κ.: </b><?php echo $user_info['PC']; ?></p>
    				<p><b>Ημερομηνία Γέννησης: </b><?php echo $user_info['birthDate']; ?></p>
    				<p><b>Σταθερό τηλέφωνο: </b><?php echo $user_info['phoneNumber']; ?></p>
    				<?php if(isset($user_info['cellphoneNumber'])){ ?>
@@ -146,10 +148,17 @@
    				<?php if(isset($user_info['profession'])){ ?>
    					<p><b>Επάγγελμα: </b><?php echo $user_info['profession']; ?></p>
    				<?php } ?>
+   				<!-- If it is an employer -->
+				<?php if($user_info['userType'] == 'Εργοδότης'){ ?>
+   					<p><b>Α.Μ.Ε.: </b><?php echo $user_info['AME']; ?></p>
+   				<?php } ?>
    				<!-- If the user works in an enterprise -->
    				<?php if(isset($user_info['enterpriseID'])){ ?>
    					<p><b>Όνομα Επιχείρησης: </b><?php echo $entpr_info['name']; ?></p>
+   					<p><b>Α.Φ.Μ. Επιχείρησης: </b><?php echo $entpr_info['AFM']; ?></p>
    					<p><b>Διεύθυνση Επιχείρησης: </b><?php echo $entpr_info['address']; ?></p>
+   					<p><b>Δήμος: </b><?php echo $entpr_info['municipality']; ?></p>
+   					<p><b>Τ.Κ.: </b><?php echo $entpr_info['PC']; ?></p>
 	   				<?php if(isset($entpr_info['duringCovid'])){ ?>
 	   					<p><b>Κατάσταση επιχείρησης λόγω Covid-19: </b><?php echo $entpr_info['duringCovid']; ?></p>
 	   				<?php }
@@ -166,15 +175,15 @@
 	   				<?php if(isset($user_info['duringCovid'])){ ?>
    						<div style="text-indent:8%;"><p><b>Εν μέσω Covid-19: </b><?php echo $user_info['duringCovid']; ?></p></div>
    					<?php }
-   					if(isset($user_info['onLeave'])){ ?>
-   						<div style="text-indent:8%;"><p><b>Άδεια: </b><?php echo $user_info['onLeave']; ?></p></div>
+   					if(isset($user_info['onLeave']) && $user_info['onLeave'] != "Δεν έχει γίνει κάποιο αίτημα"){ ?>
+   						<div style="text-indent:8%;"><p><b>Άδεια: </b><?php echo $user_info['onLeave'] . " από " . $user_info['onLeaveFrom'] . " έως " . $user_info['onLeaveTo']; ?></p></div>
    					<?php } else { ?>
    						<div style="text-indent:8%;"><p><b>Άδεια: </b>Δεν έχει γίνει κάποιο αίτημα</p></div>
 	   				<?php } ?>
    				<?php }
    				// If it is an employer
    				if($user_info['userType'] == "Εργοδότης"){ ?>
-   					<p style="display: inline-block; line-height: 0.8;"><b style="line-height: 1.3;">Απαλλαγή Ασφαλιστικών Εισφορών λόγω Covid-19: </b><br><br>
+   					<p style="display: inline-block; line-height: 0.8;"><b style="line-height: 1.3;">Απαλλαγές Ασφαλιστικών Εισφορών λόγω Covid-19: </b><br><br>
    					<a href="./default.php" id="msform">
 						<button class="action-button" style="width:110px; margin:0; margin-left: 25%;">Υπολογισμός</button></a></p>
    				<?php } ?>
@@ -233,12 +242,12 @@
 										<?php if($employee['duringCovid'] == "Δια ζώσης εργασία"){ ?>
 											<a href="./exapostasews.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Εξ' αποστάσεως εργασία</button></a>
-											<a href="#" id="msform">
+											<a href="./anastolh.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Αναστολή εργασίας</button></a>
 										<?php } else if(!strncmp($employee['duringCovid'],"Εξ αποστάσεως εργασία",21)){ ?>
 											<a href="default.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Δια ζώσης εργασία</button></a>
-											<a href="#" id="msform">
+											<a href="./anastolh.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Αναστολή εργασίας</button></a>
 										<?php } else if(!strncmp($employee['duringCovid'],"Σε αναστολή",11)){ ?>
 											<a href="default.php" id="msform">

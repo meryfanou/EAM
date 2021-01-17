@@ -10,8 +10,8 @@
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		// Initialize variables
 		$username= $password= $firstName= $lastName= $afm= $email= $address= $birthDate= $phoneNumber= $cellphoneNumber= $children='';
+		$municipality = $pc = $ame = $enterpriseAFM = $enterpriseMunicipality = $enterprisePC = $onLeave = $duringCovid = '';
 		$userType= $profession= $enterpriseName= $enterpriseAddress= $enterpriseStatus= $enterpriseID= $enterpriseNumber= $fund= '';
-		$onLeave = $duringCovid = '';
 
 		if(isset($_POST['username']))
 			$username = $_POST['username'];
@@ -27,6 +27,10 @@
 			$email = $_POST['email'];
 		if(isset($_POST['address']))
 			$address = $_POST['address'];
+		if(isset($_POST['municipality']))
+			$municipality = $_POST['municipality'];
+		if(isset($_POST['pc']))
+			$pc = $_POST['pc'];
 		if(isset($_POST['birthDate']))
 			$birthDate = $_POST['birthDate'];
 		if(isset($_POST['phoneNumber']))
@@ -39,10 +43,18 @@
 			$userType = $_POST['userType'];
 		if(isset($_POST['profession']))
 			$profession = $_POST['profession'];
+		if(isset($_POST['ame']))
+			$ame = $_POST['ame'];
 		if(isset($_POST['enterpriseName']))
 			$enterpriseName = $_POST['enterpriseName'];
+		if(isset($_POST['enterpriseAFM']))
+			$enterpriseAFM = $_POST['enterpriseAFM'];
 		if(isset($_POST['enterpriseAddress']))
 			$enterpriseAddress = $_POST['enterpriseAddress'];
+		if(isset($_POST['enterpriseMunicipality']))
+			$enterpriseMunicipality = $_POST['enterpriseMunicipality'];
+		if(isset($_POST['enterprisePC']))
+			$enterprisePC = $_POST['enterprisePC'];
 		if(isset($_POST['enterpriseStatus']))
 			$enterpriseStatus = $_POST['enterpriseStatus'];
 		if(isset($_POST['enterprise']))
@@ -86,7 +98,7 @@
 		$enterpriseID = $max_id + 1;
 
 		// Add employer's enterprise in db
-		$query = "INSERT INTO `Enterprises` (enterpriseID, name, address, duringCovid) VALUES ('$enterpriseID', '$enterpriseName', '$enterpriseAddress', '$enterpriseStatus')";
+		$query = "INSERT INTO `Enterprises` (enterpriseID, name, AFM, address, PC, municipality, duringCovid) VALUES ('$enterpriseID', '$enterpriseName', '$enterpriseAFM', '$enterpriseAddress', '$enterprisePC', '$enterpriseMunicipality', '$enterpriseStatus')";
 		$result = $conn->query($query);
 		if(!$result) die($conn->error);
 	}
@@ -98,43 +110,17 @@
 	}
 
 	// Add new user in db
-	$query = "INSERT INTO `Users` (userID, username, password, firstName, lastName, afm, email, address, birthDate, phoneNumber, cellphoneNumber, children, userType, profession, enterpriseID, enterpriseNumber, insuranceFund, onLeave, duringCovid) VALUES ('$userID', '$username', '$password', '$firstName', '$lastName', '$afm', '$email', '$address', '$birthDate', '$phoneNumber', '$cellphoneNumber', '$children', '$userType', '$profession', '$enterpriseID', '$enterpriseNumber', '$fund', '$onLeave', '$duringCovid')";
+	$query = "INSERT INTO `Users` (userID, username, password, firstName, lastName, afm, email, address, municipality, pc, birthDate, phoneNumber, cellphoneNumber, children, userType, profession, AME, enterpriseID, enterpriseNumber, insuranceFund, onLeave, duringCovid) VALUES ('$userID', '$username', '$password', '$firstName', '$lastName', '$afm', '$email', '$address', '$municipality', '$pc', '$birthDate', '$phoneNumber', '$cellphoneNumber', '$children', '$userType', '$profession', '$ame', '$enterpriseID', '$enterpriseNumber', '$fund', '$onLeave', '$duringCovid')";
 	$result = $conn->query($query);
 	if(!$result) die($conn->error);
 
 	// Disconnect from db
 	$conn->close();
 
-	// Add user's info to $_SESSION, so tah it can be accessed by other pages too
+	// Add user's id and username to $_SESSION, so that it can be accessed by other pages too
 	session_start();
 	$_SESSION['logged_in_user_id'] = $userID;
 	$_SESSION['username'] = $username;
-	$_SESSION['firstName'] = $firstName;
-	$_SESSION['lastName'] = $lastName;
-	$_SESSION['afm'] = $afm;
-	$_SESSION['email'] = $email;
-	$_SESSION['address'] = $address;
-	$_SESSION['birthDate'] = $birthDate;
-	$_SESSION['phoneNumber'] = $phoneNumber;
-	if(isset($_POST['cellphoneNumber']))
-		$_SESSION['cellphoneNumber'] = $cellphoneNumber;
-	if(isset($_POST['children']))
-		$_SESSION['children'] = $children;
-	$_SESSION['userType'] = $userType;
-	if(isset($_POST['profession']))
-		$_SESSION['profession'] = $profession;
-	if(isset($_POST['enterpriseName']))
-		$_SESSION['enterpriseName'] = $enterpriseName;
-	if(isset($_POST['enterpriseAddress']))
-		$_SESSION['enterpriseAddress'] = $enterpriseAddress;
-	if(isset($_POST['enterpriseStatus']))
-		$_SESSION['enterpriseStatus'] = $enterpriseStatus;
-	if(isset($_POST['enterprise']))
-		$_SESSION['enterpriseID'] = intval($enterprise);
-	if(isset($_POST['enterpriseNumber']))
-		$_SESSION['enterpriseNumber'] = $enterpriseNumber;
-	if(isset($_POST['fund']))
-		$_SESSION['fund'] = $fund;
 
 	// Redirect
 	header('Location: ../registration_success.php');

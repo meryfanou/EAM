@@ -9,14 +9,26 @@
 
 	session_start();
 
-	// If the employer made a form about employee's status during covid
+	// If a form was submitted (exapostasews, anastolh, eidikou skopou)
 	if($_SERVER["REQUEST_METHOD"] == "POST"){
-		// Get employee's info
-		$employee = $_POST['employee'];
-		$duringCovid = $_POST['duringCovid'] . " από τις " . $_POST['begin_date_4'];
+		// If the employer made a form about employee's status during covid
+		if(isset($_POST['employee'])){
+			// Get employee's info
+			$employee = $_POST['employee'];
+			$duringCovid = $_POST['duringCovid'] . " από " . $_POST['begin_date_4'];
 
-		$query = "UPDATE `Users` SET duringCovid='$duringCovid' WHERE userID='$employee'";
-		$conn->query($query);
+			$query = "UPDATE `Users` SET duringCovid='$duringCovid' WHERE userID='$employee'";
+			$conn->query($query);
+		}
+		elseif(isset($_POST['onLeave'])){
+			$employee = $_SESSION['logged_in_user_id'];
+			$onLeave = $_POST['onLeave'];
+			$onLeaveFrom = $_POST['begin_date_2'];
+			$onLeaveTo = $_POST['end_date_2'];
+
+			$query = "UPDATE `Users` SET onLeave='$onLeave',onLeaveFrom='$onLeaveFrom',onLeaveTo='$onLeaveTo' WHERE userID='$employee'";
+			$conn->query($query);
+		}
 	}
 	// If the employer wants to accept an employee's request
 	else{

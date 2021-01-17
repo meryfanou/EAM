@@ -1,4 +1,4 @@
-<!-- exapostasews.php -->
+<!-- anastolh.php -->
 <?php include './header.php' ?>
 
 <link rel="stylesheet" href="./stylesheets/form.css">
@@ -12,7 +12,7 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
         <li class="breadcrumb-item"><a href="user-profile.php">Προφίλ</a></li>
-        <li class="breadcrumb-item">Δήλωση εξ' αποστάσεως εργασίας</li>
+        <li class="breadcrumb-item">Δήλωση αναστολής εργασίας</li>
     </ol>
     </nav>
 </div>
@@ -111,7 +111,7 @@
         <!-- Hidden field - keep employee's id in db -->
         <input type="hidden" name="employee" value="<?php echo $_SESSION['update_employee']; ?>">
         <!-- Hidden field - keep employee's status during covid -->
-        <input type="hidden" name="duringCovid" value="Εξ αποστάσεως εργασία">
+        <input type="hidden" name="duringCovid" value="Σε αναστολή">
 
         <!-- First form page -->
         <fieldset id="fieldset1">
@@ -708,13 +708,13 @@
             <!--  begin date -->
             <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;"> 
-                        <label for="begin_date" class="form-control-label">Ημερομηνία Έναρξης Εξ' Αποστάσεως Εργασίας *</label>
+                        <label for="begin_date" class="form-control-label">Ημερομηνία Έναρξης Αναστολής Εργασίας *</label>
                         <input type="date" name="begin_date_4" class="form-control" id="begin_date_4"  data-error="Υποχρεωτικό πεδίο"required> 
                         <div class="help-block with-errors"></div>
                 
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
-                        <div class="fas fa-question-circle" title="Η ημερομηνία έναρξης της εξ' αποστάσεως εργασίας"> </div> 
+                        <div class="fas fa-question-circle" title="Η ημερομηνία έναρξης της αναστολής εργασίας"> </div> 
                         </div>
             </div><br>
             <!-- wromisthio-->

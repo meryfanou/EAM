@@ -121,6 +121,28 @@
                         <div class="fas fa-question-circle" title="Π.χ. Επιδαύρου 46"> </div> 
                     </div>
                 </div><br>
+                <!-- dhmos -->
+                <div class="form-group" style="display: table-row;">
+                    <div style="display: table-cell;overflow: auto;">
+                        <label for="municipality" class="form-control-label">Δήμος *</label>
+                        <input name="municipality" type="text" class="form-control" id="municipality" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div style="display: table-cell;padding-left: 20px"><br><p></p>
+                        <div class="fas fa-question-circle" title="Π.χ. Πειραιάς"> </div> 
+                    </div>
+                </div><br>
+                <!-- postal code -->
+                <div class="form-group" style="display: table-row;">
+                    <div style="display: table-cell;overflow: auto;">
+                        <label for="pc" class="form-control-label">Τ.Κ. *</label>
+                        <input name="pc" type="text" class="form-control" id="pc" data-error="Ο Τ.Κ. δεν είναι έγκυρος" pattern="^[0-9]{5}" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div style="display: table-cell;padding-left: 20px"><br><p></p>
+                        <div class="fas fa-question-circle" title="Ταχυδρομικός Κώδικας: 5 ψηφία"> </div> 
+                    </div>
+                </div><br>
                 <!-- birth date -->
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
@@ -197,6 +219,17 @@
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
+                <!-- AME for employer only (required) -->
+                <div class="form-group" id="ame" style="display: none;">
+                    <div style="display: table-cell;overflow: auto;">
+                        <br><label for="ame_inp" class="form-control-label">Α.Μ.Ε. *</label><br>
+                        <input name="ame" type="text" class="form-control" id="ame_inp" data-error="Το Α.Μ.Ε. δεν είναι έγκυρο" pattern="^[0-9]{10}">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div style="display: table-cell;padding-left: 20px"><br><p></p>
+                        <br><div class="fas fa-question-circle" title="Αριθμός Μητρώου Εργοδότη: 10 ψηφία"> </div> 
+                    </div>
+                </div>
                 <!-- Enterprise for employer -->
                 <div class="form-group" id="employerEnterprise" style="display: none;">
                     <div style="display: table-cell;overflow: auto;">
@@ -204,7 +237,7 @@
                         <hr style="border-top: 1px solid #2C3E50; width: 80%;">
                     </div>
                 </div>
-                <!-- The emplyer should give their enterprise's name (required) -->
+                <!-- The emplyer should give the enterprise's name (required) -->
                 <div class="form-group" id="enterpriseName" style="display: none;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="enterpriseName_inp" class="form-control-label">Όνομα Επιχείρησης *</label><br>
@@ -215,7 +248,18 @@
                         <div class="fas fa-question-circle" title="Συμπληρώστε το όνομα της επιχείρησής σας"> </div> 
                     </div>
                 </div>
-                <!-- The emplyer should give their enterprise's address (required) -->
+                <!-- The emplyer should give the enterprise's AFM (required) -->
+                <div class="form-group" id="enterpriseAFM" style="display: none;">
+                    <div style="display: table-cell;overflow: auto;">
+                        <br><label for="enterpriseAFM_inp" class="form-control-label">Α.Φ.Μ. Επιχείρησης *</label><br>
+                        <input name="enterpriseAFM" type="text" class="form-control" id="enterpriseAFM_inp" data-error="Το Α.Φ.Μ. δεν είναι έγκυρο" pattern="^[0-9]{9}">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div style="display: table-cell;padding-left: 20px"><br><p></p>
+                        <br><div class="fas fa-question-circle" title="Αριθμός Φορολογικού Μητρώου Επιχείρησης: 9 ψηφία"> </div> 
+                    </div>
+                </div>
+                <!-- The emplyer should give the enterprise's address (required) -->
                 <div class="form-group" id="enterpriseAddress" style="display: none;">
                     <div style="display: table-cell;overflow: auto;">
                         <br><label for="enterpriseAddress_inp" class="form-control-label">Διεύθυνση Επιχείρησης *</label><br>
@@ -226,7 +270,29 @@
                         <br><div class="fas fa-question-circle" title="Π.χ. Επιδαύρου 46"> </div> 
                     </div>
                 </div>
-                <!-- The emplyer can give their enterprise's current status -->
+                <!-- The emplyer should give the enterprise's municipality (required) -->
+                <div class="form-group" id="enterpriseMunicipality" style="display: none;">
+                    <div style="display: table-cell;overflow: auto;">
+                        <br><label for="enterpriseMunicipality_inp" class="form-control-label">Δήμος *</label><br>
+                        <input name="enterpriseMunicipality" type="text" class="form-control" id="enterpriseMunicipality_inp" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div style="display: table-cell;padding-left: 20px"><br><p></p>
+                        <br><div class="fas fa-question-circle" title="Ο δήμος στον οποίο ανήκει η επιχείρησή σας. Π.χ. Πειραιάς"> </div> 
+                    </div>
+                </div>
+                <!-- The emplyer should give the enterprise's postal code (required) -->
+                <div class="form-group" id="enterprisePC" style="display: none;">
+                    <div style="display: table-cell;overflow: auto;">
+                        <br><label for="enterprisePC_inp" class="form-control-label">Τ.Κ. *</label><br>
+                        <input name="enterprisePC" type="text" class="form-control" id="enterprisePC_inp" data-error="Ο Τ.Κ. δεν είναι έγκυρος" pattern="^[0-9]{5}">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div style="display: table-cell;padding-left: 20px"><br><p></p>
+                        <br><div class="fas fa-question-circle" title="Ταχυδρομικός Κώδικας: 5 ψηφία"> </div> 
+                    </div>
+                </div>
+                <!-- The emplyer can give the enterprise's current status -->
                 <div class="form-group" id="enterpriseStatus" style="display: none;">
                     <div style="display: table-cell;overflow: auto;">
                         <br><label for="enterpriseStatus" class="form-control-label">Κατάσταση εν μέσω Covid19</label><br>
@@ -331,15 +397,35 @@
             let enterprise = document.getElementById('employerEnterprise');
             enterprise.setAttribute('style', 'display:table-row');
 
+            let ame = document.getElementById('ame');
+            ame.setAttribute('style', 'display:table-row');
+            let ame_inp = document.getElementById('ame_inp');
+            ame_inp.setAttribute('required', 'required');
+
             let enterpriseName = document.getElementById('enterpriseName');
             enterpriseName.setAttribute('style', 'display:table-row');
             let enterpriseName_inp = document.getElementById('enterpriseName_inp');
             enterpriseName_inp.setAttribute('required', 'required');
 
+            let enterpriseAFM = document.getElementById('enterpriseAFM');
+            enterpriseAFM.setAttribute('style', 'display:table-row');
+            let enterpriseAFM_inp = document.getElementById('enterpriseAFM_inp');
+            enterpriseAFM_inp.setAttribute('required', 'required');
+
             let enterpriseAddress = document.getElementById('enterpriseAddress');
             enterpriseAddress.setAttribute('style', 'display:table-row');
             let enterpriseAddress_inp = document.getElementById('enterpriseAddress_inp');
             enterpriseAddress_inp.setAttribute('required', 'required');
+
+            let enterpriseMunicipality = document.getElementById('enterpriseMunicipality');
+            enterpriseMunicipality.setAttribute('style', 'display:table-row');
+            let enterpriseMunicipality_inp = document.getElementById('enterpriseMunicipality_inp');
+            enterpriseMunicipality_inp.setAttribute('required', 'required');
+
+            let enterprisePC = document.getElementById('enterprisePC');
+            enterprisePC.setAttribute('style', 'display:table-row');
+            let enterprisePC_inp = document.getElementById('enterprisePC_inp');
+            enterprisePC_inp.setAttribute('required', 'required');
 
             let enterpriseStatus = document.getElementById('enterpriseStatus');
             enterpriseStatus.setAttribute('style', 'display:table-row');
@@ -348,16 +434,35 @@
             let enterprise = document.getElementById('employerEnterprise');
             enterprise.setAttribute('style', 'display:none');
 
+            let ame = document.getElementById('ame');
+            ame.setAttribute('style', 'display:none');
+            let ame_inp = document.getElementById('ame_inp');
+            ame_inp.removeAttribute('required');
+
             let enterpriseName = document.getElementById('enterpriseName');
             enterpriseName.setAttribute('style', 'display:none');
             let enterpriseName_inp = document.getElementById('enterpriseName_inp');
             enterpriseName_inp.removeAttribute('required');
+
+            let enterpriseAFM = document.getElementById('enterpriseAFM');
+            enterpriseAFM.setAttribute('style', 'display:none');
+            let enterpriseAFM_inp = document.getElementById('enterpriseAFM_inp');
+            enterpriseAFM_inp.removeAttribute('required');
 
             let enterpriseAddress = document.getElementById('enterpriseAddress');
             enterpriseAddress.setAttribute('style', 'display:none');
             let enterpriseAddress_inp = document.getElementById('enterpriseAddress_inp');
             enterpriseAddress_inp.removeAttribute('required');
 
+            let enterpriseMunicipality = document.getElementById('enterpriseMunicipality');
+            enterpriseMunicipality.setAttribute('style', 'display:none');
+            let enterpriseMunicipality_inp = document.getElementById('enterpriseMunicipality_inp');
+            enterpriseMunicipality_inp.removeAttribute('required');
+
+            let enterprisePC = document.getElementById('enterprisePC');
+            enterprisePC.setAttribute('style', 'display:none');
+            let enterprisePC_inp = document.getElementById('enterprisePC_inp');
+            enterprisePC_inp.removeAttribute('required');
 
             let enterpriseStatus = document.getElementById('enterpriseStatus');
             enterpriseStatus.setAttribute('style', 'display:none');
@@ -417,11 +522,13 @@
                 var formObj3 = document.getElementById('AFM');
                 var formObj4 = document.getElementById('email');
                 var formObj5 = document.getElementById('address');
-                var formObj6 = document.getElementById('birthDate');
-                var formObj7 = document.getElementById('phoneNumber');
-                var formObj8 = document.getElementById('cellphoneNumber');
-                var formObj9 = document.getElementById('children');
-                if(!formObj1.checkValidity() || !formObj2.checkValidity() || !formObj3.checkValidity() || !formObj4.checkValidity() ||  !formObj5.checkValidity() || !formObj6.checkValidity() || !formObj7.checkValidity() || !formObj8.checkValidity() || !formObj9.checkValidity()){
+                var formObj6 = document.getElementById('municipality');
+                var formObj7 = document.getElementById('pc');
+                var formObj8 = document.getElementById('birthDate');
+                var formObj9 = document.getElementById('phoneNumber');
+                var formObj10 = document.getElementById('cellphoneNumber');
+                var formObj11 = document.getElementById('children');
+                if(!formObj1.checkValidity() || !formObj2.checkValidity() || !formObj3.checkValidity() || !formObj4.checkValidity() ||  !formObj5.checkValidity() || !formObj6.checkValidity() || !formObj7.checkValidity() || !formObj8.checkValidity() || !formObj9.checkValidity() || !formObj10.checkValidity() || !formObj11.checkValidity()){
                     // Add bootstrap 4 was-validated classes to trigger validation messages
                     $('#msform').addClass('was-validated');
                     return false;
@@ -430,11 +537,8 @@
             // If this is the third fieldset
             else{
                 var formObj1 = document.getElementById('userType');
-                // var formObj2 = document.getElementById('profession');
-                // var formObj3 = document.getElementById('enterpriseNumber');
-                var formObj4 = document.getElementById('fund');
-                // if(!formObj1.checkValidity() || !formObj2.checkValidity() || !formObj3.checkValidity() || !formObj4.checkValidity()) {
-                if(!formObj1.checkValidity() || !formObj4.checkValidity()) {
+                var formObj2 = document.getElementById('fund');
+                if(!formObj1.checkValidity() || !formObj2.checkValidity()) {
                     // Add bootstrap 4 was-validated classes to trigger validation messages
                     $('#msform').addClass('was-validated');
                     return false;

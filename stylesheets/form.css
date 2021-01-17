@@ -143,6 +143,12 @@ form .list-unstyled li
     content: "\f1ad";
 }
 
+#progressbar #child:before
+{
+    font-family: FontAwesome;
+    content: "\f1ae";
+}
+
 #progressbar li:before
 {
     width: 50px;
