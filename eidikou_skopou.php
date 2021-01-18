@@ -473,8 +473,29 @@
                         <div class="fas fa-question-circle" title="Π.χ. 7ο Γυμνάσιο Αμαρουσίου Αττικής"> </div> 
                     </div>
                 </div><br>
-            <!-- Previous & next buttons -->
-            </div> <input type="button" name="previous" class="previous action-button-previous" value="Προηγούμενο"/> <button type="submit" name="next" class="next action-button">Υποβολή</button>
+            </div>
+
+            <!-- Previous & Trigger modal buttons -->
+            <input type="button" name="previous" class="previous action-button-previous" value="Προηγούμενο"/> <input type="button" data-toggle="modal" data-target="#myModal" class="action-button" value="Υποβολή">
+
+            <!-- Modal -->
+            <div  id="myModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin: 200px 0px 0px 5px " >
+                <div style="background-color: rgba(255, 255, 255, 0.6);" class="modal-header">
+                   
+                    <h3 id="myModalLabel">Επιβεβαίωση</h3>
+                </div>
+                <div style="background-color: rgba(255, 255, 255, 0.6)" class="modal-body">
+                    <form id="myForm" method="post">
+                       <h5>Είστε σίγουροι για τα στοιχεία σας; </h5>
+                    </form>
+                </div>
+                <div style="background-color: rgba(255, 255, 255, 0.6)"class="modal-footer">
+                    <button class='btn btn-danger' data-dismiss='modal' aria-hidden='true'>Άκυρο</button>
+                    <!-- Submit form button -->
+                    <button type="submit" name="next" class="next action-button">Συνέχεια</button>
+                </div>
+            </div>
+
         </fieldset>
     </form>
 </div>

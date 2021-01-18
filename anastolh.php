@@ -594,7 +594,7 @@
                     </div>
                 </div><br>  
                  <!--idiothta-->
-                 <div class="form-group" style="display: table-row">
+                <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;"> 
                         <label for="idiothta" class="form-control-label">Ιδιότητα Μισθωτού*</label><br>
                         <select name="idiothta_4" id="idiothta_4" class="custom-select"data-error="Παρακαλώ επιλέξτε μία ιδιότητα" required>
@@ -606,8 +606,8 @@
                         <div class="help-block with-errors"></div>
                     </div>
                 </div><br>          
-            <!-- Ar.Adeias -->
-            <div class="form-group" style="display: table-row;">
+                <!-- Ar.Adeias -->
+                <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="ar_adeias" class="form-control-label">Αρ. Άδειας Άσκησης Επαγ. Δραστηριότητας *</label>
                         <input name="ar_adeias_4" type="text" class="form-control" id="ar_adeias_4" data-error="Υποχρεωτικό πεδίο (μόνο ψηφία)" pattern="^[0-9]*$" required>
@@ -616,9 +616,9 @@
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="Ειδικότητα - Αριθμός Άδειας Άσκησης Επαγγελματικής Δραστηριότητας Μισθωτού"> </div> 
                     </div>
-            </div><br>  
-            <!-- proslhpshdate -->
-            <div class="form-group" style="display: table-row">
+                </div><br>  
+                <!-- proslhpshdate -->
+                <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;"> 
                         <label for="date" class="form-control-label">Ημερομηνία Πρόσληψης *</label>
                         <input type="date" name="pros_date_4" class="form-control" id="pros_date_4"  data-error="Παρακαλώ δώστε μία έγκυρη ημερομηνία"required> 
@@ -628,9 +628,9 @@
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="Η ημερομηνία πρόσληψής σας"> </div> 
                         </div>
-            </div><br>
-            <!-- proupologismos -->
-            <div class="form-group" style="display: table-row;">
+                </div><br>
+                <!-- proupologismos -->
+                <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="proupologismos" class="form-control-label">Προϋπολογισμός (Έτη) *</label>
                         <input name="proupologismos_4" type="text" class="form-control" id="proupologismos_4" data-error="Υποχρεωτικό πεδίο (μόνο ψηφία)" pattern="^[0-9]*$" required>
@@ -639,9 +639,9 @@
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="O προϋπολογισμός"> </div> 
                     </div>
-            </div><br>  
-            <!-- OAED -->
-            <div class="form-group" style="display: table-row;">
+                </div><br>  
+                <!-- OAED -->
+                <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="oaed" class="form-control-label">Αναγγελία Πρόσληψης Ο.Α.Ε.Δ. *</label>
                         <input name="oaed_4" type="text" class="form-control" id="oaed_4" data-error="Υποχρεωτικό πεδίο" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ.,!:]*$" required>
@@ -650,9 +650,9 @@
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="Αναγγελία πρόσληψης μισθωτού"> </div> 
                     </div>
-            </div><br>
-            <!-- ar. bibliariou anhlikou -->
-            <div class="form-group" style="display: table-row;">
+                </div><br>
+                <!-- ar. bibliariou anhlikou -->
+                <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="ar_bibliariou_an" class="form-control-label">Αρ. Βιβλιαρίου Εργασίας Ανηλίκου</label>
                         <input name="ar_bibliariou_an_4" type="text" class="form-control" id="ar_bibliariou_an_4" data-error="Προαιρετικό πεδίο (μόνο ψηφία)" pattern="^[0-9]*$">
@@ -661,9 +661,9 @@
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="O αριθμός βιβλιαρίου εργασίας ανηλίκου (προαιρετικό)"> </div> 
                     </div>
-            </div><br> 
-            <!-- ar. bibliariou alodapou -->
-            <div class="form-group" style="display: table-row;">
+                </div><br> 
+                <!-- ar. bibliariou alodapou -->
+                <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="ar_bibliariou_al" class="form-control-label">Αρ. Βιβλιαρίου Εργασίας Αλλοδαπού</label>
                         <input name="ar_bibliariou_al_4" type="text" class="form-control" id="ar_bibliariou_al_4" data-error="Προαιρετικό πεδίο (μόνο ψηφία)" pattern="^[0-9]*$">
@@ -672,9 +672,9 @@
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="O αριθμός βιβλιαρίου εργασίας αλλοδαπού (προαιρετικό)"> </div> 
                     </div>
-            </div><br> 
-            <!-- wres ebdomadiaiws -->
-            <div class="form-group" style="display: table-row;">
+                </div><br> 
+                <!-- wres ebdomadiaiws -->
+                <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="wres_ebdomadas" class="form-control-label">Ώρες Εργασίας Εβδομαδιαίως *</label>
                         <input name="wres_ebd_4" type="text" class="form-control" id="wres_ebd_4" data-error="Υποχρεωτικό πεδίο (μόνο ψηφία)" pattern="^[0-9]*$" maxlength="3" required>
@@ -683,9 +683,9 @@
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="O αριθμός των ωρών εργασίας ανά εβδομάδα"> </div> 
                     </div>
-            </div><br> 
-            <!-- wres enarkshs lhkshs-->
-            <div class="form-group" style="display: table-row;">
+                </div><br> 
+                <!-- wres enarkshs lhkshs-->
+                <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="begin_end_hours" class="form-control-label">Ώρες Έναρξης-Λήξης & Ημέρες Εργασίας</label>
                         <input name="begin_end_hours_4" type="text" class="form-control" id="begin_end_hours_4" pattern="^[0-9.,:-]*$">
@@ -693,9 +693,9 @@
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="Σε περίπτωση που εναλλάσσεται το εξ αποστάσεως προσωπικό της επιχείρησης, αναγράφονται οι ώρες και οι ημέρες που ο εργαζόμενος παρέχει την εργασία του εξ αποστάσεως"> </div> 
                     </div>
-            </div><br> 
-            <!-- wres dialeimma-->
-            <div class="form-group" style="display: table-row;">
+                </div><br> 
+                <!-- wres dialeimma-->
+                <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="break_hours" class="form-control-label">Ώρες Διαλείμματος - Διακοπής Εργασίας *</label>
                         <input name="break_hours_4" type="text" class="form-control" id="break_hours_4" data-error="Υποχρεωτικό πεδίο (διάστηματα ωρών)" pattern="^[0-9.,:-]*$" required>
@@ -704,21 +704,20 @@
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="Διάστηματα ωρών διαλείμματος - διακοπής εργασίας"> </div> 
                     </div>
-            </div><br> 
-            <!--  begin date -->
-            <div class="form-group" style="display: table-row">
+                </div><br> 
+                <!--  begin date -->
+                <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;"> 
                         <label for="begin_date" class="form-control-label">Ημερομηνία Έναρξης Αναστολής Εργασίας *</label>
                         <input type="date" name="begin_date_4" class="form-control" id="begin_date_4"  data-error="Υποχρεωτικό πεδίο"required> 
                         <div class="help-block with-errors"></div>
-                
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="Η ημερομηνία έναρξης της αναστολής εργασίας"> </div> 
                         </div>
-            </div><br>
-            <!-- wromisthio-->
-            <div class="form-group" style="display: table-row;">
+                </div><br>
+                <!-- wromisthio-->
+                <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="wage_hours" class="form-control-label">Ωρομίσθιο (&euro;) *</label>
                         <input name="wage_hours_4" type="text" class="form-control" id="wage_hours_4" data-error="Υποχρεωτικό πεδίο (μόνο ψηφία)" pattern="^[0-9]*$" required>
@@ -727,9 +726,9 @@
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="Χρήματα ανά Ώρα εργασίας"> </div> 
                     </div>
-            </div><br> 
-            <!-- meiktes apodoxes-->
-            <div class="form-group" style="display: table-row;">
+                </div><br> 
+                <!-- meiktes apodoxes-->
+                <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="meiktes" class="form-control-label">Μεικτές Αποδοχές (&euro;) *</label>
                         <input name="meiktes_4" type="text" class="form-control" id="meiktes_4" data-error="Υποχρεωτικό πεδίο (μόνο ψηφία)" pattern="^[0-9]*$" required>
@@ -738,9 +737,9 @@
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="Μεικτές αποδοχές και Εργοδοτικές εισφορές = Καθαρές πληρωτέες αποδοχές + Φ.Μ.Υ. + Εισφορά αλληλεγγύης + Συνολικές ασφαλιστικές εισφορές προς απόδοση"> </div> 
                     </div>
-            </div><br> 
-            <!-- topos paroxhs ergasias-->
-            <div class="form-group" style="display: table-row;">
+                </div><br> 
+                <!-- topos paroxhs ergasias-->
+                <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="topos_ergasias" class="form-control-label">Διεύθυνση Εργασίας Μισθωτού *</label>
                         <input name="topos_ergasias_4" type="text" class="form-control" id="topos_ergasias_4" data-error="Υποχρεωτικό πεδίο" required>
@@ -750,8 +749,29 @@
                         <div class="fas fa-question-circle" title="Π.χ. Επιδαύρου 46 Αθήνα Αττική Ελλάδα"> </div> 
                     </div>
                 </div><br>
-            <!-- Previous & next buttons -->
-            </div> <input type="button" name="previous" class="previous action-button-previous" value="Προηγούμενο"/> <button type="submit" name="next" class="next action-button">Υποβολή</button>
+            </div>
+
+            <!-- Previous & Trigger modal buttons -->
+            <input type="button" name="previous" class="previous action-button-previous" value="Προηγούμενο"/> <input type="button" data-toggle="modal" data-target="#myModal" class="action-button" value="Υποβολή">
+
+            <!-- Modal -->
+            <div  id="myModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin: 200px 0px 0px 5px " >
+                <div style="background-color: rgba(255, 255, 255, 0.6);" class="modal-header">
+                   
+                    <h3 id="myModalLabel">Επιβεβαίωση</h3>
+                </div>
+                <div style="background-color: rgba(255, 255, 255, 0.6)" class="modal-body">
+                    <form id="myForm" method="post">
+                       <h5>Είστε σίγουροι για τα στοιχεία σας; </h5>
+                    </form>
+                </div>
+                <div style="background-color: rgba(255, 255, 255, 0.6)"class="modal-footer">
+                    <button class='btn btn-danger' data-dismiss='modal' aria-hidden='true'>Άκυρο</button>
+                    <!-- Submit form button -->
+                    <button type="submit" name="next" class="next action-button">Συνέχεια</button>
+                </div>
+            </div>
+
         </fieldset>
     </form>
 </div>
