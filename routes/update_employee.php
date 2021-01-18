@@ -37,34 +37,50 @@
 		// Disconnect from db
 		$conn->close();
 
+		if(isset($_SESSION['undo_form']))
+			unset($_SESSION['undo_form']);
+
 		// Redirect
 		header('Location: ../forms/form_success.php');
 		exit();
 	}
-	// If the employer wants to accept an employee's request
 	else{
+		// If the employer wants to undo an employee's form (arsh exapostasews / anastolhs ergasias)
 		$employee = $_SESSION['update_employee'];
 		unset($_SESSION['update_employee']);
 
-		// Get employee from db
-		$query = "SELECT * FROM `Users` WHERE userID='$employee'";
-		$result = $conn->query($query);
-		if(!$result) die($conn->connect_error);
+		if(isset($_SESSION['undo_form'])){
+			unset($_SESSION['undo_form']);
 
-		// Accept employee's request
-		$result->data_seek(0);
-		$request = $result->fetch_assoc()['onLeave'];
-		if($request == "Έγινε αίτημα για κανονική άδεια")
-			$onLeave = "Σε κανονική άδεια";
-		else if($request == "Έγινε αίτημα για αναρρωτική άδεια")
-			$onLeave = "Σε αναρρωτική άδεια";
-		else if($request == "Έγινε αίτημα για άδεια άνευ αποδοχών")
-			$onLeave = "Σε άδεια άνευ αποδοχών";
-		else if($request == "Έγινε αίτημα για άδεια ειδικού σκοπού")
-			$onLeave = "Σε άδεια ειδικού σκοπού";
+			$duringCovid = "Δια ζώσης εργασία";
+			$query = "UPDATE `Users` SET duringCovid='$duringCovid' WHERE userID='$employee'";
+			$conn->query($query);
+		}
+		// If the employer wants to accept an employee's request
+		else{
 
-		$query = "UPDATE `Users` SET onLeave='$onLeave' WHERE userID='$employee'";
-		$conn->query($query);
+			// Get employee from db
+			$query = "SELECT * FROM `Users` WHERE userID='$employee'";
+			$result = $conn->query($query);
+			if(!$result) die($conn->connect_error);
+
+			// Accept employee's request
+			$result->data_seek(0);
+			$request = $result->fetch_assoc()['onLeave'];
+
+			if($request == "Έγινε αίτημα για κανονική άδεια")
+				$onLeave = "Σε κανονική άδεια";
+			else if($request == "Έγινε αίτημα για αναρρωτική άδεια")
+				$onLeave = "Σε αναρρωτική άδεια";
+			else if($request == "Έγινε αίτημα για άδεια άνευ αποδοχών")
+				$onLeave = "Σε άδεια άνευ αποδοχών";
+			else if($request == "Έγινε αίτημα για άδεια ειδικού σκοπού")
+				$onLeave = "Σε άδεια ειδικού σκοπού";
+
+			$query = "UPDATE `Users` SET onLeave='$onLeave' WHERE userID='$employee'";
+			$conn->query($query);
+
+		}
 
 		$_SESSION['updated_employee'] = 1;
 

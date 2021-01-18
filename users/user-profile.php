@@ -253,13 +253,17 @@
 												<button class="action-button" style="margin-left:5%">Εξ' αποστάσεως εργασία</button></a>
 											<a href="../forms/anastolh.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Αναστολή εργασίας</button></a>
-										<?php } else if(!strncmp($employee['duringCovid'],"Εξ αποστάσεως εργασία",21)){ ?>
-											<a href="../info/default.php" id="msform">
+										<?php } else if(!strncmp($employee['duringCovid'],"Εξ αποστάσεως εργασία",21)){
+											$_SESSION['undo_form'] = 1;
+										?>
+											<a href="../routes/update_employee.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Δια ζώσης εργασία</button></a>
 											<a href="../forms/anastolh.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Αναστολή εργασίας</button></a>
-										<?php } else if(!strncmp($employee['duringCovid'],"Σε αναστολή",11)){ ?>
-											<a href="../info/default.php" id="msform">
+										<?php } else if(!strncmp($employee['duringCovid'],"Σε αναστολή",11)){
+											$_SESSION['undo_form'] = 1;
+										?>
+											<a href="../routes/update_employee.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Δια ζώσης εργασία</button></a>
 											<a href="../forms/exapostasews.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Εξ' αποστάσεως εργασία</button></a>

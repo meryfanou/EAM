@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jan 18, 2021 at 02:54 AM
+-- Generation Time: Jan 18, 2021 at 01:13 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.0
 
@@ -18,11 +18,11 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ypourgeio_ergasias`
+-- Database: `sdi1700027`
 --
 
-CREATE DATABASE `ypourgeio_ergasias`;
-Use `ypourgeio_ergasias`;
+CREATE DATABASE `sdi1700027`;
+Use `sdi1700027`;
 
 -- --------------------------------------------------------
 
@@ -45,7 +45,7 @@ CREATE TABLE `Enterprises` (
 --
 
 INSERT INTO `Enterprises` (`enterpriseID`, `name`, `AFM`, `address`, `PC`, `municipality`, `duringCovid`) VALUES
-(1, 'MyMarket', '294068392', 'Λ. Πεντέλης 142', 15234, 'Χαλάνδρι', 'Σε λειτουργεία');
+(1, 'MyMarket', '917375937', 'Λ. Πεντέλης 142', 15234, 'Χαλάνδρι', 'Σε λειτουργεία');
 
 -- --------------------------------------------------------
 
@@ -85,8 +85,8 @@ CREATE TABLE `Users` (
 --
 
 INSERT INTO `Users` (`userID`, `username`, `password`, `AFM`, `firstName`, `lastName`, `address`, `PC`, `municipality`, `birthDate`, `email`, `phoneNumber`, `userType`, `profession`, `AME`, `enterpriseID`, `cellphoneNumber`, `enterpriseNumber`, `insuranceFund`, `onLeave`, `onLeaveFrom`, `onLeaveTo`, `duringCovid`, `children`) VALUES
-(1, 'konstantinos', 'Aa123456', '123456789', 'Κωνσταντίνος', 'Θεοδώρου', 'Γεωργίου Λαμπράκη 13', 15121, 'Μαρούσι', '1976-01-07', 'kostas_theod@gmail.com', '2103948206', 'Εργοδότης', 'Διευθυντής καταστήματος Supermarket', '2940238495', 1, '6918204728', '2103929485', 'Τ.Ε.Α.Υ.Ε.Τ. (Ταμείο Επαγγελματικής Ασφάλισης Υπαλλήλων Εμπορίου Τροφίμων)', NULL, NULL, NULL, NULL, ''),
-(2, 'maria_lytra', 'Aa123456', '987654321', 'Μαρία', 'Λύτρα', 'Γιασεμιών 17', 15125, 'Χαλάνδρι', '1983-07-25', 'maria_lytra@yahoo.gr', '2103916482', 'Εργαζόμενος', 'Υπάλληλος σε κατάστημα Supermarket', NULL, 1, '6930283948', '', 'Τ.Ε.Α.Υ.Ε.Τ. (Ταμείο Επαγγελματικής Ασφάλισης Υπαλλήλων Εμπορίου Τροφίμων)', 'Σε άδεια ειδικού σκοπού', '2020-12-15', '2021-01-24', 'Σε αναστολή από 2020-12-17', 'Ναι');
+(1, 'konstantinos', 'Aa123456', '201938592', 'Κωνσταντίνος', 'Θεοδώρου', 'Γεωργίου Λαμπράκη 13', 15121, 'Πεύκη', '1976-01-07', 'kostas_theod@gmail.com', '2103829048', 'Εργοδότης', 'Διευθυντής καταστήματος Supermarket', '1028391724', 1, '6928194028', '2103958372', 'Τ.Ε.Α.Υ.Ε.Τ. (Ταμείο Επαγγελματικής Ασφάλισης Υπαλλήλων Εμπορίου Τροφίμων)', '', NULL, NULL, '', ''),
+(2, 'maria_lytra', 'Aa123456', '391028394', 'Μαρία', 'Λύτρα', 'Γιασεμιών 17', 15125, 'Χαλάνδρι', '1986-07-25', 'maria_lytra@yahoo.gr', '2103829745', 'Εργαζόμενος', 'Υπάλληλος σε κατάστημα Supermarket', '', 1, '6926154736', '', 'Τ.Ε.Α.Υ.Ε.Τ. (Ταμείο Επαγγελματικής Ασφάλισης Υπαλλήλων Εμπορίου Τροφίμων)', 'Δεν έχει γίνει κάποιο αίτημα', NULL, NULL, 'Δια ζώσης εργασία', 'Ναι');
 
 --
 -- Indexes for dumped tables

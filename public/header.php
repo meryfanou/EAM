@@ -129,7 +129,7 @@
 		       			<a class="dropdown-item" href="../info/default.php">ΑΣΦΑΛΕΙΑ & ΥΓΕΙΑ ΣΤΗΝ ΕΡΓΑΣΙΑ</a>
 				        <!-- Border line for large screen -->
 				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
-				        <a class="dropdown-item" href="../info/covid.php">COVID-19 & ΕΠΙΧΕΙΡΗΣΕΙΣ</a>
+				        <a class="dropdown-item" href="../info/covid.php">COVID-19 ΣΤΟ ΧΩΡΟ ΕΡΓΑΣΙΑΣ</a>
 				        <!-- Border line for small screen -->
 					    <hr id="smScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 65%;">
 		   			</div>

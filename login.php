@@ -1,6 +1,6 @@
 <?php // login.php
 	$hn = 'localhost';
-	$db = 'ypourgeio_ergasias';
+	$db = 'sdi1700027';
 	$un = 'root';
 	$pw = '';
 ?>
