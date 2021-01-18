@@ -22,7 +22,7 @@
     $_SESSION['welcome_user'] = -1;
   }
   // If the user just logged out
-  else if(!isset($_SESSION['logged_in_user_id']) && $_SESSION['welcome_user'] == -1){
+  else if(!isset($_SESSION['logged_in_user_id']) && isset($_SESSION['welcome_user']) && $_SESSION['welcome_user'] == -1){
     print "<div class=\"alert\" style=\"background-color: #A0DAA9; border-color:seagreen; color:#264E36;\">";
     print "<strong>Η αποσύνδεση ολοκληρώθηκε με επιτυχία!</strong>";
     print "</div>";

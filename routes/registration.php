@@ -123,6 +123,13 @@
 	$_SESSION['username'] = $username;
 
 	// Redirect
-	header('Location: ../registration_success.php');
+	if(!isset($_SESSION['eidikou_skopou'])){
+		header('Location: ../registration_success.php');
+	}
+	elseif($_SESSION['eidikou_skopou'] == 1){
+		header('Location: ../eidikou_skopou.php');
+		$_SESSION['eidikou_skopou'] = -1;
+	}
+
 	exit();
 ?>

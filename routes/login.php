@@ -23,13 +23,6 @@
 	$user = $conn->query($query);
 	if(!$user) die($conn->error);
 
-	// foreach ($user as $item) {
-	// 	foreach ($item as $key => $value) {
-	// 		print $key . "<br>";
-	// 		print $value . "<br>";
-	// 	}
-	// }
-
 	// Add user's basic info to $_SESSION, so that it can be accessed by other pages too
 	session_start();
 
@@ -45,6 +38,13 @@
 	$conn->close();
 
 	// Redirect
-	header('Location: ../index.php');
+	if(!isset($_SESSION['eidikou_skopou'])){
+		header('Location: ../index.php');
+	}
+	elseif($_SESSION['eidikou_skopou'] == 1){
+		header('Location: ../eidikou_skopou.php');
+		$_SESSION['eidikou_skopou'] = 0;
+	}
+
 	exit();
 ?>

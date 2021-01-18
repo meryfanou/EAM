@@ -17,12 +17,21 @@
 <?php
 
 	// If the user is an employer and has just updated an employee's info, show a message
-	if(isset($_SESSION['updated_employee']) && $_SESSION['updated_employee'] == 1){
+	if(isset($_SESSION['updated_employee']) && ($_SESSION['updated_employee'] == 1)){
 		print "<div class=\"alert\" style=\"background-color: #A0DAA9; border-color:seagreen; color:#264E36;\">";
     	print "<strong>Οι αλλαγές αποθηκεύτηκαν με επιτυχία!</strong>";
     	print "</div>";
 
 	    unset($_SESSION['updated_employee']);
+	}
+
+	// If the user is an employee and has just made a request to the employer(s), show a message
+	if(isset($_SESSION['made_request']) && $_SESSION['made_request'] == 1){
+		print "<div class=\"alert\" style=\"background-color: #A0DAA9; border-color:seagreen; color:#264E36;\">";
+    	print "<strong>Το αίτημά σας υποβλήθηκε με επιτυχία! Ο εργοδότης σας θα ενημερωθεί για αυτό και θα αποφασίσει για την αποδοχή του.</strong>";
+    	print "</div>";
+
+	    unset($_SESSION['made_request']);
 	}
 
 	// If the user has just updated his/her profile, show a message
@@ -266,7 +275,7 @@
 										if($employee['onLeave'] == "Έγινε αίτημα για κανονική άδεια" || $employee['onLeave'] == "Έγινε αίτημα για αναρρωτική άδεια" || $employee['onLeave'] == "Έγινε αίτημα για άδεια άνευ αποδοχών" || $employee['onLeave'] == "Έγινε αίτημα για άδεια ειδικού σκοπού"){
 											$_SESSION['update_employee'] = $employee['userID'];
 										?>
-											<a href="./routes/updated_employee.php" id="msform">
+											<a href="./routes/update_employee.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Αποδοχή Αιτήματος</button></a>
 		                        		<?php } ?>
 									<?php } ?>

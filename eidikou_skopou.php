@@ -11,50 +11,65 @@
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
-        <li class="breadcrumb-item"><a href="user-profile.php">Προφίλ</a></li>
-        <li class="breadcrumb-item">Αίτηση Άδειας ειδικού σκοπού</li>
+        <li class="breadcrumb-item"><a href="#">Covid-19 & Εργαζόμενοι</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Αίτηση Άδειας ειδικού σκοπού</li>
     </ol>
     </nav>
 </div>
 
 <?php 
-   
-    // if(!isset($_SESSION['logged_in_user_id'])){
-    //     print "<div class=\"al  <!-- Last Name -->
-    //     <div class="form-group" style="display: table-row;">
-    //         <div style="display: table-cell;overflow: auto;">
-    //             <label for="lastName" class="form-control-label">Επώνυμο *</label>
-    //             <input name="lastName_4" type="text" class="form-control" id="lastName_4" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$" required>
-    //             <div class="help-block with-errors"></div>
-    //         </div>
-    //     </div><br>
-    //     <!-- First Name -->
-    //     <div class="form-group" style="display: table-row;">
-    //         <div style="display: table-cell;overflow: auto;">
-    //             <label for="firstName" class="form-control-label">Όνομα *</label>
-    //             <input name="firstName_4" type="text" class="form-control" id="firstName_4" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$" required>
-    //             <div class="help-block with-errors"></div>
-    //         </div>
-    //     </div><br>
-    //     <!-- Onoma Patera -->
-    //     <div class="form-group" style="display: table-row;">
-    //         <div style="display: table-cell;overflow: auto;">
-    //             <label for="fatherName" class="form-control-label">Όνομα Πατέρα *</label>
-    //             <input name="fatherName_4" type="text" class="form-control" id="fatherName_4" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$" required>
-    //             <div class="help-block with-errors"></div>
-    //         </div>
-    //     </div><br>
-    //     <!-- Onoma Mhteras -->
-    //     <div class="form-group" style="display: table-row;">
-    //         <div style="display: table-cell;overflow: auto;">
-    //             <label for="motherName" class="form-control-label">Όνομα Μητέρας *</label>
-    //             <input name="motherName_4" type="text" class="form-control" id="motherName_4" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$" required>
-    //             <div class="help-block with-errors"></div>
-    //         </div>
-    //     </div><br>ert\" style=\"background-color:#ECDB54; border-color:#B8860B; color:#B8860B;\">";
-    //     print "<strong>Παρακαλώ </strong><a href=\"./sundesh.php\">συνδεθείτε</a><strong> ή </strong><a href=\"./registration.php\">εγγραφείτε</a><strong> πρώτα ώστε να συμπληρωθούν αυτόματα τα στοιχεία σας, όπου είναι εφικτό.</strong>";
-    //     print "</div>";
-    // }
+
+    // If the user is not logged in, show help message
+    if(!isset($_SESSION['logged_in_user_id'])){
+        print "<div class=\"alert\" style=\"background-color:#ECDB54; border-color:#B8860B; color:#B8860B;\">";
+        print "<strong>Παρακαλώ </strong><a href=\"./sundesh.php\">συνδεθείτε</a><strong> ή </strong><a href=\"./registration.php\">εγγραφείτε</a><strong> πρώτα ώστε να συμπληρωθούν αυτόματα τα στοιχεία σας, όπου είναι εφικτό.</strong>";
+        print "</div>";
+    }
+    else{   // Get user's info from db
+
+        // Connect to database
+        require_once './login.php';
+        $conn = new mysqli($hn,$un,$pw,$db);
+        if($conn->connect_error) die($conn->connect_error);
+
+        // Get user's info from db
+        $userID = $_SESSION['logged_in_user_id'];
+        $query = "SELECT * FROM `Users` WHERE userID='$userID'";
+        $user = $conn->query($query);
+        if(!$user) die($conn->error);
+
+        // Store user's info in array
+        foreach ($user as $item){
+            foreach ($item as $key => $value){
+                // Skip userID and username - already in $_SESSION. Also ignore password
+                if($key == "userID" || $key == "username" || $key == "password") continue;
+                // If key's value is empty, continue
+                if(!$value || $value=='') continue;
+
+                $user_info[$key] = $value;
+            }
+        }
+
+        // Disconnect from db
+        $conn->close();
+    }
+
+    // If the user was not logged in before reaching the form
+    if(isset($_SESSION['eidikou_skopou'])){
+        if($_SESSION['eidikou_skopou'] == 0){
+            print "<div class=\"alert\" style=\"background-color: #A0DAA9; border-color:seagreen; color:#264E36;\">";
+            print "<strong>Καλωσήρθες " . $_SESSION['username'] . "! Η σύνδεσή σου ολοκληρώθηκε με επιτυχία.</strong>";
+            print "</div>";
+        }
+        if($_SESSION['eidikou_skopou'] == -1){
+            print "<div class=\"alert\" style=\"background-color: #A0DAA9; border-color:seagreen; color:#264E36;\">";
+            print "<strong>Καλωσήρθες " . $_SESSION['username'] . "! Η εγγραφή σου ολοκληρώθηκε με επιτυχία.</strong>";
+            print "</div>";
+        }
+
+        unset($_SESSION['eidikou_skopou']);
+    }
+
 ?>
 <br>
 
@@ -64,7 +79,7 @@
 <ul id="progressbar">
     <li class="active" id="personal"><strong>Προσωπικά Στοιχεία</strong></li>
     <li id="employee"><strong>Στοιχεία Μισθωτού</strong></li>
-    <li id="child"><strong>Στοιχεία Τέκνων</strong></li>
+    <li id="child"><strong>Στοιχεία Τέκνου</strong></li>
     <li id="confirm"><strong>Ολοκλήρωση Αίτησης</strong></li>
 </ul>
 
@@ -83,7 +98,10 @@
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="lastName" class="form-control-label">Επώνυμο *</label>
-                        <input name="lastName_1" type="text" class="form-control" id="lastName_1" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$" required>
+                        <input name="lastName_1" type="text" class="form-control" id="lastName_1" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$"
+                        <?php if(isset($_SESSION['logged_in_user_id'])){ ?>
+                            value="<?php echo $user_info['lastName']; ?>"
+                        <?php } ?> required>
                         <div class="help-block with-errors"></div>
                     </div>
                 </div><br>
@@ -91,7 +109,10 @@
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="firstName" class="form-control-label">Όνομα *</label>
-                        <input name="firstName_1" type="text" class="form-control" id="firstName_1" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$" required>
+                        <input name="firstName_1" type="text" class="form-control" id="firstName_1" data-error="Υποχρεωτικό πεδίο (μόνο γράμματα)" pattern="^[A-Za-zΑ-Ωα-ωΆΈΉΊΎΌΏάέήίύόώϊϋΐ]*$"
+                        <?php if(isset($_SESSION['logged_in_user_id'])){ ?>
+                            value="<?php echo $user_info['firstName']; ?>"
+                        <?php } ?> required>
                         <div class="help-block with-errors"></div>
                     </div>
                 </div><br>
@@ -128,7 +149,10 @@
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="birthDate" class="form-control-label">Ημερομηνία Γέννησης *</label>
-                        <input name="birthDate_1" type="date" class="form-control" id="birthDate_1" data-error="Υποχρεωτικό πεδίο" required>
+                        <input name="birthDate_1" type="date" class="form-control" id="birthDate_1" data-error="Υποχρεωτικό πεδίο"
+                        <?php if(isset($_SESSION['logged_in_user_id'])){ ?>
+                            value="<?php echo $user_info['birthDate']; ?>"
+                        <?php } ?> required>
                         <div class="help-block with-errors"></div>
                     </div>
                 </div><br>
@@ -136,7 +160,10 @@
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="phoneNumber" class="form-control-label">Τηλέφωνο Κατοικίας *</label>
-                        <input name="phoneNumber_1" type="text" class="form-control" id="phoneNumber_1" data-error="Παρακαλώ δώστε ένα έγκυρο τηλέφωνο" pattern="^[0-9]{10}" required>
+                        <input name="phoneNumber_1" type="text" class="form-control" id="phoneNumber_1" data-error="Παρακαλώ δώστε ένα έγκυρο τηλέφωνο" pattern="^[0-9]{10}"
+                        <?php if(isset($_SESSION['logged_in_user_id'])){ ?>
+                            value="<?php echo $user_info['phoneNumber']; ?>"
+                        <?php } ?> required>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
@@ -147,7 +174,10 @@
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="cellphoneNumber" class="form-control-label">Κινητό Τηλέφωνο</label>
-                        <input name="cellphoneNumber_1" type="text" class="form-control" id="cellphoneNumber_1" data-error="Παρακαλώ δώστε ένα έγκυρο τηλέφωνο" pattern="^[0-9]{10}">
+                        <input name="cellphoneNumber_1" type="text" class="form-control" id="cellphoneNumber_1" data-error="Παρακαλώ δώστε ένα έγκυρο τηλέφωνο"
+                        <?php if(isset($_SESSION['logged_in_user_id']) && isset($user_info['cellphoneNumber'])){ ?>
+                            value="<?php echo $user_info['cellphoneNumber']; ?>"
+                        <?php } ?> pattern="^[0-9]{10}">
                         <div class="help-block with-errors"></div>
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
@@ -175,7 +205,10 @@
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="AFM" class="form-control-label">Α.Φ.Μ. *</label>
-                        <input name="afm_2" type="text" class="form-control" id="afm_2" data-error="Το Α.Φ.Μ. δεν είναι έγκυρο" pattern="^[0-9]{9}" required>
+                        <input name="afm_2" type="text" class="form-control" id="afm_2" data-error="Το Α.Φ.Μ. δεν είναι έγκυρο" pattern="^[0-9]{9}"
+                        <?php if(isset($_SESSION['logged_in_user_id'])){ ?>
+                            value="<?php echo $user_info['AFM']; ?>"
+                        <?php } ?> required>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>

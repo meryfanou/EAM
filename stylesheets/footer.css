@@ -19,7 +19,7 @@ html, body {
   }
   body {
     margin: 0;
-    /* font: 16px Sans-Serif; */
+     font: 16px Sans-Serif; 
   }
   h1 {
     margin: 0 0 20px 0;

@@ -1,22 +1,9 @@
-<!-- randevu.php -->
+<!-- default.php -->
 <?php include './header.php' ?>
 
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"> -->
 <link rel="stylesheet" href="./stylesheets/form.css">
 <body style="background-color:rgba(198, 198, 236, 0.5)">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
-
-<!-- Breadcrumb -->
-<div class="sticky">
-    <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        
-    </ol>
-    </nav>
-</div>
-<br>
-
         
 <!-- Form body -->
 <div class="container-xxl" id="msform" style="

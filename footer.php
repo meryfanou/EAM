@@ -1,10 +1,5 @@
 <!-- footer.php -->
-<!-- <br><br><br><br><br> -->
-
-<!-- this is changed footer for sticky -->
-<link rel="stylesheet" href="./stylesheets/footer.css">
-<div class="content"></div>
-<!-- this is changed footer for sticky -->
+<br><br><br>
 
 <footer class="text-center text-lg-start" style="background-color: rgba(0, 0, 0, 0.3)">
 <!-- Grid container -->
@@ -67,6 +62,6 @@
     <a class="text-dark" href="https://www.ypakp.gr/">Υπουργείο Εργασίας και Κοινωνικών Υποθέσεων</a>
 </div>
 </footer>
-
 </body>
+
 </html>

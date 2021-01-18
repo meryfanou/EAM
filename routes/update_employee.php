@@ -19,6 +19,8 @@
 
 			$query = "UPDATE `Users` SET duringCovid='$duringCovid' WHERE userID='$employee'";
 			$conn->query($query);
+
+			$_SESSION['updated_employee'] = 1;
 		}
 		elseif(isset($_POST['onLeave'])){
 			$employee = $_SESSION['logged_in_user_id'];
@@ -28,7 +30,16 @@
 
 			$query = "UPDATE `Users` SET onLeave='$onLeave',onLeaveFrom='$onLeaveFrom',onLeaveTo='$onLeaveTo' WHERE userID='$employee'";
 			$conn->query($query);
+
+			$_SESSION['made_request'] = 1;
 		}
+
+		// Disconnect from db
+		$conn->close();
+
+		// Redirect
+		header('Location: ../form_success.php');
+		exit();
 	}
 	// If the employer wants to accept an employee's request
 	else{
@@ -54,15 +65,15 @@
 
 		$query = "UPDATE `Users` SET onLeave='$onLeave' WHERE userID='$employee'";
 		$conn->query($query);
+
+		$_SESSION['updated_employee'] = 1;
+
+		// Disconnect from db
+		$conn->close();
+
+		// Redirect
+		header('Location: ../user-profile.php');
+		exit();
 	}
-
-	// Disconnect from db
-	$conn->close();
-
-	$_SESSION['updated_employee'] = 1;
-
-	// Redirect
-	header('Location: ../user-profile.php');
-	exit();
 
 ?>
