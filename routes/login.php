@@ -1,4 +1,4 @@
-<!-- login.php -->
+<!-- routes/login.php -->
 
 <?php
 
@@ -39,10 +39,10 @@
 
 	// Redirect
 	if(!isset($_SESSION['eidikou_skopou'])){
-		header('Location: ../index.php');
+		header('Location: ../info/index.php');
 	}
 	elseif($_SESSION['eidikou_skopou'] == 1){
-		header('Location: ../eidikou_skopou.php');
+		header('Location: ../forms/eidikou_skopou.php');
 		$_SESSION['eidikou_skopou'] = 0;
 	}
 

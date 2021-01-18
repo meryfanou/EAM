@@ -1,14 +1,14 @@
-<!-- user-profile.php -->
-<?php include './header.php' ?>
+<!-- users/user-profile.php -->
+<?php include '../public/header.php' ?>
 
-<link rel="stylesheet" href="./stylesheets/user-profile.css">
+<link rel="stylesheet" href="../stylesheets/user-profile.css">
 <body style="background-color:rgba(198, 198, 236, 0.5);">
 
 <!-- Breadcrumb -->
 <div class="sticky">
 	<nav aria-label="breadcrumb">
 	  <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
+        <li class="breadcrumb-item"><a href="../info/index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
        	<li class="breadcrumb-item active" aria-current="page">Προφίλ</li>
       </ol>
 	</nav>
@@ -48,7 +48,7 @@
 <?php 	 // Get user's info from db
 
 	// Connect to database
-	require_once './login.php';
+	require_once '../login.php';
 	$conn = new mysqli($hn,$un,$pw,$db);
 	if($conn->connect_error) die($conn->connect_error);
 
@@ -121,7 +121,7 @@
 			<!-- Buttons -->
 			<div class="col-md-5 float-right">
 		    	<a href="./edit_profile.php"><input type="button" class="edit-button btn-sm" value="Επεξεργασία"></a>
-			    <a href="./routes/logout.php"><input type="button" class="logout-button btn-sm" value="Αποσύνδεση"></a>
+			    <a href="../routes/logout.php"><input type="button" class="logout-button btn-sm" value="Αποσύνδεση"></a>
 			</div>
 	    </div>
 		<hr style="border-top: 2px solid rgba(0,0,0,0);">
@@ -193,7 +193,7 @@
    				// If it is an employer
    				if($user_info['userType'] == "Εργοδότης"){ ?>
    					<p style="display: inline-block; line-height: 0.8;"><b style="line-height: 1.3;">Απαλλαγές Ασφαλιστικών Εισφορών λόγω Covid-19: </b><br><br>
-   					<a href="./default.php" id="msform">
+   					<a href="../info/default.php" id="msform">
 						<button class="action-button" style="width:110px; margin:0; margin-left: 25%;">Υπολογισμός</button></a></p>
    				<?php } ?>
    			</div>
@@ -249,19 +249,19 @@
 										<br><p><b>Εν μέσω Covid-19: </b><?php echo $employee['duringCovid']; ?></p>
 										<div style="text-indent:8%;"><b>Δήλωση για: </b></div>
 										<?php if($employee['duringCovid'] == "Δια ζώσης εργασία"){ ?>
-											<a href="./exapostasews.php" id="msform">
+											<a href="../forms/exapostasews.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Εξ' αποστάσεως εργασία</button></a>
-											<a href="./anastolh.php" id="msform">
+											<a href="../forms/anastolh.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Αναστολή εργασίας</button></a>
 										<?php } else if(!strncmp($employee['duringCovid'],"Εξ αποστάσεως εργασία",21)){ ?>
-											<a href="default.php" id="msform">
+											<a href="../info/default.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Δια ζώσης εργασία</button></a>
-											<a href="./anastolh.php" id="msform">
+											<a href="../forms/anastolh.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Αναστολή εργασίας</button></a>
 										<?php } else if(!strncmp($employee['duringCovid'],"Σε αναστολή",11)){ ?>
-											<a href="default.php" id="msform">
+											<a href="../info/default.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Δια ζώσης εργασία</button></a>
-											<a href="./exapostasews.php" id="msform">
+											<a href="../forms/exapostasews.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Εξ' αποστάσεως εργασία</button></a>
 										<?php } ?>
 									<?php }
@@ -275,7 +275,7 @@
 										if($employee['onLeave'] == "Έγινε αίτημα για κανονική άδεια" || $employee['onLeave'] == "Έγινε αίτημα για αναρρωτική άδεια" || $employee['onLeave'] == "Έγινε αίτημα για άδεια άνευ αποδοχών" || $employee['onLeave'] == "Έγινε αίτημα για άδεια ειδικού σκοπού"){
 											$_SESSION['update_employee'] = $employee['userID'];
 										?>
-											<a href="./routes/update_employee.php" id="msform">
+											<a href="../routes/update_employee.php" id="msform">
 												<button class="action-button" style="margin-left:5%">Αποδοχή Αιτήματος</button></a>
 		                        		<?php } ?>
 									<?php } ?>
@@ -298,4 +298,4 @@
 
 </script>
 
-<?php include './footer.php' ?>
+<?php include '../public/footer.php' ?>

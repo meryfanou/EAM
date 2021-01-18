@@ -1,7 +1,7 @@
-<!-- eidikou_skopou.php -->
-<?php include './header.php' ?>
+<!-- forms/eidikou_skopou.php -->
+<?php include '../public/header.php' ?>
 
-<link rel="stylesheet" href="./stylesheets/form.css">
+<link rel="stylesheet" href="../stylesheets/form.css">
 <body style="background-color:rgba(198, 198, 236, 0.5)">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
@@ -10,7 +10,7 @@
 <div class="sticky">
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
+        <li class="breadcrumb-item"><a href="../info/index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
         <li class="breadcrumb-item"><a href="#">Covid-19 & Εργαζόμενοι</a></li>
         <li class="breadcrumb-item active" aria-current="page">Αίτηση Άδειας ειδικού σκοπού</li>
     </ol>
@@ -28,7 +28,7 @@
     else{   // Get user's info from db
 
         // Connect to database
-        require_once './login.php';
+        require_once '../login.php';
         $conn = new mysqli($hn,$un,$pw,$db);
         if($conn->connect_error) die($conn->connect_error);
 
@@ -85,7 +85,7 @@
 
 <!-- Form body -->
 <div class="d-xl-flex">
-    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="./routes/update_employee.php">
+    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="../routes/update_employee.php">
         <!-- Hidden field - keep employee's status during covid -->
         <input type="hidden" name="onLeave" value="Έγινε αίτημα για άδεια ειδικού σκοπού">
 
@@ -635,11 +635,6 @@
             });
         });
 
-        // $('.radio-group .radio').click(function(){
-        //     $(this).parent().find('.radio').removeClass('selected');
-        //     $(this).addClass('selected');
-        // });
-
         $(".submit").click(function(){
             return false;
         })
@@ -649,4 +644,4 @@
 
 
 
-<?php include './footer.php' ?>
+<?php include '../public/footer.php' ?>

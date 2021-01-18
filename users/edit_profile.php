@@ -1,13 +1,14 @@
-<?php include './header.php' ?>
+<!-- users/edit_profile.php -->
+<?php include '../public/header.php' ?>
 
-<link rel="stylesheet" href="./stylesheets/form.css">
+<link rel="stylesheet" href="../stylesheets/form.css">
 <body style="background-color:rgba(198, 198, 236, 0.5);">
 
 <!-- Breadcrumb -->
 <div class="sticky">
 	<nav aria-label="breadcrumb">
 	  <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
+        <li class="breadcrumb-item"><a href="../info/index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
        	<li class="breadcrumb-item active" aria-current="page">Προφίλ</li>
       </ol>
 	</nav>
@@ -16,7 +17,7 @@
 <?php 	 // Get user's info from db
 
 	// Connect to database
-	require_once './login.php';
+	require_once '../login.php';
 	$conn = new mysqli($hn,$un,$pw,$db);
 	if($conn->connect_error) die($conn->connect_error);
 
@@ -76,7 +77,7 @@
 
 <!-- Form body -->
 <div class="d-xl-flex">
-    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="./routes/edit_profile.php">
+    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="../routes/edit_profile.php">
         <!-- First form page -->
         <fieldset id="fieldset1">
             <div class="form-card">
@@ -417,7 +418,7 @@
                         <select name="enterprise" class="custom-select" id="enterprise" data-error="Υποχρεωτικό πεδίο">
                             <?php
                                     // connect to database
-                                    require_once './login.php';
+                                    require_once '../login.php';
                                     $conn = new mysqli($hn,$un,$pw,$db);
                                     if($conn->connect_error) die($conn->connect_error);
                                     // Get eneterpiseID,name for all enterprises in db
@@ -648,11 +649,8 @@
             // If this is the third fieldset
             else{
                 var formObj1 = document.getElementById('userType');
-                // var formObj2 = document.getElementById('profession');
-                // var formObj3 = document.getElementById('enterpriseNumber');
-                var formObj4 = document.getElementById('fund');
-                // if(!formObj1.checkValidity() || !formObj2.checkValidity() || !formObj3.checkValidity() || !formObj4.checkValidity()) {
-                if(!formObj1.checkValidity() || !formObj4.checkValidity()) {
+                var formObj2 = document.getElementById('fund');
+                if(!formObj1.checkValidity() || !formObj2.checkValidity()) {
                     return false;
                 }
             }
@@ -705,11 +703,6 @@
             });
         });
 
-        // $('.radio-group .radio').click(function(){
-        //     $(this).parent().find('.radio').removeClass('selected');
-        //     $(this).addClass('selected');
-        // });
-
         $(".submit").click(function(){
             return false;
         })
@@ -717,4 +710,5 @@
 
 </script>
 
-<?php include './footer.php' ?>
+
+<?php include '../public/footer.php' ?>

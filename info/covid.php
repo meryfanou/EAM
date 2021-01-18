@@ -1,8 +1,8 @@
-<!-- covid.php -->
-<?php include './header.php' ?>
+<!-- info/covid.php -->
+<?php include '../public/header.php' ?>
 
 <!-- <body style="background-color:rgb(198, 198, 236);> -->
-<body style="background-image: url('./images/covidbackground05-2560x1440.jpeg');">
+<body style="background-image: url('../images/covidbackground05-2560x1440.jpeg');">
 
     <!-- Breadcrumb -->
     <div class="sticky">
@@ -59,7 +59,6 @@
                 </ul>
             </div>
         </div>
-    <!-- </div> -->
     
         <div class="card-header" id="headingThree">
             <h5 class="mb-0">
@@ -109,7 +108,6 @@
         <div class="card-header" id="headingThree">
             <h5 class="mb-0">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-controls="collapseThree">
-                <!-- aria-expanded="false" -->
                     <h5><b>Διαχείριση Περιστατικών στο Χώρο Εργασίας</b></h5>
                 </button>
             </h5>
@@ -165,7 +163,6 @@
         <div class="card-header" id="headingThree">
             <h5 class="mb-0">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-controls="collapseThree">
-                <!-- aria-expanded="false" -->
                     <h5><b>Πιθανά Σενάρια και Δράσεις από τους Εργαζομένους</b></h5>
                 </button>
             </h5>
@@ -201,7 +198,7 @@
 <br></br>
 <br></br>
 
-<link rel="stylesheet" href="./stylesheets/footer.css">
+<link rel="stylesheet" href="../stylesheets/footer.css">
 <div class="content"></div>
 
-<?php include './footer.php' ?>
+<?php include '../public/footer.php' ?>

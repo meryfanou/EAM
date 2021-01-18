@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jan 15, 2021 at 04:33 PM
+-- Generation Time: Jan 18, 2021 at 02:54 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.0
 
@@ -21,6 +21,9 @@ SET time_zone = "+00:00";
 -- Database: `ypourgeio_ergasias`
 --
 
+CREATE DATABASE `ypourgeio_ergasias`;
+Use `ypourgeio_ergasias`;
+
 -- --------------------------------------------------------
 
 --
@@ -30,7 +33,10 @@ SET time_zone = "+00:00";
 CREATE TABLE `Enterprises` (
   `enterpriseID` int(11) NOT NULL,
   `name` text NOT NULL,
+  `AFM` text NOT NULL,
   `address` text NOT NULL,
+  `PC` int(11) NOT NULL,
+  `municipality` text NOT NULL,
   `duringCovid` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -38,8 +44,8 @@ CREATE TABLE `Enterprises` (
 -- Dumping data for table `Enterprises`
 --
 
-INSERT INTO `Enterprises` (`enterpriseID`, `name`, `address`, `duringCovid`) VALUES
-(1, 'MyMarket', 'Λ. Πεντέλης 142 Χαλάνδρι Αττική Ελλάδα', 'Σε λειτουργεία');
+INSERT INTO `Enterprises` (`enterpriseID`, `name`, `AFM`, `address`, `PC`, `municipality`, `duringCovid`) VALUES
+(1, 'MyMarket', '294068392', 'Λ. Πεντέλης 142', 15234, 'Χαλάνδρι', 'Σε λειτουργεία');
 
 -- --------------------------------------------------------
 
@@ -55,16 +61,21 @@ CREATE TABLE `Users` (
   `firstName` text NOT NULL,
   `lastName` text NOT NULL,
   `address` text NOT NULL,
+  `PC` int(11) NOT NULL,
+  `municipality` text NOT NULL,
   `birthDate` date NOT NULL,
   `email` text NOT NULL,
   `phoneNumber` text NOT NULL,
   `userType` text NOT NULL,
   `profession` text NOT NULL,
+  `AME` text DEFAULT NULL,
   `enterpriseID` int(11) DEFAULT NULL,
   `cellphoneNumber` text DEFAULT NULL,
   `enterpriseNumber` text DEFAULT NULL,
   `insuranceFund` text DEFAULT NULL,
   `onLeave` text DEFAULT NULL,
+  `onLeaveFrom` date DEFAULT NULL,
+  `onLeaveTo` date DEFAULT NULL,
   `duringCovid` text DEFAULT NULL,
   `children` set('Ναι','Όχι') DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -73,9 +84,9 @@ CREATE TABLE `Users` (
 -- Dumping data for table `Users`
 --
 
-INSERT INTO `Users` (`userID`, `username`, `password`, `AFM`, `firstName`, `lastName`, `address`, `birthDate`, `email`, `phoneNumber`, `userType`, `profession`, `enterpriseID`, `cellphoneNumber`, `enterpriseNumber`, `insuranceFund`, `onLeave`, `duringCovid`, `children`) VALUES
-(1, 'konstantinos', 'Aa123456', '123456789', 'Κωνσταντίνος', 'Θεοδώρου', 'Γεωργίου Λαμπράκη 13 Μαρούσι Αττική Ελλάδα', '1976-01-07', 'kostas_theod@gmail.com', '2103948206', 'Εργοδότης', 'Διευθυντής καταστήματος Supermarket', 1, '6918204728', '2103929485', 'Τ.Ε.Α.Υ.Ε.Τ. (Ταμείο Επαγγελματικής Ασφάλισης Υπαλλήλων Εμπορίου Τροφίμων)', NULL, NULL, ''),
-(2, 'maria_lytra', 'Aa123456', '987654321', 'Μαρία', 'Λύτρα', 'Γιασεμιών 17 Χαλάνδρι Αττική Ελλάδα', '1983-07-25', 'maria_lytra@yahoo.gr', '2103916482', 'Εργαζόμενος', 'Υπάλληλος σε κατάστημα Supermarket', 1, '6930283948', '', 'Τ.Ε.Α.Υ.Ε.Τ. (Ταμείο Επαγγελματικής Ασφάλισης Υπαλλήλων Εμπορίου Τροφίμων)', 'Σε κανονική άδεια', 'Σε αναστολή', 'Ναι');
+INSERT INTO `Users` (`userID`, `username`, `password`, `AFM`, `firstName`, `lastName`, `address`, `PC`, `municipality`, `birthDate`, `email`, `phoneNumber`, `userType`, `profession`, `AME`, `enterpriseID`, `cellphoneNumber`, `enterpriseNumber`, `insuranceFund`, `onLeave`, `onLeaveFrom`, `onLeaveTo`, `duringCovid`, `children`) VALUES
+(1, 'konstantinos', 'Aa123456', '123456789', 'Κωνσταντίνος', 'Θεοδώρου', 'Γεωργίου Λαμπράκη 13', 15121, 'Μαρούσι', '1976-01-07', 'kostas_theod@gmail.com', '2103948206', 'Εργοδότης', 'Διευθυντής καταστήματος Supermarket', '2940238495', 1, '6918204728', '2103929485', 'Τ.Ε.Α.Υ.Ε.Τ. (Ταμείο Επαγγελματικής Ασφάλισης Υπαλλήλων Εμπορίου Τροφίμων)', NULL, NULL, NULL, NULL, ''),
+(2, 'maria_lytra', 'Aa123456', '987654321', 'Μαρία', 'Λύτρα', 'Γιασεμιών 17', 15125, 'Χαλάνδρι', '1983-07-25', 'maria_lytra@yahoo.gr', '2103916482', 'Εργαζόμενος', 'Υπάλληλος σε κατάστημα Supermarket', NULL, 1, '6930283948', '', 'Τ.Ε.Α.Υ.Ε.Τ. (Ταμείο Επαγγελματικής Ασφάλισης Υπαλλήλων Εμπορίου Τροφίμων)', 'Σε άδεια ειδικού σκοπού', '2020-12-15', '2021-01-24', 'Σε αναστολή από 2020-12-17', 'Ναι');
 
 --
 -- Indexes for dumped tables

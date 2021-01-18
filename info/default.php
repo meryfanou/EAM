@@ -1,8 +1,8 @@
-<!-- default.php -->
-<?php include './header.php' ?>
+<!-- info/default.php -->
+<?php include '../public/header.php' ?>
 
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"> -->
-<link rel="stylesheet" href="./stylesheets/form.css">
+<link rel="stylesheet" href="../stylesheets/form.css">
 <body style="background-color:rgba(198, 198, 236, 0.5)">
         
 <!-- Form body -->
@@ -14,10 +14,10 @@
 	border: 1px solid rgba(0,0,0,0.6);
 	background-color: rgba(0,0,0,0.15);
 	text-align : center;">
-    <img src="images/wrench.png" alt="Logo" style="width: 250px; border-radius:0%">
+    <img src="../images/wrench.png" alt="Logo" style="width: 250px; border-radius:0%">
     <h2> Η σελίδα αυτά είναι υπό κατασκευή.<br>Παρακαλώ προχωρήστε στην αρχική ή γυρίστε πίσω.</h2>
     <br><br>
-    <a href="index.php"><input type="button" class="action-button" value="Αρχική"></button></a>
+    <a href="./index.php"><input type="button" class="action-button" value="Αρχική"></button></a>
     <input type="button" class="action-button" value="Επιστροφή" onclick="goBack()"></button>
 </div>
 
@@ -29,4 +29,4 @@
     }
 </script>
 
-<?php include './footer.php' ?>
+<?php include '../public/footer.php' ?>

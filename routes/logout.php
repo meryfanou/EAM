@@ -1,4 +1,4 @@
-<!-- logout.php -->
+<!-- routes/logout.php -->
 
 <?php
 	session_start();
@@ -10,6 +10,6 @@
 	}
 
 	// Redirect
-	header('Location: ../index.php');
+	header('Location: ../info/index.php');
 	exit();
 ?>

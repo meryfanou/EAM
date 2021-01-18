@@ -1,4 +1,4 @@
-<!-- update_employee.php -->
+<!-- routes/update_employee.php -->
 
 <?php
 
@@ -38,7 +38,7 @@
 		$conn->close();
 
 		// Redirect
-		header('Location: ../form_success.php');
+		header('Location: ../forms/form_success.php');
 		exit();
 	}
 	// If the employer wants to accept an employee's request
@@ -72,7 +72,7 @@
 		$conn->close();
 
 		// Redirect
-		header('Location: ../user-profile.php');
+		header('Location: ../users/user-profile.php');
 		exit();
 	}
 

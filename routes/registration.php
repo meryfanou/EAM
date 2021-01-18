@@ -1,4 +1,4 @@
-<!-- registration.php -->
+<!-- routes/registration.php -->
 
 <?php
 	// Connect to database
@@ -124,10 +124,10 @@
 
 	// Redirect
 	if(!isset($_SESSION['eidikou_skopou'])){
-		header('Location: ../registration_success.php');
+		header('Location: ../users/registration_success.php');
 	}
 	elseif($_SESSION['eidikou_skopou'] == 1){
-		header('Location: ../eidikou_skopou.php');
+		header('Location: ../forms/eidikou_skopou.php');
 		$_SESSION['eidikou_skopou'] = -1;
 	}
 

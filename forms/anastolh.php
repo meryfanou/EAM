@@ -1,7 +1,7 @@
-<!-- anastolh.php -->
-<?php include './header.php' ?>
+<!-- forms/anastolh.php -->
+<?php include '../public/header.php' ?>
 
-<link rel="stylesheet" href="./stylesheets/form.css">
+<link rel="stylesheet" href="../stylesheets/form.css">
 <body style="background-color:rgba(198, 198, 236, 0.5)">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
@@ -10,8 +10,8 @@
 <div class="sticky">
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
-        <li class="breadcrumb-item"><a href="user-profile.php">Προφίλ</a></li>
+        <li class="breadcrumb-item"><a href="../info/index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
+        <li class="breadcrumb-item"><a href="../users/user-profile.php">Προφίλ</a></li>
         <li class="breadcrumb-item">Δήλωση αναστολής εργασίας</li>
     </ol>
     </nav>
@@ -27,7 +27,7 @@
     else{   // Get user's info from db
 
         // Connect to database
-        require_once './login.php';
+        require_once '../login.php';
         $conn = new mysqli($hn,$un,$pw,$db);
         if($conn->connect_error) die($conn->connect_error);
 
@@ -107,7 +107,7 @@
 </ul>
 <!-- Form body -->
 <div class="d-xl-flex">
-    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="./routes/update_employee.php">
+    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="../routes/update_employee.php">
         <!-- Hidden field - keep employee's id in db -->
         <input type="hidden" name="employee" value="<?php echo $_SESSION['update_employee']; ?>">
         <!-- Hidden field - keep employee's status during covid -->
@@ -848,7 +848,7 @@
                 var formObj10 = document.getElementById('fax_3');
                 var formObj11 = document.getElementById('email_3');
                 var formObj12 = document.getElementById('eidikes_3');
-                // if(!formObj1.checkValidity() || !formObj2.checkValidity() || !formObj3.checkValidity() || !formObj4.checkValidity()) {
+
                 if(!formObj1.checkValidity() || !formObj2.checkValidity()|| !formObj3.checkValidity() || !formObj4.checkValidity() || !formObj5.checkValidity() || !formObj6.checkValidity() || !formObj7.checkValidity() || !formObj8.checkValidity() || !formObj9.checkValidity() || !formObj10.checkValidity() || !formObj11.checkValidity() || !formObj12.checkValidity() ) {
                     // Add bootstrap 4 was-validated classes to trigger validation messages
                     $('#msform').addClass('was-validated');
@@ -883,7 +883,7 @@
                 var formObj24 = document.getElementById('wage_hours_4');
                 var formObj25 = document.getElementById('meiktes_4');
                 var formObj26 = document.getElementById('topos_ergasias_4');
-                // if(!formObj1.checkValidity() || !formObj2.checkValidity() || !formObj3.checkValidity() || !formObj4.checkValidity()) {
+
                 if(!formObj1.checkValidity() || !formObj2.checkValidity()|| !formObj3.checkValidity() || !formObj4.checkValidity() || !formObj5.checkValidity() || !formObj6.checkValidity() || !formObj7.checkValidity() || !formObj8.checkValidity() || !formObj9.checkValidity() || !formObj10.checkValidity() || !formObj11.checkValidity() || !formObj12.checkValidity()|| !formObj13.checkValidity()|| !formObj14.checkValidity()|| !formObj15.checkValidity()|| !formObj16.checkValidity()|| !formObj17.checkValidity()|| !formObj18.checkValidity()|| !formObj19.checkValidity() || !formObj20.checkValidity()|| !formObj21.checkValidity()|| !formObj22.checkValidity()|| !formObj23.checkValidity()|| !formObj24.checkValidity() || !formObj25.checkValidity()|| !formObj26.checkValidity()) {
                     // Add bootstrap 4 was-validated classes to trigger validation messages
                     $('#msform').addClass('was-validated');
@@ -939,11 +939,6 @@
             });
         });
 
-        // $('.radio-group .radio').click(function(){
-        //     $(this).parent().find('.radio').removeClass('selected');
-        //     $(this).addClass('selected');
-        // });
-
         $(".submit").click(function(){
             return false;
         })
@@ -953,4 +948,4 @@
 
 
 
-<?php include './footer.php' ?>
+<?php include '../public/footer.php' ?>

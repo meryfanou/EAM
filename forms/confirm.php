@@ -1,7 +1,7 @@
-<!-- confirm.php -->
-<?php include './header.php' ?>
+<!-- forms/confirm.php -->
+<?php include '../public/header.php' ?>
 
-<link rel="stylesheet" href="./stylesheets/form.css">
+<link rel="stylesheet" href="../stylesheets/form.css">
 <body style="background-color:rgba(198, 198, 236, 0.5)">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
@@ -10,9 +10,8 @@
 <div class="sticky">
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
-        <li class="breadcrumb-item"><a href="epikoinwnia.php">Επικοινωνία</a></li>
-
+        <li class="breadcrumb-item"><a href="../info/index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
+        <li class="breadcrumb-item"><a href="../info/epikoinwnia.php">Επικοινωνία</a></li>
         <li class="breadcrumb-item active" aria-current="page">Κλείστε Ραντεβού</li>
     </ol>
     </nav>
@@ -31,10 +30,10 @@
             </div>
         </div>  
         
-        <a href="index.php"><input type="button" class="action-button" value="Επιστροφή στην Aρχική" style="width: 200px;"></a>
-        <a  href="epikoinwnia.php"><input type="button" class="action-button" value="Επιστροφή στην Eπικοινωνία" style="width: 230px;"></a>
+        <a href="../info/index.php"><input type="button" class="action-button" value="Επιστροφή στην Aρχική" style="width: 200px;"></a>
+        <a  href="../info/epikoinwnia.php"><input type="button" class="action-button" value="Επιστροφή στην Eπικοινωνία" style="width: 230px;"></a>
     </fieldset>
 </div>
 
 
-<?php include './footer.php' ?>
+<?php include '../public/footer.php' ?>

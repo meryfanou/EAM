@@ -1,7 +1,7 @@
-<!-- epikoinwnia.php -->
-<?php include './header.php' ?>
+<!-- info/epikoinwnia.php -->
+<?php include '../public/header.php' ?>
 
-<link rel="stylesheet" href="./stylesheets/form.css">
+<link rel="stylesheet" href="../stylesheets/form.css">
 <body style="background-color:rgba(198, 198, 236, 0.5)">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
@@ -13,7 +13,7 @@
 <div class="sticky">
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
+        <li class="breadcrumb-item"><a href="./index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
         <li class="breadcrumb-item active" aria-current="page">Επικοινωνία</li>
     </ol>
     </nav>
@@ -70,7 +70,7 @@
                         <p><i class="fas fa-phone"></i>&nbsp;213-1516651</p><br>
                     </li>
                     <li>
-                        <a href="" class="text-dark"><i class="fas fa-envelope"></i>&nbsp;pliroforisi-politi@ypakp.gr</a><br>        
+                        <a class="text-dark"><i class="fas fa-envelope"></i>&nbsp;pliroforisi-politi@ypakp.gr</a><br>        
                     </li>
                 </ul>
             </div>        
@@ -96,7 +96,7 @@
                         συμπληρώνοντας την παρακάτω φόρμα:<br>
                     </li>    
                     <li>
-                        <br><a href="randevu.php" class="text-dark"><button type="button" class="btn btn-info">Κλείστε Ραντεβού</button></a>
+                        <br><a href="../forms/randevu.php" class="text-dark"><button type="button" class="btn btn-info">Κλείστε Ραντεβού</button></a>
                     </li>        
                     </ul>
                 </div>                
@@ -133,7 +133,7 @@
 
 <!-- Form body -->
 <div class="d-xl-flex">
-    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="confirm_ep.php">
+    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="../forms/confirm_ep.php">
         <fieldset>
             <h2 style="padding-bottom:20px"> <b>επικοινώνησε μαζί μας!</b> </h2>
             <div class="form-card">
@@ -240,39 +240,8 @@
         // Add bootstrap 4 was-validated classes to trigger validation messages
         vForm.addClass('was-validated');
     });
-
-    
    
 </script>
 
-</body>
 
-<script src="epikoinwnia.js"></script>
-
-
-
-<?php include './footer.php' ?>
-
-
-
-<!-- SYNARTHSH GIA ELEGXO -->
-<!-- // Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-
-        form.classList.add('was-validated')
-      }, false)
-    })
-})() -->
+<?php include '../public/footer.php' ?>

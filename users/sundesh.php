@@ -1,7 +1,7 @@
-<!-- epikoinwnia.php -->
-<?php include './header.php' ?>
+<!-- users/sundesh.php -->
+<?php include '../public/header.php' ?>
 
-<link rel="stylesheet" href="./stylesheets/form.css">
+<link rel="stylesheet" href="../stylesheets/form.css">
 
 <body style="background-color:rgba(198, 198, 236, 0.5)">
 
@@ -11,7 +11,7 @@
 <div class="sticky">
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
+        <li class="breadcrumb-item"><a href="../info/index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
         <li class="breadcrumb-item active" aria-current="page">Σύνδεση</li>
     </ol>
     </nav>
@@ -20,7 +20,7 @@
 
 <!-- Login form -->
 <div class="d-xl-flex">
-    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST"  action="./routes/login.php">
+    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST"  action="../routes/login.php">
         <fieldset>
             <div class="form-card">
                 <h3 class="fs-title">Σύνδεση</h3><br><br>
@@ -48,14 +48,14 @@
                 </div><br>
             <!-- Submit buttons -->
             <button type="submit" class="action-button">Σύνδεση</button>
-            <a href="default.php"><button type="button" class="action-button" style="width: 200px;">Σύνδεση μέσω TAXIS </button></a>
+            <a href="../info/default.php"><button type="button" class="action-button" style="width: 200px;">Σύνδεση μέσω TAXIS </button></a>
         </fieldset>
     </form>
 </div>
 
 
 <div class="d-xl-flex">
-    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST"  action="default.php">
+    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST"  action="../info/default.php">
         <fieldset>
             <h3 class="fs-title">Ξέχασα τον κωδικό μου</h3><br>
             <div class="form-group" style="display: table-row;">
@@ -100,16 +100,7 @@
         vForm.addClass('was-validated');
     });
 
-    
-   
 </script>
 
 
-
-</body>
-
-
-
-
-<?php include './footer.php' ?>
-
+<?php include '../public/footer.php' ?>

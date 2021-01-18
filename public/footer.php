@@ -1,4 +1,4 @@
-<!-- footer.php -->
+<!-- public/footer.php -->
 <br><br><br>
 
 <footer class="text-center text-lg-start" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -32,7 +32,7 @@
 	          		<p><i class="fas fa-map-marker-alt"></i>&nbsp;Σταδίου 29, Αθήνα 105 59</p>
     		    </li>
 	          	<li>
-	            	<a href="default.php" class="text-dark"><i class="fas fa-map"></i>&nbsp;Οδηγίες Πρόσβασης</a>
+	            	<a href="../info/default.php" class="text-dark"><i class="fas fa-map"></i>&nbsp;Οδηγίες Πρόσβασης</a>
     	    	</li>
         	</ul>
       	</div>

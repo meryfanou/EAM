@@ -1,8 +1,8 @@
-<!-- registration.php -->
-<?php include './header.php' ?>
+<!-- users/registration.php -->
+<?php include '../public/header.php' ?>
 
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"> -->
-<link rel="stylesheet" href="./stylesheets/form.css">
+<link rel="stylesheet" href="../stylesheets/form.css">
 <body style="background-color:rgba(198, 198, 236, 0.5)">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
@@ -11,7 +11,7 @@
 <div class="sticky">
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
+        <li class="breadcrumb-item"><a href="../info/index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
         <li class="breadcrumb-item active" aria-current="page">Εγγραφή</li>
     </ol>
     </nav>
@@ -29,7 +29,7 @@
 </ul>
 <!-- Form body -->
 <div class="d-xl-flex">
-    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="./routes/registration.php">
+    <form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST" action="../routes/registration.php">
         <!-- First form page -->
         <fieldset id="fieldset1">
             <div class="form-card">
@@ -316,7 +316,7 @@
                             <option></option>
                             <?php
                                     // connect to database
-                                    require_once './login.php';
+                                    require_once '../login.php';
                                     $conn = new mysqli($hn,$un,$pw,$db);
                                     if($conn->connect_error) die($conn->connect_error);
                                     // Get eneterpiseID,name for all enterprises in db
@@ -593,11 +593,6 @@
             });
         });
 
-        // $('.radio-group .radio').click(function(){
-        //     $(this).parent().find('.radio').removeClass('selected');
-        //     $(this).addClass('selected');
-        // });
-
         $(".submit").click(function(){
             return false;
         })
@@ -607,4 +602,4 @@
 
 
 
-<?php include './footer.php' ?>
+<?php include '../public/footer.php' ?>

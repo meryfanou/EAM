@@ -1,7 +1,7 @@
-<!-- randevu.php -->
-<?php include './header.php' ?>
+<!-- forms/randevu.php -->
+<?php include '../public/header.php' ?>
 
-<link rel="stylesheet" href="./stylesheets/form.css">
+<link rel="stylesheet" href="../stylesheets/form.css">
 <body style="background-color:rgba(198, 198, 236, 0.5)">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
@@ -10,9 +10,8 @@
 <div class="sticky">
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
-        <li class="breadcrumb-item"><a href="epikoinwnia.php">Επικοινωνία</a></li>
-
+        <li class="breadcrumb-item"><a href="../info/index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
+        <li class="breadcrumb-item"><a href="../info/epikoinwnia.php">Επικοινωνία</a></li>
         <li class="breadcrumb-item active" aria-current="page">Κλείστε Ραντεβού</li>
     </ol>
     </nav>
@@ -22,7 +21,7 @@
         
 <!-- Form body -->
 <div class="d-xl-flex">
-<form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST"  action="confirm.php">
+<form role="form"  data-toggle="validator" class="flex-body" id="msform" method="POST"  action="./confirm.php">
         <!-- First form page -->
         <fieldset id="fieldset1">
             <div class="form-card">
@@ -35,7 +34,6 @@
                         <div class="help-block with-errors"></div>
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Tο επώνυμο πρέπει να αποτελείται από τουλάχιστον 4 χαρακτήρες"> </div> </div>
-
                 </div><br>
                  <!-- Last Name -->
                  <div class="form-group" style="display: table-row;">
@@ -45,9 +43,7 @@
                         <div class="help-block with-errors"></div>
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p> <div class="fas fa-question-circle" title="Tο επώνυμο πρέπει να αποτελείται από τουλάχιστον 4 χαρακτήρες"> </div>  </div>
-
                 </div><br>
-
                  <!-- e-mail -->
                  <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
@@ -59,7 +55,6 @@
                         <div class="fas fa-question-circle" title="Π.χ. name@example.gr"> </div> 
                     </div>
                 </div><br>
-
                 <!-- phone number -->
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
@@ -75,41 +70,35 @@
                 <div class="form-group" style="display: table-row;">
                     <div style="display: table-cell;overflow: auto;">
                         <label for="cellphoneNumber" class="form-control-label">Κινητό Τηλέφωνο</label>
-                        <input name="cellphoneNumber" type="text" class="form-control" id="cellphoneNumber" data-error="Παρακαλώ δώστε ένα έγκυρο τηλέφωνο" pattern="^[0-9]{10}"required >
+                        <input name="cellphoneNumber" type="text" class="form-control" id="cellphoneNumber" data-error="Παρακαλώ δώστε ένα έγκυρο τηλέφωνο" pattern="^[0-9]{10}">
                         <div class="help-block with-errors"></div>
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="10 ψήφιος αριθμός που ξεκινά με 69"> </div> 
                     </div>
                 </div><br>
-
                 <!-- date -->
                 <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;"> 
                         <label for="date" class="form-control-label">Ημερομηνία *</label>
                         <input type="date" name="date" class="form-control" id="date"  data-error="Παρακαλώ δώστε μία έγκυρη ημερομηνία"required> 
                         <div class="help-block with-errors"></div>
-                
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="Η ημερομηνία πρέπει να είναι μετά την σημερινή"> </div> 
                         </div>
                 </div><br>
-         
-
                 <!-- time -->
                 <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;"> 
                         <label for="time" class="form-control-label">Ώρα *</label>
-                        <input type="time" class="form-control" id="time"  data-error="Παρακαλώ δώστε μία έγκυρη ώρα"pattern="[0-9 _:]"> 
+                        <input type="time" class="form-control" id="time"  data-error="Παρακαλώ δώστε μία έγκυρη ώρα"pattern="[0-9 _:]">
                         <div class="help-block with-errors"></div>
-                
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="Η ώρα πρέπει να είναι συμβατή με τα ωράρια του υπουργείου"> </div> 
                         </div>
                 </div><br>
-
                 <!--selection-->
                 <div class="form-group" style="display: table-row">
                     <div style="display: table-cell;overflow: auto;"> 
@@ -124,13 +113,11 @@
                         <option>Άλλο</option>
                         </select>
                         <div class="help-block with-errors"></div>
-                
                     </div>
                     <div style="display: table-cell;padding-left: 20px"><br><p></p>
                         <div class="fas fa-question-circle" title="Πρέπει να επιλέξετε ένα τμήμα του υπουργείου"> </div> 
                         </div>
                 </div><br>
-
                 <!--message-->
                 <div class="form-group" style="display: table-row">
                    <div style="display: table-cell;overflow: auto;">
@@ -146,7 +133,6 @@
             <!-- Trigger modal button -->
             <input type="button" data-toggle="modal" data-target="#myModal" class="action-button" value="Υποβολή">
 
-       
 
             <!-- Modal -->
             <div  id="myModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin: 200px 0px 0px 5px " >
@@ -165,10 +151,8 @@
                     <button type="submit" class="action-button">Σύνεχεια</button>
                 </div>
             </div>
+
         </fieldset>
-      
-
-
     </form>
 </div>
 
@@ -191,10 +175,8 @@
         vForm.addClass('was-validated');
     });
 
-    
-   
 </script>
 
 
 
-<?php include './footer.php' ?>
+<?php include '../public/footer.php' ?>

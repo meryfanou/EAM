@@ -1,4 +1,4 @@
-<!-- edit_profile.php -->
+<!-- routes/edit_profile.php -->
 
 <?php
 	// Connect to database
@@ -74,7 +74,7 @@
 	$_SESSION['updated_profile'] = 1;
 
 	// Redirect
-	header('Location: ../user-profile.php');
+	header('Location: ../users/user-profile.php');
 	exit();
 
 ?>

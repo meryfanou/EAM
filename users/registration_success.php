@@ -1,14 +1,14 @@
-<!-- registration_success.php -->
-<?php include './header.php' ?>
+<!-- users/registration_success.php -->
+<?php include '../public/header.php' ?>
 
-<link rel="stylesheet" href="./stylesheets/form.css">
+<link rel="stylesheet" href="../stylesheets/form.css">
 <body style="background-color:rgba(198, 198, 236, 0.5)">
 
 <!-- Breadcrumb -->
 <div class="sticky">
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
+        <li class="breadcrumb-item"><a href="../info/index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
         <li class="breadcrumb-item active" aria-current="page">Εγγραφή</li>
     </ol>
     </nav>
@@ -27,7 +27,7 @@
                 <div class="col text-center">
                     <h5>Η εγγραφή σας ολοκληρώθηκε με επιτυχία</h5>
                     <!-- Profile -->
-                    <a href="user-profile.php" id="msform">
+                    <a href="./user-profile.php" id="msform">
                     	<input type="button" class="action-button" value="Προβολή Προφίλ" style="width: 135px;">
                     </a>
                 </div>
@@ -37,4 +37,4 @@
 </div>
 
 
-<?php include './footer.php' ?>
+<?php include '../public/footer.php' ?>
