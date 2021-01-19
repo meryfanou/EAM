@@ -109,7 +109,7 @@
 		       			<a class="dropdown-item" href="../info/default.php">ΓΙΑ ΝΕΟΥΣ ΕΡΓΑΖΟΜΕΝΟΥΣ</a>
 				        <!-- Border line for large screen -->
 				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
-				        <a class="dropdown-item" href="#">COVID-19 & ΕΝΑΛΛΑΚΤΙΚΟΙ ΤΡΟΠΟΙ ΕΡΓΑΣΙΑΣ</a>
+				        <a class="dropdown-item" href="../info/covid_ergazomenoi.php">COVID-19 & ΕΝΑΛΛΑΚΤΙΚΟΙ ΤΡΟΠΟΙ ΕΡΓΑΣΙΑΣ</a>
 				        <!-- Border line for small screen -->
 					    <hr id="smScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.5); width: 55%;">
 		   			</div>
@@ -168,7 +168,7 @@
 				        <a class="dropdown-item" href="../info/covid.php">ΣΤΟ ΧΩΡΟ ΕΡΓΑΣΙΑΣ: ΟΔΗΓΙΕΣ & ΜΕΤΡΑ ΠΡΟΛΗΨΗΣ</a>
 				        <!-- Border line for large screen -->
 				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
-		       			<a class="dropdown-item" href="#">ΕΝΑΛΛΑΚΤΙΚΟΙ ΤΡΟΠΟΙ ΕΡΓΑΣΙΑΣ & ΕΙΔΙΚΕΣ ΑΔΕΙΕΣ</a>
+		       			<a class="dropdown-item" href="../info/covid_ergazomenoi.php">ΕΝΑΛΛΑΚΤΙΚΟΙ ΤΡΟΠΟΙ ΕΡΓΑΣΙΑΣ & ΕΙΔΙΚΕΣ ΑΔΕΙΕΣ</a>
 				        <!-- Border line for large screen -->
 				        <hr id="lgScreen" style="border-top: 2px solid rgba(0, 0, 0, 0.6); width: 80%;">
 				        <a class="dropdown-item" href="../info/default.php">ΕΠΙΧΕΙΡΗΣΕΙΣ: ΕΠΙΔΟΜΑΤΑ / ΤΡΟΠΟΙ ΛΕΙΤΟΥΡΓΙΑΣ</a>

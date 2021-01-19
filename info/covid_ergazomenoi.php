@@ -80,8 +80,13 @@
                     <li>
                         <b> Αν είστε δικαιούχοι πατήστε εδώ: </b>
 
-                        <a href="https://www.youtube.com/?gl=GR" class="btn btn-light btn-lg active" role="button" aria-disabled="true">Αίτηση Άδειας Ειδικού Σκοπού</a>
-
+                        <!-- If the user is not logged in -->
+                        <?php if(!isset($_SESSION['logged_in_user_id'])){
+                            $_SESSION['eidikou_skopou'] = 1; ?>
+                            <a href="../users/login_first.php" class="btn btn-light btn-lg active" role="button" aria-disabled="true" style="background-color: rgb(0,139,139); color: white;">Αίτηση Άδειας Ειδικού Σκοπού</a>
+                        <?php } else { ?>
+                            <a href="../forms/eidikou_skopou.php" class="btn btn-light btn-lg active" role="button" aria-disabled="true" style="background-color: rgb(0,139,139); color: white;">Αίτηση Άδειας Ειδικού Σκοπού</a>
+                        <?php } ?>
                     </li>
                 </ol>
             </div>
@@ -184,7 +189,7 @@
       <hr style="border-top: 1px solid rgba(0, 0, 0, 0.3); width: 95%;">
       <a href="./default.php"><p><span style="font-weight:bold;">Σχέδιο Αναστολής Εργασίας: </span>Όσοι προσλήφθηκαν πρόσφατα και δεν πληρούν τις ασφαλιστικές προϋποθέσεις θα πάρουν ανεργιακό επίδομα στο πλαίσιο Σχεδίου Αναστολής;</p></a>
       <hr style="border-top: 1px solid rgba(0, 0, 0, 0.3); width: 95%;">
-      <a href="./default.php" style="text-decoration:none;"><input type="button" class="show-button" value="Προβολή Όλων"></a>
+      <a href="./default.php" style="text-decoration:none;"><input type="button" class="show-button" value="Προβολή Όλων" style="width:145px;"></a>
   </div>
 </div>
 

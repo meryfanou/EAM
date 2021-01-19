@@ -11,7 +11,7 @@
         <li class="breadcrumb-item"><a href="../info/index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
         <!-- If an employee made a request -->
         <?php if(isset($_SESSION['made_request']) && $_SESSION['made_request'] == 1){ ?>
-            <li class="breadcrumb-item"><a href="#">Covid-19 & Εργαζόμενοι</a></li>
+            <li class="breadcrumb-item"><a href="covid_ergazomenoi.php">Covid-19 & Εργαζόμενοι</a></li>
             <li class="breadcrumb-item active" aria-current="page">Αίτηση Άδειας ειδικού σκοπού</li>
         <!-- If the employer editted an employee's info -->
         <?php } elseif(isset($_SESSION['updated_employee']) && $_SESSION['updated_employee'] == 1){ ?>

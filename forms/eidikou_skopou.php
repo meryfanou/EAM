@@ -11,7 +11,7 @@
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="../info/index.php"><i class="fas fa-home" style="padding:4%;display:inline;"></i>Αρχική</a></li>
-        <li class="breadcrumb-item"><a href="#">Covid-19 & Εργαζόμενοι</a></li>
+        <li class="breadcrumb-item"><a href="../info/covid_ergazomenoi.php">Covid-19 & Εργαζόμενοι</a></li>
         <li class="breadcrumb-item active" aria-current="page">Αίτηση Άδειας ειδικού σκοπού</li>
     </ol>
     </nav>

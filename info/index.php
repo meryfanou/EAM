@@ -40,7 +40,7 @@
       <br><br><br>
       <hr style="border-top: 4px solid rgba(0, 139, 139, 0.8); width: 265px;">
       <li><a href="./covid.php" style="text-decoration:none;"><button class="button">Πληροφορίες για τον Covid-19</button></a></li><br>
-      <li><a href="#" style="text-decoration:none;"><button class="button">Δουλεύουμε από το σπίτι</button></a></li><br>
+      <li><a href="./covid_ergazomenoi.php" style="text-decoration:none;"><button class="button">Δουλεύουμε από το σπίτι</button></a></li><br>
       <li><a href="./default.php" style="text-decoration:none;"><button class="button">Προγράμματα κατάρτησης για ανέργους</button></a></li>
       <hr style="border-top: 4px solid rgba(0, 139, 139, 0.8); width: 265px;">
       <br></br>
